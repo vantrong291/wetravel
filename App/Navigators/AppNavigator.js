@@ -4,11 +4,15 @@ import Icon from "react-native-vector-icons/Entypo";
 
 import ExampleScreen from 'App/Screens/Example/ExampleScreen'
 import Login from 'App/Screens/Login'
+import Home from 'App/Screens/Home'
+import Review from 'App/Screens/Review'
+import Recent from 'App/Screens/Recent'
+import Personal from 'App/Screens/Personal'
 
 const TabNavigator = createMaterialTopTabNavigator(
   {
     Home: {
-      screen: ExampleScreen,
+      screen: Home,
       navigationOptions: {
         tabBarLabel: "Home",
         tabBarIcon: ({tintColor}) => (
@@ -17,7 +21,7 @@ const TabNavigator = createMaterialTopTabNavigator(
       }
     },
     Review: {
-      screen: ExampleScreen,
+      screen: Review,
       navigationOptions: {
         tabBarLabel: "Review",
         tabBarIcon: ({tintColor}) => (
@@ -26,7 +30,7 @@ const TabNavigator = createMaterialTopTabNavigator(
       }
     },
     RecentLocation: {
-      screen: ExampleScreen,
+      screen: Recent,
       navigationOptions: {
         tabBarLabel: "Recent",
         tabBarIcon: ({tintColor}) => (
@@ -35,7 +39,7 @@ const TabNavigator = createMaterialTopTabNavigator(
       }
     },
     Personal: {
-      screen: ExampleScreen,
+      screen: Personal,
       navigationOptions: {
         tabBarLabel: "Personal",
         tabBarIcon: ({tintColor}) => (
@@ -92,7 +96,7 @@ const StackNavigator = createSwitchNavigator(
     MainScreen: TabNavigator,
   },
   {
-    initialRouteName: 'Login',
+    initialRouteName: 'MainScreen',
     headerMode: 'none',
   }
 )
