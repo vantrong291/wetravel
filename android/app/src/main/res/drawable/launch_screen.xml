@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/green" tools:ignore="StateListReachable" />
+    <item
+            android:width="90dp"
+            android:height="90dp"
+            android:drawable="@mipmap/ic_launcher"
+            android:gravity="center" />
+</selector>
