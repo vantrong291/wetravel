@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   createAccountButton: {
-    backgroundColor: '#9B9FA4'
+    backgroundColor: '#64b5f6'
   },
   createAccountButtonText: {
     color: 'white'

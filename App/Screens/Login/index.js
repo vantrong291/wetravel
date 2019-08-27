@@ -3,7 +3,9 @@ import { KeyboardAvoidingView, LayoutAnimation, Platform, StyleSheet, UIManager 
 import { Image, View } from 'react-native-animatable'
 import { PropTypes } from 'prop-types'
 
+import imgCanvas from '../../Assets/Images/canvas.png'
 import imgLogo from '../../Assets/Images/logo.png'
+
 import metrics from '../../Config/metrics'
 
 import Opening from './Opening'
@@ -56,21 +58,28 @@ export default class AuthScreen extends Component {
     this.setState({ visibleForm })
   }
 
-  onLogin = () => {
-
+  onLogin = (email, password) => {
+    this.props.navigation.navigate('MainScreen')
   }
 
   onSignup = () => {
-
+    this.props.navigation.navigate('MainScreen')
   }
 
   render () {
     // const { isLoggedIn, isLoading, signup, login } = this.props
     const { isLoading, visibleForm, isLoggedIn } = this.state
     // The following style is responsible of the "bounce-up from bottom" animation of the form
-    const formStyle = (!visibleForm) ? { height: 0 } : { marginTop: 40 }
+    const formStyle = (!visibleForm) ? { height: 0 } : { marginTop: 40,}
     return (
       <View style={styles.container}>
+        <Image
+          animation={'bounceIn'}
+          duration={1200}
+          delay={200}
+          style={styles.canvasImg}
+          source={imgCanvas}
+        />
         <Image
           animation={'bounceIn'}
           duration={1200}
@@ -121,13 +130,21 @@ const styles = StyleSheet.create({
     paddingTop: 24,
     backgroundColor: 'white'
   },
-  logoImg: {
+  canvasImg: {
     flex: 1,
     height: null,
     width: IMAGE_WIDTH,
     alignSelf: 'center',
     resizeMode: 'contain',
-    marginVertical: 30
+    marginVertical: 0
+  },
+  logoImg: {
+    // flex: 1,
+    // height: 10,
+    width: IMAGE_WIDTH*2/3,
+    alignSelf: 'center',
+    resizeMode: 'contain',
+    marginVertical: 0
   },
   bottom: {
     backgroundColor: '#1976D2'
