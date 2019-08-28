@@ -22,17 +22,17 @@ export default {
     margin: 0
   },
   floatArea: {
-    top: coverHeight - waveHeight,
-    backgroundColor: "#fff",
+    top: coverHeight,
+    // backgroundColor: "#fff",
     marginBottom: 10,
     paddingBottom: 50,
     paddingHorizontal: contants.padding,
   },
   outerFLoat: {
-    top: coverHeight - waveHeight - 50,
+    // top: coverHeight - waveHeight - 50,
     backgroundColor: "#fff",
-    marginBottom: 10,
-    paddingBottom: 150,
+    marginTop: 20,
+    paddingBottom: 10,
     color: '#333',
     paddingHorizontal: contants.padding,
   }
