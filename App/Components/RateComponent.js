@@ -3,19 +3,19 @@ import { Text, View } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import {RANGE} from '../Utils/range'
 
-const RateComponent = ({rate}) => {
+const RateComponent = ({rate, size = 18}) => {
   const roundedRate = Math.round(rate);
   const rest = 5 - roundedRate;
   return (
     <View style={{flexDirection: 'row'}}>
       {
         RANGE(1, roundedRate).map((item, index) => (
-          <Icon name={"star"} size={18} style={{ color: "#e7504c" }}/>
+          <Icon name={"star"} size={size} style={{ color: "#f2ab51" }}/>
         ))
       }
       {
         RANGE(1, rest).map((item, index) => (
-          <Icon name={"star-o"} size={18}/>
+          <Icon name={"star"} size={size} style={{ color: "#e8e8e8" }}/>
         ))
       }
     </View>

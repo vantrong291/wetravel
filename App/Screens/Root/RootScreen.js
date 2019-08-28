@@ -20,7 +20,8 @@ class RootScreen extends Component {
     return (
 
       <View style={styles.container}>
-        <StatusBar backgroundColor={Colors.subColor} barStyle="light-content" />
+        {/*<StatusBar backgroundColor={Colors.subColor} barStyle="light-content" />*/}
+        <StatusBar translucent backgroundColor="transparent" />
         <AppNavigator
           // Initialize the NavigationService (see https://reactnavigation.org/docs/en/navigating-without-navigation-prop.html)
           ref={(navigatorRef) => {
