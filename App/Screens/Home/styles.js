@@ -1,5 +1,6 @@
 import metrics from '../../Config/metrics'
 import contants from '../../Theme/Constants'
+
 const coverHeight = 260;
 const waveHeight = 60;
 

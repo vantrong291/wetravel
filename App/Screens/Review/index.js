@@ -1,23 +1,14 @@
 import React from 'react'
-import { Platform, Text, View, ActivityIndicator, Image, ScrollView, ImageBackground, FlatList, StatusBar } from 'react-native'
-import { connect } from 'react-redux'
+import { FlatList, Image, Text, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import ReviewListComponent from '../../Components/ReviewListComponent'
 import styles from './styles'
-import { Text as EText, Button } from 'react-native-elements'
+import { Button, Text as EText } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/AntDesign'
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import {RANGE} from '../../Utils/range'
-import ParallaxScrollView from 'react-native-parallax-scroll-view';
-import {
-  window,
-  AVATAR_SIZE,
-  ROW_HEIGHT,
-  PARALLAX_HEADER_HEIGHT,
-  STICKY_HEADER_HEIGHT,
-  parallaxStyles
-} from "../../Components/ParallaxConfig";
-import Colors from '../../Theme/Colors'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import { RANGE } from '../../Utils/range'
+import ParallaxScrollView from 'react-native-parallax-scroll-view'
+import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT, window } from '../../Components/ParallaxConfig'
 
 
 const cover = require('../../Assets/Images/home3-slider.abeeb270.png')
