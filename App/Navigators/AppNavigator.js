@@ -96,7 +96,7 @@ const StackNavigator = createSwitchNavigator(
     MainScreen: TabNavigator,
   },
   {
-    initialRouteName: 'MainScreen',
+    initialRouteName: 'Login',
     headerMode: 'none',
   }
 )
