@@ -11,8 +11,8 @@ import ParallaxScrollView from 'react-native-parallax-scroll-view'
 import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT, window } from '../../Components/ParallaxConfig'
 
 
-const cover = require('../../Assets/Images/home3-slider.abeeb270.png')
-const resource = require('../../Assets/Images/shape (1).png')
+const cover = require('../../Assets/Images/review-cover.jpg')
+const resource = require('../../Assets/Images/texture.png')
 
 
 class Review extends React.Component {
@@ -83,9 +83,8 @@ class Review extends React.Component {
             <FlatList
               keyExtractor={this.keyExtractor}
               data={RANGE(1,5)}
-              renderItem={({item}) => <ReviewListComponent
-                // style={{paddingTop: 15}}
-              />}
+              renderItem={({item}) => <ReviewListComponent/>}
+              style={{paddingTop: 15}}
             />
           </ParallaxScrollView>
       </View>

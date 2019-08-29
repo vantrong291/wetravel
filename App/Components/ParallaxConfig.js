@@ -30,7 +30,6 @@ export const parallaxStyles =  {
     justifyContent: 'flex-end',
     // backgroundColor: '#73e3d8',
     backgroundColor: '#3897f1'
-
   },
   fixedSection: {
     position: 'absolute',

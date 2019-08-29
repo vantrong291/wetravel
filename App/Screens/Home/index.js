@@ -13,6 +13,7 @@ import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT } from '..
 
 const cover = require('../../Assets/Images/home-cover.jpg')
 const wave = require('../../Assets/Images/wave.png')
+const logo = require('../../Assets/Images/wetravel@0,25x.png')
 
 class Home extends React.Component {
   constructor(props) {
@@ -45,7 +46,8 @@ class Home extends React.Component {
 
           renderForeground={() => (
             <View key="parallax-header" style={styles.floatArea}>
-                <EText h4 style={{color: "#333"}}>Hi, Van Trong</EText>
+              {/*<Image source={logo} style={{width: 171, height: 40, marginBottom: 20}}/>*/}
+              <EText h4 style={{color: "#333"}}>Hi, Van Trong</EText>
                 <EText h4 style={{color: "#333"}}>Where do you want to go?</EText>
                 <SearchComponent/>
             </View>
@@ -53,7 +55,7 @@ class Home extends React.Component {
 
           renderStickyHeader={() => (
             <View key="sticky-header" style={parallaxStyles.stickySection}>
-              <Text style={{fontSize: 20, fontWeight: 'bold', color: '#fff', marginLeft: 15, marginBottom: 8}}>KodeTravel</Text>
+              <Text style={{fontSize: 20, fontWeight: 'bold', color: '#fff', marginLeft: 15, marginBottom: 8}}>WeTravel</Text>
             </View>
           )}
 

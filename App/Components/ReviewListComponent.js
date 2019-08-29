@@ -105,7 +105,7 @@ const styles = {
     marginBottom: 15,
     marginHorizontal: 15,
     backgroundColor: '#fff',
-    elevation: 5,
+    elevation: 4,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.8,
