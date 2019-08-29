@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.kodetravel",
+    package = "com.wetravel",
 )
 
 android_resource(
     name = "res",
-    package = "com.kodetravel",
+    package = "com.wetravel",
     res = "src/main/res",
 )
 

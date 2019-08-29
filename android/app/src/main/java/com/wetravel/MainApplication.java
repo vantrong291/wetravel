@@ -1,4 +1,4 @@
-package com.kodetravel;
+package com.wetravel;
 
 import android.app.Application;
 

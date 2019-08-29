@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, ImageBackground, Text, TouchableHighlight, View } from 'react-native'
+import { Image, ImageBackground, StatusBar, Text, TouchableHighlight, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import styles from './styles'
 import { Text as EText } from 'react-native-elements'
@@ -29,6 +29,7 @@ class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar translucent backgroundColor="transparent" barStyle="light-content"/>
         <ParallaxScrollView
           ref="ScrollView"
           backgroundColor="#fff"

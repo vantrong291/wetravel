@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { KeyboardAvoidingView, LayoutAnimation, Platform, StyleSheet, UIManager } from 'react-native'
+import { KeyboardAvoidingView, LayoutAnimation, Platform, StatusBar, StyleSheet, UIManager } from 'react-native'
 import { Image, View } from 'react-native-animatable'
 import { PropTypes } from 'prop-types'
 
 import imgCanvas from '../../Assets/Images/canvas.png'
-import imgLogo from '../../Assets/Images/logo.png'
+import imgLogo from '../../Assets/Images/wetravel@0,25x.png'
 
 import metrics from '../../Config/metrics'
 
@@ -73,6 +73,7 @@ export default class AuthScreen extends Component {
     const formStyle = (!visibleForm) ? { height: 0 } : { marginTop: 40,}
     return (
       <View style={styles.container}>
+        <StatusBar translucent backgroundColor="transparent" barStyle="dark-content"/>
         <Image
           animation={'bounceIn'}
           duration={1200}
