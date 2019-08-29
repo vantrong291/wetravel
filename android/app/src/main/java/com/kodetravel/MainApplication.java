@@ -5,7 +5,7 @@ import android.app.Application;
 import com.facebook.react.ReactApplication;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
-import org.devio.rn.splashscreen.SplashScreenReactPackage;
+//import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -29,7 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
             new LinearGradientPackage(),
             new VectorIconsPackage(),
-            new SplashScreenReactPackage(),
+//            new SplashScreenReactPackage(),
             new RNGestureHandlerPackage()
       );
     }
@@ -45,9 +45,9 @@ public class MainApplication extends Application implements ReactApplication {
     return mReactNativeHost;
   }
 
-  @Override
-  public void onCreate() {
-    super.onCreate();
-    SoLoader.init(this, /* native exopackage */ false);
-  }
+//  @Override
+//  public void onCreate() {
+//    super.onCreate();
+//    SoLoader.init(this, /* native exopackage */ false);
+//  }
 }

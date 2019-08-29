@@ -6,13 +6,13 @@ import styles from './RootScreenStyle'
 import { connect } from 'react-redux'
 import StartupActions from 'App/Stores/Startup/Actions'
 import { PropTypes } from 'prop-types'
-import SplashScreen from 'react-native-splash-screen'
+// import SplashScreen from 'react-native-splash-screen'
 import Colors from '../../Theme/Colors'
 
 class RootScreen extends Component {
   componentDidMount() {
     // Run the startup saga when the application is starting
-    SplashScreen.hide()
+    // SplashScreen.hide()
     // this.props.startup()
   }
 
