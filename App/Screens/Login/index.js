@@ -59,10 +59,12 @@ export default class AuthScreen extends Component {
   }
 
   onLogin = (email, password) => {
+    this.setState({isLoading: true});
     this.props.navigation.navigate('MainScreen')
   }
 
   onSignup = () => {
+    this.setState({isLoading: true});
     this.props.navigation.navigate('MainScreen')
   }
 

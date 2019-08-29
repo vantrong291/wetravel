@@ -6,6 +6,7 @@ import { PropTypes } from 'prop-types'
 import CustomButton from '../../Components/CustomButton'
 import CustomTextInput from '../../Components/CustomTextInput'
 import metrics from '../../Config/metrics'
+import {runAfter} from '../../Utils/asyncFunc'
 
 export default class LoginForm extends Component {
   static propTypes = {
@@ -17,7 +18,8 @@ export default class LoginForm extends Component {
   state = {
     email: '',
     password: '',
-    fullName: ''
+    fullName: '',
+    isBtnLoading: false
   }
 
   hideForm = async () => {
@@ -28,6 +30,11 @@ export default class LoginForm extends Component {
         this.linkRef.fadeOut(300)
       ])
     }
+  }
+
+  onLogin = (email, password) => {
+    this.setState({isBtnLoading: true})
+    runAfter(() => this.props.onLoginPress(email, password),2000);
   }
 
   render () {
@@ -66,9 +73,9 @@ export default class LoginForm extends Component {
         <View style={styles.footer}>
           <View ref={(ref) => this.buttonRef = ref}>
             <CustomButton
-              onPress={() => onLoginPress(email, password)}
+              onPress={() => this.onLogin(email, password)}
               isEnabled={isValid}
-              isLoading={isLoading}
+              isLoading={this.state.isBtnLoading}
               buttonStyle={styles.loginButton}
               textStyle={styles.loginButtonText}
               text={'Log In'}
