@@ -10,6 +10,8 @@ import CardVerticalFlatList from '../../Components/CardVerticalFlatList'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import ParallaxScrollView from 'react-native-parallax-scroll-view'
 import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT } from '../../Components/ParallaxConfig'
+import Icon from 'react-native-vector-icons/Entypo'
+import Colors from '../../Theme/Colors'
 
 const cover = require('../../Assets/Images/home-cover.jpg')
 const wave = require('../../Assets/Images/wave.png')
@@ -25,7 +27,7 @@ class Home extends React.Component {
   };
 
   componentDidMount() {
-    this.setState({loading: false})
+    this.setState({ loading: false })
   }
 
   // shouldComponentUpdate(nextProps, nextState, nextContext) {
@@ -33,12 +35,12 @@ class Home extends React.Component {
   // }
 
   goToTourDetail = (item) => {
-    console.log(item);
-    this.props.navigation.navigate('TourDetail', {tour: item})
+    console.log(item)
+    this.props.navigation.navigate('TourDetail', { tour: item })
   }
 
   render() {
-    const {loading} = this.state;
+    const { loading } = this.state
     return loading ? (<View><Text>a</Text></View>) : (
       <View style={styles.container}>
         <StatusBar translucent backgroundColor="transparent" barStyle="light-content"/>
@@ -47,7 +49,7 @@ class Home extends React.Component {
           backgroundColor="#fff"
           headerBackgroundColor="#333"
           stickyHeaderHeight={STICKY_HEADER_HEIGHT}
-          parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT + 100}
+          parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT + 140}
           backgroundSpeed={10}
           renderBackground={() => (
             <ImageBackground source={cover} style={styles.cover}>
@@ -58,16 +60,26 @@ class Home extends React.Component {
           renderForeground={() => (
             <View key="parallax-header" style={styles.floatArea}>
               {/*<Image source={logo} style={{width: 171, height: 40, marginBottom: 20}}/>*/}
-              <EText h4 style={{color: "#333"}}>Hi, Van Trong</EText>
-                <EText h4 style={{color: "#333"}}>Where do you want to go?</EText>
-                <SearchComponent/>
+              <EText h4 style={{ color: '#333' }}>Hi, Van Trong</EText>
+              <EText h4 style={{ color: '#333' }}>Where do you want to go?</EText>
+              <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                <Icon name='location' color={Colors.navbarColor} size={18}/>
+                <Text style={{ paddingLeft: 10 }}>Ha Noi</Text>
+              </View>
+              <SearchComponent/>
             </View>
           )}
 
           renderStickyHeader={() => (
             <View>
               <View key="sticky-header" style={parallaxStyles.stickySection}>
-                <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#fff', marginLeft: 15, marginBottom: 8 }}>WeTravel</Text>
+                <Text style={{
+                  fontSize: 20,
+                  fontWeight: 'bold',
+                  color: '#fff',
+                  marginLeft: 15,
+                  marginBottom: 8,
+                }}>WeTravel</Text>
               </View>
               <View key="fixed-header" style={parallaxStyles.fixedSection}>
                 <MaterialCommunityIcons name="format-align-top" style={parallaxStyles.fixedSectionText}
@@ -86,18 +98,18 @@ class Home extends React.Component {
           // )}
         >
           <View style={styles.outerFLoat}>
-            <View style={{flexDirection:'row'}}>
-              <Text style={{fontSize: 17, fontWeight: "bold", color: "#333"}}>Top Place</Text>
-              <TouchableHighlight style={{paddingTop: 4, marginLeft: 'auto'}}>
-                <Text style={{fontSize: 14, color: "#3284c6"}}>More</Text>
+            <View style={{ flexDirection: 'row' }}>
+              <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Top Place</Text>
+              <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
+                <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
               </TouchableHighlight>
             </View>
             <CardHorizontalFlatList onItemPress={this.goToTourDetail}/>
 
-            <View style={{flexDirection:'row', marginTop: 30}}>
-              <Text style={{fontSize: 17, fontWeight: "bold", color: "#333"}}>For you</Text>
-              <TouchableHighlight style={{paddingTop: 4, marginLeft: 'auto'}}>
-                <Text style={{fontSize: 14, color: "#3284c6"}}>More</Text>
+            <View style={{ flexDirection: 'row', marginTop: 30 }}>
+              <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>For you</Text>
+              <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
+                <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
               </TouchableHighlight>
             </View>
             <CardVerticalFlatList onItemPress={this.goToTourDetail}/>

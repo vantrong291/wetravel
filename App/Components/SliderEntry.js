@@ -49,8 +49,8 @@ const styles = StyleSheet.create({
   imageContainer: {
     flex: 1,
     marginBottom: IS_IOS ? 0 : -1, // Prevent a random Android rendering issue
-    backgroundColor: 'white',
-    borderRadius: entryBorderRadius,
+    // backgroundColor: 'white',
+    // borderRadius: entryBorderRadius,
   },
   imageContainerEven: {
     backgroundColor: colors.black,

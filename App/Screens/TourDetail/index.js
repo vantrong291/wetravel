@@ -12,6 +12,7 @@ import { runAfter } from '../../Utils/asyncFunc'
 import LoadingContainer from '../../Components/LoadingContainer'
 import Constants from '../../Theme/Constants'
 import {tourData} from '../../Data/tours'
+import RateComponent from '../../Components/RateComponent'
 
 class TourDetail extends React.Component {
   constructor(props) {
@@ -46,13 +47,14 @@ class TourDetail extends React.Component {
           {loading && <LoadingContainer height={267}/>}
           {!loading && <TourPhotoCarousel data={tour.images}/>}
           <View style={{ paddingHorizontal: Constants.padding }}>
-            <Text style={{ marginBottom: 0, fontSize: 16, fontWeight: 'bold', color: '#333' }}>
+            <Text style={{ marginBottom: 0, fontSize: 20, fontWeight: 'bold', color: '#333' }}>
               {title}
             </Text>
             <Text style={{ marginBottom: 5, fontSize: 12 }}>
               {country}, {continents}
             </Text>
-            <Text>
+            <RateComponent rate={tour.rating}/>
+            <Text style={{textAlign: 'justify', fontSize: 16, marginTop: 10}}>
               {tour.introduce}
             </Text>
           </View>

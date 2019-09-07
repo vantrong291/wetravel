@@ -18,7 +18,7 @@ const CardVerticalItem = ({ item, onItemPress}) => {
       <View style={[styles.row, { marginTop: 15 }]}>
         <View style={styles.imageCol4}>
           <Image source={{uri: item.images[item.id - 1]}}
-                 style={{ width: metrics.DEVICE_WIDTH * 0.4 - 10, height: metrics.DEVICE_WIDTH * 0.4 - 10 }}/>
+                 style={{ width: metrics.DEVICE_WIDTH * 0.4 - 10, height: metrics.DEVICE_WIDTH * 0.25, borderRadius: 8}}/>
         </View>
         <View style={styles.imageCol6}>
           <Text style={{ marginBottom: 0, fontSize: 16, fontWeight: 'bold', color: '#333' }}>

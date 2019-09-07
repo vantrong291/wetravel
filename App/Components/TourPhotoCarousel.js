@@ -24,7 +24,8 @@ const styles = {
     overflow: 'visible', // for custom animations
   },
   sliderContentContainer: {
-    paddingVertical: 5, // for custom animation
+    // alignContent: 'center',
+    paddingVertical: 10, // for custom animation
   },
 }
 
@@ -52,8 +53,8 @@ const TourPhotoCarousel = ({data}) => {
       hasParallaxImages={true}
       firstItem={1}
       inactiveSlideScale={0.9}
-      inactiveSlideOpacity={0.3}
-      inactiveSlideShift={20}
+      inactiveSlideOpacity={0.1}
+      // inactiveSlideShift={20}
       containerCustomStyle={styles.slider}
       contentContainerCustomStyle={styles.sliderContentContainer}
       loop={true}

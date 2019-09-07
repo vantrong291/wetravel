@@ -1,9 +1,11 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { Text, Image, View } from 'react-native'
 import { Card } from 'react-native-elements'
 import TouchableScale from 'react-native-touchable-scale' // https://github.com/kohver/react-native-touchable-scale
-
 import RateComponent from './RateComponent'
+
+const cardWidth = 150
+const cardBorderRadius = 8
 
 
 const CardHorizontalItem = ({ item, onItemPress }) => {
@@ -13,15 +15,13 @@ const CardHorizontalItem = ({ item, onItemPress }) => {
     <TouchableScale activeScale={0.95}
                     friction={90}
                     tension={100}
-                    onPress={() => {onItemPress(item)}}
+                    onPress={() => {
+                      onItemPress(item)
+                    }}
     >
-      <Card image={{uri: item.images[item.id - 1]}} containerStyle={{
-        marginHorizontal: 0,
-        borderRadius: 10,
-        width: 180,
-        marginBottom: 15,
-        marginRight: 10,
-      }}>
+      <View style={styles.card}>
+        <Image source={{ uri: item.images[item.id - 1]}} style={styles.cardImage}/>
+        <View style={{padding:15}}>
         <Text style={{ marginBottom: 0, fontSize: 16, fontWeight: 'bold', color: '#333' }}>
           {item.destination}
         </Text>
@@ -29,17 +29,32 @@ const CardHorizontalItem = ({ item, onItemPress }) => {
           {item.country}, {item.continent}
         </Text>
         <RateComponent rate={item.rating}/>
-
-      </Card>
+        </View>
+      </View>
     </TouchableScale>
   )
 }
 
 const styles = {
   card: {
+    backgroundColor: '#fff',
+    elevation: 1,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
     marginHorizontal: 0,
-    borderRadius: 4,
+    borderRadius: cardBorderRadius,
+    width: cardWidth,
+    marginVertical: 15,
+    marginRight: 10,
   },
+  cardImage: {
+    width:cardWidth,
+    height: 120,
+    borderTopLeftRadius: cardBorderRadius,
+    borderTopRightRadius: cardBorderRadius
+  }
 }
 
 export default CardHorizontalItem

@@ -8,7 +8,7 @@ import contants from '../Theme/Constants'
 const SearchComponent = ({}) => {
   return (
       <View style={styles.searchInput}>
-        <Icon active name="location-on" size={18} style={{color: "#8096a0", paddingBottom: 0}}/>
+        <Icon active name="search" size={20} style={{color: "#8096a0", paddingTop: 4}}/>
         <TextInput placeholder="Eg: Ha Long Bay, Hoi An,..."
                    style={{ paddingLeft: 10, paddingTop: 0, paddingBottom: 5}}
                    placeholderTextColor={"#8096a0"}
