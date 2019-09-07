@@ -14,5 +14,7 @@ export default {
   error: '#dc3545',
   mainColor: '#1976D2',
   subColor: '#3897f1',
-  navbarColor: '#3897f1'
+  navbarColor: '#3897f1',
+  navbarTextColor: '#fff'
+
 }

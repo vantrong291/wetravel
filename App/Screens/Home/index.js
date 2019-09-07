@@ -32,6 +32,11 @@ class Home extends React.Component {
   //     return
   // }
 
+  goToTourDetail = (item) => {
+    console.log(item);
+    this.props.navigation.navigate('TourDetail', {tour: item})
+  }
+
   render() {
     const {loading} = this.state;
     return loading ? (<View><Text>a</Text></View>) : (
@@ -87,7 +92,7 @@ class Home extends React.Component {
                 <Text style={{fontSize: 14, color: "#3284c6"}}>More</Text>
               </TouchableHighlight>
             </View>
-            <CardHorizontalFlatList/>
+            <CardHorizontalFlatList onItemPress={this.goToTourDetail}/>
 
             <View style={{flexDirection:'row', marginTop: 30}}>
               <Text style={{fontSize: 17, fontWeight: "bold", color: "#333"}}>For you</Text>
@@ -95,7 +100,7 @@ class Home extends React.Component {
                 <Text style={{fontSize: 14, color: "#3284c6"}}>More</Text>
               </TouchableHighlight>
             </View>
-            <CardVerticalFlatList/>
+            <CardVerticalFlatList onItemPress={this.goToTourDetail}/>
           </View>
         </ParallaxScrollView>
       </View>

@@ -1,17 +1,19 @@
-import React, { Component } from 'react'
-import { createAppContainer, createStackNavigator, createSwitchNavigator, createMaterialTopTabNavigator } from 'react-navigation'
-import Icon from "react-native-vector-icons/Entypo";
-import FIcon from "react-native-vector-icons/Feather";
-import { View, StatusBar, Text} from 'react-native'
-import ExampleScreen from 'App/Screens/Example/ExampleScreen'
+import React from 'react'
+import {
+  createAppContainer,
+  createMaterialTopTabNavigator,
+  createStackNavigator,
+  createSwitchNavigator,
+} from 'react-navigation'
 import Login from 'App/Screens/Login'
 import Home from 'App/Screens/Home'
 import Review from 'App/Screens/Review'
 import Notifications from 'App/Screens/Notifications'
 import Personal from 'App/Screens/Personal'
-import {Easing, Animated} from 'react-native'
+import TourDetail from 'App/Screens/TourDetail'
 import CustomTabBar from './CustomTabBar'
-import { Avatar, Badge, Icon as EIcon,  withBadge } from 'react-native-elements'
+import { Icon as EIcon, withBadge } from 'react-native-elements'
+
 
 const notiNum = Math.floor(Math.random() * 10) + 1;
 const BadgedIcon = withBadge(notiNum)(EIcon)
@@ -97,10 +99,21 @@ const TabNavigator = createMaterialTopTabNavigator(
   }
 );
 
-const StackNavigator = createSwitchNavigator(
+const StackNavigator = createStackNavigator(
+  {
+    Main: {screen: TabNavigator},
+    TourDetail: TourDetail
+  },
+  {
+    initialRouteName: "Main",
+    headerMode: "none"
+  }
+)
+
+const SwitchNavigator = createSwitchNavigator(
   {
     Login: Login,
-    MainScreen: TabNavigator,
+    MainScreen: StackNavigator,
   },
   {
     initialRouteName: 'MainScreen',
@@ -108,4 +121,4 @@ const StackNavigator = createSwitchNavigator(
   }
 )
 
-export default createAppContainer(StackNavigator)
+export default createAppContainer(SwitchNavigator)

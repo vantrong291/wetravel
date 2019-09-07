@@ -7,25 +7,27 @@ import RateComponent from './RateComponent'
 import TouchableScale from 'react-native-touchable-scale'
 
 
-const CardVerticalItem = ({ image = require('../Assets/Images/TOM.png'), name = 'Hoi An', rate = 4, continents = 'Asia', country = 'VietNam' }) => {
+const CardVerticalItem = ({ item, onItemPress}) => {
+  const id = item.id
   return (
-    <TouchableScale activeScale={0.9}
+    <TouchableScale activeScale={0.95}
                     friction={90}
                     tension={100}
+                    onPress={() => {onItemPress(item)}}
     >
       <View style={[styles.row, { marginTop: 15 }]}>
         <View style={styles.imageCol4}>
-          <Image source={image}
+          <Image source={{uri: item.images[item.id - 1]}}
                  style={{ width: metrics.DEVICE_WIDTH * 0.4 - 10, height: metrics.DEVICE_WIDTH * 0.4 - 10 }}/>
         </View>
         <View style={styles.imageCol6}>
           <Text style={{ marginBottom: 0, fontSize: 16, fontWeight: 'bold', color: '#333' }}>
-            {name}
+            {item.destination}
           </Text>
           <Text style={{ marginBottom: 5, fontSize: 12 }}>
-            {country}, {continents}
+            {item.country}, {item.continent}
           </Text>
-          <RateComponent rate={rate}/>
+          <RateComponent rate={item.rating}/>
         </View>
       </View>
     </TouchableScale>
