@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 import { createAppContainer, createStackNavigator, createSwitchNavigator, createMaterialTopTabNavigator } from 'react-navigation'
 import Icon from "react-native-vector-icons/Entypo";
-
+import FIcon from "react-native-vector-icons/Feather";
+import { View, StatusBar, Text} from 'react-native'
 import ExampleScreen from 'App/Screens/Example/ExampleScreen'
 import Login from 'App/Screens/Login'
 import Home from 'App/Screens/Home'
 import Review from 'App/Screens/Review'
-import Recent from 'App/Screens/Recent'
+import Notifications from 'App/Screens/Notifications'
 import Personal from 'App/Screens/Personal'
+import {Easing, Animated} from 'react-native'
+import CustomTabBar from './CustomTabBar'
+import { Avatar, Badge, Icon as EIcon,  withBadge } from 'react-native-elements'
+
+const notiNum = Math.floor(Math.random() * 10) + 1;
+const BadgedIcon = withBadge(notiNum)(EIcon)
 
 const TabNavigator = createMaterialTopTabNavigator(
   {
@@ -16,7 +23,7 @@ const TabNavigator = createMaterialTopTabNavigator(
       navigationOptions: {
         tabBarLabel: "Home",
         tabBarIcon: ({tintColor}) => (
-          <Icon name="home" color={tintColor} size={24}/>
+          <EIcon type="ionicon" name="ios-home" color={tintColor} size={24}/>
         )
       }
     },
@@ -25,32 +32,32 @@ const TabNavigator = createMaterialTopTabNavigator(
       navigationOptions: {
         tabBarLabel: "Review",
         tabBarIcon: ({tintColor}) => (
-          <Icon name="news" color={tintColor} size={24}/>
+          <EIcon type="ionicon" name="ios-star-half" color={tintColor} size={24}/>
         )
       }
     },
-    RecentLocation: {
-      screen: Recent,
-      navigationOptions: {
-        tabBarLabel: "Recent",
+    Notifications: {
+      screen: Notifications,
+      navigationOptions: ({ }) => ({
+        tabBarLabel: "Notifications",
         tabBarIcon: ({tintColor}) => (
-          <Icon name="location" color={tintColor} size={24}/>
+          <BadgedIcon type="ionicon" name="ios-notifications" color={tintColor} size={24}/>
         )
-      }
+      })
     },
     Personal: {
       screen: Personal,
       navigationOptions: {
         tabBarLabel: "Personal",
         tabBarIcon: ({tintColor}) => (
-          <Icon name="unread" color={tintColor} size={24}/>
+          <EIcon type="ionicon" name="ios-contact" color={tintColor} size={24}/>
         )
       },
     }
   },
   {
     initialRouteName: "Home",
-    order: ["Home", "Review", "RecentLocation", "Personal"],
+    order: ["Home", "Review", "Notifications", "Personal"],
     // activeTintColor: "#e91d62",
     // barStyle: { backgroundColor: '#f5f5f5' },
     // shifting:true
@@ -85,10 +92,10 @@ const TabNavigator = createMaterialTopTabNavigator(
       },
       showIcon: true,
       showLabel: true
-    }
+    },
+    tabBarComponent: CustomTabBar
   }
 );
-
 
 const StackNavigator = createSwitchNavigator(
   {
@@ -96,7 +103,7 @@ const StackNavigator = createSwitchNavigator(
     MainScreen: TabNavigator,
   },
   {
-    initialRouteName: 'Login',
+    initialRouteName: 'MainScreen',
     headerMode: 'none',
   }
 )

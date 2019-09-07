@@ -12,6 +12,8 @@ import Opening from './Opening'
 import SignupForm from './SignupForm'
 import LoginForm from './LoginForm'
 
+import { login } from '../../Services/AuthService'
+
 const IMAGE_WIDTH = metrics.DEVICE_WIDTH * 0.8
 
 if (Platform.OS === 'android') UIManager.setLayoutAnimationEnabledExperimental(true)
@@ -60,12 +62,14 @@ export default class AuthScreen extends Component {
 
   onLogin = (email, password) => {
     this.setState({isLoading: true});
-    this.props.navigation.navigate('MainScreen')
+    login(this);
+    // this.props.navigation.navigate('MainScreen')
   }
 
   onSignup = () => {
     this.setState({isLoading: true});
-    this.props.navigation.navigate('MainScreen')
+    login(this);
+    // this.props.navigation.navigate('MainScreen')
   }
 
   render () {

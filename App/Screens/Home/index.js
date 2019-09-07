@@ -25,10 +25,16 @@ class Home extends React.Component {
   };
 
   componentDidMount() {
+    this.setState({loading: false})
   }
 
+  // shouldComponentUpdate(nextProps, nextState, nextContext) {
+  //     return
+  // }
+
   render() {
-    return (
+    const {loading} = this.state;
+    return loading ? (<View><Text>a</Text></View>) : (
       <View style={styles.container}>
         <StatusBar translucent backgroundColor="transparent" barStyle="light-content"/>
         <ParallaxScrollView
@@ -54,18 +60,26 @@ class Home extends React.Component {
           )}
 
           renderStickyHeader={() => (
-            <View key="sticky-header" style={parallaxStyles.stickySection}>
-              <Text style={{fontSize: 20, fontWeight: 'bold', color: '#fff', marginLeft: 15, marginBottom: 8}}>WeTravel</Text>
+            <View>
+              <View key="sticky-header" style={parallaxStyles.stickySection}>
+                <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#fff', marginLeft: 15, marginBottom: 8 }}>WeTravel</Text>
+              </View>
+              <View key="fixed-header" style={parallaxStyles.fixedSection}>
+                <MaterialCommunityIcons name="format-align-top" style={parallaxStyles.fixedSectionText}
+                                        onPress={() => this.refs.ScrollView.scrollTo({ x: 0, y: 0 })}>
+                </MaterialCommunityIcons>
+              </View>
             </View>
           )}
 
-          renderFixedHeader={() => (
-            <View key="fixed-header" style={parallaxStyles.fixedSection}>
-              <MaterialCommunityIcons name="format-align-top" style={parallaxStyles.fixedSectionText}
-                                      onPress={() => this.refs.ScrollView.scrollTo({x: 0, y: 0})}>
-              </MaterialCommunityIcons>
-            </View>
-          )}>
+          // renderFixedHeader={() => (
+          //   <View key="fixed-header" style={parallaxStyles.fixedSection}>
+          //     <MaterialCommunityIcons name="format-align-top" style={parallaxStyles.fixedSectionText}
+          //                             onPress={() => this.refs.ScrollView.scrollTo({x: 0, y: 0})}>
+          //     </MaterialCommunityIcons>
+          //   </View>
+          // )}
+        >
           <View style={styles.outerFLoat}>
             <View style={{flexDirection:'row'}}>
               <Text style={{fontSize: 17, fontWeight: "bold", color: "#333"}}>Top Place</Text>

@@ -3,6 +3,8 @@ import {
   Dimensions
 } from 'react-native';
 
+import Colors from '../Theme/Colors'
+
 export const window = Dimensions.get('window');
 export const AVATAR_SIZE = 120;
 export const ROW_HEIGHT = 55;
@@ -29,7 +31,7 @@ export const parallaxStyles =  {
     width: "100%",
     justifyContent: 'flex-end',
     // backgroundColor: '#73e3d8',
-    backgroundColor: '#3897f1'
+    backgroundColor: Colors.navbarColor
   },
   fixedSection: {
     position: 'absolute',
@@ -41,7 +43,7 @@ export const parallaxStyles =  {
   fixedSectionText: {
     color: '#fff',
     fontSize: 26,
-    marginRight: 10
+    marginRight: 5
   },
   parallaxHeader: {
     alignItems: 'center',

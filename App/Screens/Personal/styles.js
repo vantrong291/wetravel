@@ -1,5 +1,5 @@
-import metrics from '../../Config/metrics'
 import contants from '../../Theme/Constants'
+
 const coverHeight = 260;
 const waveHeight = 60;
 
@@ -15,7 +15,7 @@ export default {
     marginBottom: 10
   },
   floatArea: {
-    top: 60,
+    top: 50,
     marginBottom: 10,
     paddingBottom: 50,
     paddingHorizontal: contants.padding,
@@ -49,5 +49,4 @@ export default {
     color: '#676f83',
     fontSize: 16
   },
-
 }

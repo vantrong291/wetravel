@@ -67,19 +67,27 @@ class Review extends React.Component {
             )}
 
             renderStickyHeader={() => (
-              <View key="sticky-header" style={parallaxStyles.stickySection}>
-                <Text style={{fontSize: 20, fontWeight: 'bold', color: '#fff', marginLeft: 15, marginBottom: 8}}>Customer Reviews</Text>
+              <View>
+                <View key="sticky-header" style={parallaxStyles.stickySection}>
+                  <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#fff', marginLeft: 15, marginBottom: 8 }}>Customer Review</Text>
+                </View>
+                <View key="fixed-header" style={parallaxStyles.fixedSection}>
+                  <MaterialCommunityIcons name="format-align-top" style={parallaxStyles.fixedSectionText}
+                                          onPress={() => this.refs.ScrollView.scrollTo({ x: 0, y: 0 })}>
+                  </MaterialCommunityIcons>
+                </View>
               </View>
             )}
 
-            renderFixedHeader={() => (
-              <View key="fixed-header" style={parallaxStyles.fixedSection}>
-                <MaterialCommunityIcons name="format-align-top" style={parallaxStyles.fixedSectionText}
-                      onPress={() => this.refs.ScrollView.scrollTo({x: 0, y: 0})}>
-                </MaterialCommunityIcons>
-
-              </View>
-            )}>
+            // renderFixedHeader={() => (
+            //   <View key="fixed-header" style={parallaxStyles.fixedSection}>
+            //     <MaterialCommunityIcons name="format-align-top" style={parallaxStyles.fixedSectionText}
+            //           onPress={() => this.refs.ScrollView.scrollTo({x: 0, y: 0})}>
+            //     </MaterialCommunityIcons>
+            //
+            //   </View>
+            // )}
+          >
             <FlatList
               keyExtractor={this.keyExtractor}
               data={RANGE(1,5)}
