@@ -25,7 +25,7 @@ class TourDetail extends React.Component {
   };
 
   componentDidMount() {
-    runAfter(() => this.setState({ loading: false }), 1000)
+    runAfter(() => this.setState({ loading: false }), 200)
   }
 
   goBack = () => {
@@ -44,7 +44,7 @@ class TourDetail extends React.Component {
       <View style={{ flex: 1, backgroundColor: '#f3f3f3' }}>
         <AppHeader onItemPress={this.goBack} title={title}/>
         <ScrollView style={{ height: 10000 }}>
-          {loading && <LoadingContainer height={267}/>}
+          {loading && <LoadingContainer height={278}/>}
           {!loading && <TourPhotoCarousel data={tour.images}/>}
           <View style={{ paddingHorizontal: Constants.padding }}>
             <Text style={{ marginBottom: 0, fontSize: 20, fontWeight: 'bold', color: '#333' }}>
