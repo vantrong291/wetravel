@@ -13,6 +13,11 @@ import SignupForm from './SignupForm'
 import LoginForm from './LoginForm'
 
 import { login } from '../../Services/AuthService'
+import { getItem } from '../../Services/AsyncStorageService'
+import NavigationService from '../../Services/NavigationService'
+import { runAfter } from '../../Utils/asyncFunc'
+import LoadingContainer from '../../Components/LoadingContainer'
+import {Config} from '../../Config'
 
 const IMAGE_WIDTH = metrics.DEVICE_WIDTH * 0.8
 
@@ -31,6 +36,17 @@ export default class AuthScreen extends Component {
     visibleForm: null, // Can be: null | SIGNUP | LOGIN
     isLoading: false,
     isLoggedIn: false
+  }
+
+  async componentDidMount() {
+    if (!Config.LOGIN_REQUIRED) {
+      const { success, value: isAuth } = await getItem("@isAuthenticated", false)
+      console.log("isAuth", isAuth)
+      if (success && isAuth === 'Authenticated') {
+        this.setState({ isLoggedIn: true })
+        this.onLogin();
+      }
+    }
   }
 
   componentWillUpdate (nextProps) {
@@ -60,15 +76,15 @@ export default class AuthScreen extends Component {
     this.setState({ visibleForm })
   }
 
-  onLogin = (email, password) => {
+  onLogin = async (email, password) => {
     this.setState({isLoading: true});
-    login(this);
+    await login(this);
     // this.props.navigation.navigate('MainScreen')
   }
 
-  onSignup = () => {
+  onSignup = async () => {
     this.setState({isLoading: true});
-    login(this);
+    await login(this);
     // this.props.navigation.navigate('MainScreen')
   }
 
@@ -95,6 +111,7 @@ export default class AuthScreen extends Component {
           style={styles.logoImg}
           source={imgLogo}
         />
+        {isLoggedIn && (<LoadingContainer height={300}/>)}
         {(!visibleForm && !isLoggedIn) && (
           <Opening
             onCreateAccountPress={() => this._setVisibleForm('SIGNUP')}

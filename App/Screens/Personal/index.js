@@ -4,13 +4,13 @@ import { PropTypes } from 'prop-types'
 import ReviewListComponent from '../../Components/ReviewListComponent'
 import styles from './styles'
 import { Button, Text as EText } from 'react-native-elements'
-import Icon from 'react-native-vector-icons/AntDesign'
+import EIcon from 'react-native-vector-icons/Entypo'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { RANGE } from '../../Utils/range'
 import ParallaxScrollView from 'react-native-parallax-scroll-view'
 import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT, window } from '../../Components/ParallaxConfig'
 import TouchableScale from 'react-native-touchable-scale'
-
+import Colors from '../../Theme/Colors'
 
 const cover = require('../../Assets/Images/personal-cover.png')
 const resource = require('../../Assets/Images/texture.png')
@@ -34,8 +34,8 @@ class Personal extends React.Component {
 
   keyExtractor = (item, index) => index.toString()
 
-  onLogout = () => {
-    logout(this);
+  onLogout = async () => {
+    await logout(this);
     // this.props.navigation.navigate('MainScreen')
   }
 
@@ -51,7 +51,7 @@ class Personal extends React.Component {
           backgroundColor="#fff"
           headerBackgroundColor="#333"
           stickyHeaderHeight={STICKY_HEADER_HEIGHT}
-          parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT + 120}
+          parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT + 80}
           backgroundSpeed={10}
           renderBackground={() => (
             <View key="background">
@@ -100,18 +100,18 @@ class Personal extends React.Component {
                 <View style={{flexDirection: 'row', marginBottom: 15}}>
                   <View style={styles.statisticColumn}>
                     <View style={{ flexDirection: 'row' }}>
-                      <Text style={styles.tagTitle}>Country</Text>
+                      <EIcon name="location" color={Colors.navbarColor} size={24}/>
                     </View>
-                    <View style={{ flexDirection: 'row' }}>
-                      <Text style={styles.tagText}>Viet Nam</Text>
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                      <Text style={styles.tagText}>Recent Place</Text>
                     </View>
                   </View>
                   <View style={styles.statisticColumn}>
                     <View style={{ flexDirection: 'row' }}>
-                      <Text style={styles.tagTitle}>Place</Text>
+                      <EIcon name="location" color={Colors.navbarColor} size={24}/>
                     </View>
-                    <View style={{ flexDirection: 'row' }}>
-                      <Text st0yle={styles.tagText}>Ha Long Bay</Text>
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                      <Text style={styles.tagText}>Recent Place</Text>
                     </View>
                   </View>
                 </View>
@@ -119,40 +119,40 @@ class Personal extends React.Component {
                 <View style={{flexDirection: 'row', marginBottom: 15}}>
                   <View style={styles.statisticColumn}>
                     <View style={{ flexDirection: 'row' }}>
-                      <Text style={styles.tagTitle}>Country</Text>
+                      <EIcon name="location" color={Colors.navbarColor} size={24}/>
                     </View>
-                    <View style={{ flexDirection: 'row' }}>
-                      <Text style={styles.tagText}>Viet Nam</Text>
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                      <Text style={styles.tagText}>Recent Place</Text>
                     </View>
                   </View>
                   <View style={styles.statisticColumn}>
                     <View style={{ flexDirection: 'row' }}>
-                      <Text style={styles.tagTitle}>Place</Text>
+                      <EIcon name="location" color={Colors.navbarColor} size={24}/>
                     </View>
-                    <View style={{ flexDirection: 'row' }}>
-                      <Text st0yle={styles.tagText}>Ha Long Bay</Text>
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                      <Text style={styles.tagText}>Recent Place</Text>
                     </View>
                   </View>
                 </View>
 
-                <View style={{flexDirection: 'row', marginBottom: 5}}>
-                  <View style={styles.statisticColumn}>
-                    <View style={{ flexDirection: 'row' }}>
-                      <Text style={styles.tagTitle}>Country</Text>
-                    </View>
-                    <View style={{ flexDirection: 'row' }}>
-                      <Text style={styles.tagText}>Viet Nam</Text>
-                    </View>
-                  </View>
-                  <View style={styles.statisticColumn}>
-                    <View style={{ flexDirection: 'row' }}>
-                      <Text style={styles.tagTitle}>Place</Text>
-                    </View>
-                    <View style={{ flexDirection: 'row' }}>
-                      <Text st0yle={styles.tagText}>Ha Long Bay</Text>
-                    </View>
-                  </View>
-                </View>
+                {/*<View style={{flexDirection: 'row', marginBottom: 5}}>*/}
+                  {/*<View style={styles.statisticColumn}>*/}
+                    {/*<View style={{ flexDirection: 'row' }}>*/}
+                      {/*<Text style={styles.tagTitle}>Country</Text>*/}
+                    {/*</View>*/}
+                    {/*<View style={{ flexDirection: 'row' }}>*/}
+                      {/*<Text style={styles.tagText}>Viet Nam</Text>*/}
+                    {/*</View>*/}
+                  {/*</View>*/}
+                  {/*<View style={styles.statisticColumn}>*/}
+                    {/*<View style={{ flexDirection: 'row' }}>*/}
+                      {/*<Text style={styles.tagTitle}>Place</Text>*/}
+                    {/*</View>*/}
+                    {/*<View style={{ flexDirection: 'row' }}>*/}
+                      {/*<Text st0yle={styles.tagText}>Ha Long Bay</Text>*/}
+                    {/*</View>*/}
+                  {/*</View>*/}
+                {/*</View>*/}
               </View>
             </View>
           )}

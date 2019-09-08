@@ -33,7 +33,7 @@ export default {
     marginBottom: 10,
     backgroundColor: "#fff",
     alignContent: 'stretch',
-    padding: 15,
+    paddingTop: 15,
     borderRadius: 10,
     flexWrap: 'wrap',
     flexDirection: 'row',
@@ -47,6 +47,6 @@ export default {
   tagTitle: {fontWeight: "bold", fontSize: 14, color: '#525c6d', marginBottom: 3},
   tagText: {
     color: '#676f83',
-    fontSize: 16
+    fontSize: 12
   },
 }

@@ -7,6 +7,7 @@ import CustomButton from '../../Components/CustomButton'
 import CustomTextInput from '../../Components/CustomTextInput'
 import metrics from '../../Config/metrics'
 import {runAfter} from '../../Utils/asyncFunc'
+import {Config} from '../../Config'
 
 export default class LoginForm extends Component {
   static propTypes = {
@@ -34,7 +35,7 @@ export default class LoginForm extends Component {
 
   onLogin = (email, password) => {
     this.setState({isBtnLoading: true})
-    runAfter(() => this.props.onLoginPress(email, password),2000);
+    runAfter(() => this.props.onLoginPress(email, password), Config.LOGIN_TIME);
   }
 
   render () {

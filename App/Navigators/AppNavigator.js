@@ -15,99 +15,100 @@ import CustomTabBar from './CustomTabBar'
 import { Icon as EIcon, withBadge } from 'react-native-elements'
 
 
-const notiNum = Math.floor(Math.random() * 10) + 1;
+const notiNum = Math.floor(Math.random() * 10) + 1
 const BadgedIcon = withBadge(notiNum)(EIcon)
+
 
 const TabNavigator = createMaterialTopTabNavigator(
   {
     Home: {
       screen: Home,
       navigationOptions: {
-        tabBarLabel: "Home",
-        tabBarIcon: ({tintColor}) => (
+        tabBarLabel: 'Home',
+        tabBarIcon: ({ tintColor }) => (
           <EIcon type="ionicon" name="ios-home" color={tintColor} size={24}/>
-        )
-      }
+        ),
+      },
     },
     Review: {
       screen: Review,
       navigationOptions: {
-        tabBarLabel: "Review",
-        tabBarIcon: ({tintColor}) => (
+        tabBarLabel: 'Review',
+        tabBarIcon: ({ tintColor }) => (
           <EIcon type="ionicon" name="ios-star-half" color={tintColor} size={24}/>
-        )
-      }
+        ),
+      },
     },
     Notifications: {
       screen: Notifications,
-      navigationOptions: ({ }) => ({
-        tabBarLabel: "Notifications",
-        tabBarIcon: ({tintColor}) => (
+      navigationOptions: ({}) => ({
+        tabBarLabel: 'Notifications',
+        tabBarIcon: ({ tintColor }) => (
           <BadgedIcon type="ionicon" name="ios-notifications" color={tintColor} size={24}/>
-        )
-      })
+        ),
+      }),
     },
     Personal: {
       screen: Personal,
       navigationOptions: {
-        tabBarLabel: "Personal",
-        tabBarIcon: ({tintColor}) => (
+        tabBarLabel: 'Personal',
+        tabBarIcon: ({ tintColor }) => (
           <EIcon type="ionicon" name="ios-contact" color={tintColor} size={24}/>
-        )
+        ),
       },
-    }
+    },
   },
   {
-    initialRouteName: "Home",
-    order: ["Home", "Review", "Notifications", "Personal"],
+    initialRouteName: 'Home',
+    order: ['Home', 'Review', 'Notifications', 'Personal'],
     // activeTintColor: "#e91d62",
     // barStyle: { backgroundColor: '#f5f5f5' },
     // shifting:true
 
     // tabBarComponent: MyTabBar,
-    tabBarPosition: "bottom",
+    tabBarPosition: 'bottom',
     swipeEnabled: true,
     animationEnabled: true,
     optimizationsEnabled: true,
     tabBarOptions: {
-      activeTintColor: "#1976D2",
-      inactiveTintColor: "grey",
+      activeTintColor: '#1976D2',
+      inactiveTintColor: 'grey',
       upperCaseLabel: false,
-      pressColor: "#1976d224",
+      pressColor: '#1976d224',
       pressOpacity: 1,
       labelStyle: {
         fontSize: 10,
         marginTop: 2,
         marginLeft: 0,
-        marginRight: 0
+        marginRight: 0,
       },
       style: {
-        backgroundColor: "#fff",
+        backgroundColor: '#fff',
         borderTopWidth: 0.5,
-        borderTopColor: "grey",
+        borderTopColor: 'grey',
         height: 50,
         // elevation: 3,
       },
       iconStyle: {},
       indicatorStyle: {
-        height: 0
+        height: 0,
       },
       showIcon: true,
-      showLabel: true
+      showLabel: true,
     },
-    tabBarComponent: CustomTabBar
-  }
-);
+    tabBarComponent: CustomTabBar,
+  },
+)
 
 const StackNavigator = createStackNavigator(
   {
-    Main: {screen: TabNavigator},
-    TourDetail: TourDetail
+    Main: { screen: TabNavigator },
+    TourDetail: TourDetail,
   },
   {
-    initialRouteName: "Main",
-    headerMode: "none"
-  }
+    initialRouteName: 'Main',
+    headerMode: 'none',
+  },
 )
 
 const SwitchNavigator = createSwitchNavigator(
@@ -116,9 +117,9 @@ const SwitchNavigator = createSwitchNavigator(
     MainScreen: StackNavigator,
   },
   {
-    initialRouteName: 'MainScreen',
+    initialRouteName: 'Login',
     headerMode: 'none',
-  }
+  },
 )
 
 export default createAppContainer(SwitchNavigator)
