@@ -40,13 +40,17 @@ export default {
     elevation: 2,
   },
   statisticColumn: {
-    width: "50%",
+    width: "33%",
     flexWrap:'wrap',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginVertical: 5
   },
   tagTitle: {fontWeight: "bold", fontSize: 14, color: '#525c6d', marginBottom: 3},
+  tagTextContainer: { flexDirection: 'row', marginTop: 2, width: 70, justifyContent: 'center' },
   tagText: {
     color: '#676f83',
-    fontSize: 12
+    fontSize: 11,
+    // flexShrink: 1,
+    textAlign: 'center'
   },
 }

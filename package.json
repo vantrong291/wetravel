@@ -9,7 +9,9 @@
     "prettier-check": "prettier --list-different **/*.js",
     "lint-fix": "eslint --fix .",
     "lint-check": "eslint .",
-    "rename": "react-native-rename"
+    "rename": "react-native-rename",
+    "r": "react-native run-android",
+    "l": "react-native log-android"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
@@ -20,6 +22,7 @@
     "react-native": "0.59.9",
     "react-native-action-button": "^2.8.5",
     "react-native-animatable": "^1.3.2",
+    "react-native-credit-card-input": "^0.4.1",
     "react-native-elements": "^1.1.0",
     "react-native-gesture-handler": "^1.3.0",
     "react-native-parallax-scroll-view": "^0.21.3",

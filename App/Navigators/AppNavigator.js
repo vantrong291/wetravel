@@ -11,6 +11,7 @@ import Review from 'App/Screens/Review'
 import Notifications from 'App/Screens/Notifications'
 import Personal from 'App/Screens/Personal'
 import TourDetail from 'App/Screens/TourDetail'
+import AddCard from 'App/Screens/AddCard'
 import CustomTabBar from './CustomTabBar'
 import { Icon as EIcon, withBadge } from 'react-native-elements'
 
@@ -104,6 +105,7 @@ const StackNavigator = createStackNavigator(
   {
     Main: { screen: TabNavigator },
     TourDetail: TourDetail,
+    AddCard: AddCard
   },
   {
     initialRouteName: 'Main',
