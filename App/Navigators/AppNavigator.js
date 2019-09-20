@@ -14,7 +14,7 @@ import TourDetail from 'App/Screens/TourDetail'
 import AddCard from 'App/Screens/AddCard'
 import CustomTabBar from './CustomTabBar'
 import { Icon as EIcon, withBadge } from 'react-native-elements'
-
+import {Config} from '../Config'
 
 const notiNum = Math.floor(Math.random() * 10) + 1
 const BadgedIcon = withBadge(notiNum)(EIcon)
@@ -119,7 +119,7 @@ const SwitchNavigator = createSwitchNavigator(
     MainScreen: StackNavigator,
   },
   {
-    initialRouteName: 'Login',
+    initialRouteName: Config.PRODUCTION ? 'Login' : 'MainScreen',
     headerMode: 'none',
   },
 )

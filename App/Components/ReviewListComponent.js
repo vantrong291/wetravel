@@ -111,23 +111,23 @@ const styles = {
     shadowOpacity: 0.8,
     shadowRadius: 2,
   },
-  notiRow: {
+  userRow: {
     flexDirection: 'row',
     borderBottomColor: '#eaeaea',
     padding: 15,
     paddingBottom: 8,
     borderBottomWidth: 1,
   },
-  notiColumn: {
+  userColumn: {
     flexDirection: 'column',
     paddingHorizontal: 10,
   },
-  notiContent: {
+  userName: {
     fontSize: 15,
     fontWeight: 'bold',
     color: '#333',
   },
-  notiTime: {
+  postTime: {
     fontSize: 12,
     // fontWeight: 'bold',
     color: '#9e9eaa',

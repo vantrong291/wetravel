@@ -52,11 +52,18 @@ const CustomTabBar = props => {
       {routes.map((route, routeIndex) => {
         const isRouteActive = routeIndex === activeRouteIndex
         const tintColor = isRouteActive ? activeTintColor : inactiveTintColor
+        const activeBorderTop = isRouteActive ? {
+          borderTopColor: tintColor,
+          borderTopWidth: 1
+        } : {
+          borderTopColor: '#fff',
+          borderTopWidth: 1
+        }
 
         return (
           <TouchableOpacity
             key={routeIndex}
-            style={styles.tabButton}
+            style={[styles.tabButton, activeBorderTop]}
             onPress={() => {
               onTabPress({ route })
             }}
