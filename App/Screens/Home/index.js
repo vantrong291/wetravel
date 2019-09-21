@@ -46,15 +46,18 @@ class Home extends React.Component {
         <StatusBar translucent backgroundColor="transparent" barStyle="light-content"/>
         <ParallaxScrollView
           ref="ScrollView"
-          backgroundColor="#fff"
+          // backgroundColor="#fff"
+          backgroundColor={Colors.navbarColor}
           headerBackgroundColor="#333"
           stickyHeaderHeight={STICKY_HEADER_HEIGHT}
           parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT + 140}
           backgroundSpeed={10}
           renderBackground={() => (
-            <ImageBackground source={cover} style={styles.cover}>
+            <View style={{backgroundColor: '#fff', height:PARALLAX_HEADER_HEIGHT + 140 }}>
+            <ImageBackground source={cover} style={[styles.cover]}>
               <Image source={wave} style={styles.wave}/>
             </ImageBackground>
+            </View>
           )}
 
           renderForeground={() => (

@@ -9,6 +9,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import { RANGE } from '../../Utils/range'
 import ParallaxScrollView from 'react-native-parallax-scroll-view'
 import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT, window } from '../../Components/ParallaxConfig'
+import Colors from '../../Theme/Colors'
 
 
 const cover = require('../../Assets/Images/notibg.png')
@@ -34,7 +35,8 @@ class Notifications extends React.Component {
       <View style={styles.container}>
         <ParallaxScrollView
           ref="ScrollView"
-          backgroundColor="#fff"
+          // backgroundColor="#fff"
+          backgroundColor={Colors.navbarColor}
           headerBackgroundColor="#333"
           stickyHeaderHeight={STICKY_HEADER_HEIGHT}
           parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT - 50}

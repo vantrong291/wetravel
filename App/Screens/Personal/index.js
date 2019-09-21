@@ -47,13 +47,14 @@ class Personal extends React.Component {
       <View style={styles.container}>
         <ParallaxScrollView
           ref="ScrollView"
-          backgroundColor="#fff"
+          // backgroundColor="#fff"
+          backgroundColor={Colors.navbarColor}
           headerBackgroundColor="#333"
           stickyHeaderHeight={STICKY_HEADER_HEIGHT}
           parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT + 80}
           backgroundSpeed={10}
           renderBackground={() => (
-            <View key="background">
+            <View key="background" style={{backgroundColor: '#fff', height:PARALLAX_HEADER_HEIGHT + 80 }}>
               <Image source={cover}
                      style={{
                        width: window.width,

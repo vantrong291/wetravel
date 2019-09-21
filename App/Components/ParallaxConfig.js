@@ -31,7 +31,7 @@ export const parallaxStyles =  {
     width: "100%",
     justifyContent: 'flex-end',
     // backgroundColor: '#73e3d8',
-    backgroundColor: Colors.navbarColor
+    // backgroundColor: Colors.navbarColor
   },
   fixedSection: {
     position: 'absolute',

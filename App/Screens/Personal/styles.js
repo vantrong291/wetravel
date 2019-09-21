@@ -1,4 +1,7 @@
 import contants from '../../Theme/Constants'
+import Colors from '../../Theme/Colors'
+import ParallaxScrollView from '../Notifications'
+import React from 'react'
 
 const coverHeight = 260;
 const waveHeight = 60;
