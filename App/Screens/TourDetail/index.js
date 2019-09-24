@@ -6,13 +6,48 @@ import ActionButton from 'react-native-action-button'
 import Icon from 'react-native-vector-icons/Ionicons'
 import AppHeader from '../../Components/AppHeader'
 import Colors from '../../Theme/Colors'
-import { ENTRIES1 } from '../../Data/tourDetailData'
 import TourPhotoCarousel from '../../Components/TourPhotoCarousel'
 import { runAfter } from '../../Utils/asyncFunc'
 import LoadingContainer from '../../Components/LoadingContainer'
 import Constants from '../../Theme/Constants'
-import {tourData} from '../../Data/tours'
 import RateComponent from '../../Components/RateComponent'
+import SectionedMultiSelect from 'react-native-sectioned-multi-select'
+import SelectInput from '../../Components/ReuseComponents/SelectInput'
+
+const items = [
+  {
+    name: 'Fruits',
+    id: 0,
+    // these are the children or 'sub items'
+    children: [
+      {
+        name: 'Apple',
+        id: 10,
+      },
+      {
+        name: 'Strawberry',
+        id: 17,
+      },
+      {
+        name: 'Pineapple',
+        id: 13,
+      },
+      {
+        name: 'Banana',
+        id: 14,
+      },
+      {
+        name: 'Watermelon',
+        id: 15,
+      },
+      {
+        name: 'Kiwi fruit',
+        id: 16,
+      },
+    ],
+  },
+
+]
 
 class TourDetail extends React.Component {
   constructor(props) {
@@ -21,6 +56,7 @@ class TourDetail extends React.Component {
     this.state = {
       loading: true,
       details: {},
+      selectedItems: [],
     }
   };
 
@@ -30,6 +66,10 @@ class TourDetail extends React.Component {
 
   goBack = () => {
     this.props.navigation.goBack()
+  }
+
+  onSelectedItemsChange = (selectedItems) => {
+    this.setState({ selectedItems })
   }
 
   render() {
@@ -54,9 +94,35 @@ class TourDetail extends React.Component {
               {country}, {continents}
             </Text>
             <RateComponent rate={tour.rating}/>
-            <Text style={{textAlign: 'justify', fontSize: 16, marginTop: 10}}>
+            <Text style={{ textAlign: 'justify', fontSize: 16, marginTop: 10 }}>
               {tour.introduce}
             </Text>
+          </View>
+          <View style={{flexDirection: 'row'}}>
+            <SelectInput
+              items={items}
+              uniqueKey="id"
+              single={true}
+              subKey="children"
+              placeholder="Choose some things..."
+              showDropDownst={true}
+              readOnlyHeadings={true}
+              onSelectedItemsChange={this.onSelectedItemsChange}
+              selectedItems={this.state.selectedItems}
+              containerStyle={{width: '50%'}}
+            />
+            <SelectInput
+              items={items}
+              uniqueKey="id"
+              single={true}
+              subKey="children"
+              placeholder="Choose some things..."
+              showDropDownst={true}
+              readOnlyHeadings={true}
+              onSelectedItemsChange={this.onSelectedItemsChange}
+              selectedItems={this.state.selectedItems}
+              containerStyle={{width: '50%'}}
+            />
           </View>
         </ScrollView>
         <ActionButton
