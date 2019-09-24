@@ -40,7 +40,7 @@
     "redux-persist": "^5.10.0",
     "redux-saga": "^1.0.2",
     "reduxsauce": "^1.0.1",
-    "rn-sliding-up-panel": "^2.3.3",
+    "rn-sliding-up-panel": "^2.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

@@ -12,7 +12,7 @@ const styles = {
     position: 'relative',
   },
   panelHeader: {
-    height: 180,
+    height: 50,
     backgroundColor: '#b197fc',
     justifyContent: 'flex-end',
     padding: 24,
@@ -21,47 +21,27 @@ const styles = {
     fontSize: 28,
     color: '#FFF',
   },
-  icon: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
-    top: -24,
-    right: 18,
-    width: 48,
-    height: 48,
-    zIndex: 1,
-  },
-  iconBg: {
-    backgroundColor: '#2b8a3e',
-    position: 'absolute',
-    top: -24,
-    right: 18,
-    width: 48,
-    height: 48,
-    borderRadius: 24,
-    zIndex: 1,
-  },
 }
 
 class BottomSheet extends React.Component {
   static defaultProps = {
-    draggableRange: { top: height + 180 - 64, bottom: 180 },
+    draggableRange: { top: height/4 + 180 - 64, bottom: 30 },
   }
 
-  _draggedValue = new Animated.Value(180)
+  _draggedValue = new Animated.Value(30)
 
   render() {
     const { top, bottom } = this.props.draggableRange
 
     const backgoundOpacity = this._draggedValue.interpolate({
-      inputRange: [height - 48, height],
+      inputRange: [height - 1408, height],
       outputRange: [1, 0],
       extrapolate: 'clamp',
     })
 
     const iconTranslateY = this._draggedValue.interpolate({
-      inputRange: [height - 56, height, top],
-      outputRange: [0, 56, 180 - 32],
+      inputRange: [height - 56, height, top + 500],
+      outputRange: [0, 56, -400],
       extrapolate: 'clamp',
     })
 
@@ -89,25 +69,26 @@ class BottomSheet extends React.Component {
         draggableRange={this.props.draggableRange}
         animatedValue={this._draggedValue}
         snappingPoints={[360]}
-        height={height + 180}
+        height={height/3 + 180 - 64}
         friction={0.5}
+        style={{bottom:0}}
       >
         <View style={styles.panel}>
-          <Animated.View
-            style={[
-              styles.iconBg,
-              {
-                opacity: backgoundOpacity,
-                transform: [{ translateY: iconTranslateY }],
-              },
-            ]}
-          />
+          {/*<Animated.View*/}
+            {/*style={[*/}
+              {/*styles.iconBg,*/}
+              {/*{*/}
+                {/*opacity: backgoundOpacity,*/}
+                {/*transform: [{ translateY: iconTranslateY }],*/}
+              {/*},*/}
+            {/*]}*/}
+          {/*/>*/}
           <View style={styles.panelHeader}>
             <Animated.View
               style={{
                 transform: [
                   { translateY: textTranslateY },
-                  { translateX: textTranslateX },
+                  // { translateX: textTranslateX },
                   { scale: textScale },
                 ],
               }}

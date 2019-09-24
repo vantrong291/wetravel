@@ -11,9 +11,7 @@ import { runAfter } from '../../Utils/asyncFunc'
 import LoadingContainer from '../../Components/LoadingContainer'
 import Constants from '../../Theme/Constants'
 import RateComponent from '../../Components/RateComponent'
-import SectionedMultiSelect from 'react-native-sectioned-multi-select'
 import SelectInput from '../../Components/ReuseComponents/SelectInput'
-import SlidingUpPanel from 'rn-sliding-up-panel';
 import BottomSheet from '../../Components/BottomSheet'
 
 const items = [
@@ -100,33 +98,34 @@ class TourDetail extends React.Component {
               {tour.introduce}
             </Text>
           </View>
-          <BottomSheet children={<View style={{flexDirection: 'row'}}>
-            <SelectInput
-              items={items}
-              uniqueKey="id"
-              single={true}
-              subKey="children"
-              placeholder="Choose some things..."
-              showDropDownst={true}
-              readOnlyHeadings={true}
-              onSelectedItemsChange={this.onSelectedItemsChange}
-              selectedItems={this.state.selectedItems}
-              containerStyle={{width: '50%'}}
-            />
-            <SelectInput
-              items={items}
-              uniqueKey="id"
-              single={true}
-              subKey="children"
-              placeholder="Choose some things..."
-              showDropDownst={true}
-              readOnlyHeadings={true}
-              onSelectedItemsChange={this.onSelectedItemsChange}
-              selectedItems={this.state.selectedItems}
-              containerStyle={{width: '50%'}}
-            />
-          </View>}/>
+
         </ScrollView>
+        <BottomSheet children={<View style={{ flexDirection: 'row' }}>
+          <SelectInput
+            items={items}
+            uniqueKey="id"
+            single={true}
+            subKey="children"
+            placeholder="Choose some things..."
+            showDropDownst={true}
+            readOnlyHeadings={true}
+            onSelectedItemsChange={this.onSelectedItemsChange}
+            selectedItems={this.state.selectedItems}
+            containerStyle={{ width: '50%' }}
+          />
+          <SelectInput
+            items={items}
+            uniqueKey="id"
+            single={true}
+            subKey="children"
+            placeholder="Choose some things..."
+            showDropDownst={true}
+            readOnlyHeadings={true}
+            onSelectedItemsChange={this.onSelectedItemsChange}
+            selectedItems={this.state.selectedItems}
+            containerStyle={{ width: '50%' }}
+          />
+        </View>}/>
         <ActionButton
           buttonColor={Colors.navbarColor}
           renderIcon={() => (<Icon name='md-apps' size={26} color={Colors.navbarTextColor}/>)}
