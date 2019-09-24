@@ -1859,6 +1859,11 @@ ci-info@^2.0.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
 
+clamp@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/clamp/-/clamp-1.0.1.tgz#66a0e64011816e37196828fdc8c8c147312c8634"
+  integrity sha1-ZqDmQBGBbjcZaCj9yMjBRzEshjQ=
+
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
@@ -6834,6 +6839,21 @@ rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
   integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
+
+rn-sliding-up-panel@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/rn-sliding-up-panel/-/rn-sliding-up-panel-2.3.3.tgz#6036c23b9dbd5c139fc38a27b8efdf944714bda1"
+  integrity sha512-LcIaU/qbriu5i0aLtwBDJRl2b26idj9XJQZYEdvSCxtNEhm5R3+OEHFwq0YF14a4tnfGmnlHIALi9sKBIj6mcw==
+  dependencies:
+    clamp "^1.0.1"
+    prop-types "^15.7.2"
+
+rn-swipeable-panel@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/rn-swipeable-panel/-/rn-swipeable-panel-1.0.14.tgz#1cef7bfd6db8168e0efa1efffbf763bda6d02a12"
+  integrity sha512-3xl6bskd3At0wjotHrK2eCXAeoXcLc5i1NyiTV4SOgQ8cEMm9nnTYpN2b7UE12UTwzNkew085BnPUjHLtD1drQ==
+  dependencies:
+    prop-types "^15.7.2"
 
 rsvp@^3.3.3:
   version "3.6.2"
