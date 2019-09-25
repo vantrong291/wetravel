@@ -6,14 +6,14 @@ import Colors from '../Theme/Colors'
 import {Header} from 'react-native-elements'
 import BackButton from './BackButton'
 
-const AppHeader = ({onItemPress, title}) => {
+const AppHeader = ({onItemPress, title, barStyle = 'light-content', backgroundColor = Colors.navbarColor, textColor = Colors.navbarTextColor}) => {
   return (
     <Header
-      statusBarProps={{ barStyle: 'light-content', backgroundColor: Colors.navbarColor }}
-      leftComponent={<BackButton onItemPress={onItemPress}/>}
-      centerComponent={<Text style={{ color: Colors.navbarTextColor, fontSize: 20, fontWeight: 'bold' }} >{title}</Text>}
+      statusBarProps={{ barStyle: barStyle, backgroundColor: backgroundColor }}
+      leftComponent={<BackButton onItemPress={onItemPress} textColor={textColor}/>}
+      centerComponent={<Text style={{ color: textColor, fontSize: 20, fontWeight: 'bold' }} >{title}</Text>}
       containerStyle={{
-        backgroundColor: Colors.navbarColor,
+        backgroundColor: backgroundColor,
         justifyContent: 'space-around',
       }}
     />

@@ -9,7 +9,7 @@ const { height } = Dimensions.get('window')
 const styles = {
   panel: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: "#f7f7fa",
     position: 'relative',
   },
   panelHeader: {
@@ -100,7 +100,6 @@ class BottomSheet extends React.Component {
                 ],
               }}
             >
-
               <Text style={styles.textHeader}>_________</Text>
             </Animated.View>
           </View>

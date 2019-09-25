@@ -32,7 +32,7 @@ const styles = {
 const TourPhotoCarousel = ({data}) => {
 
   const _renderItemWithParallax = ({item, index}, parallaxProps) => {
-    console.log("item",item)
+    // console.log("item",item)
     return (
       <SliderEntry
         data={item}

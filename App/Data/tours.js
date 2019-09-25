@@ -29,13 +29,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -52,13 +52,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -75,13 +75,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -98,13 +98,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -143,13 +143,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -166,13 +166,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -189,13 +189,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -212,13 +212,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -257,13 +257,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -280,13 +280,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -303,13 +303,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -326,13 +326,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -371,13 +371,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -394,13 +394,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -417,13 +417,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -440,13 +440,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -485,13 +485,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -508,13 +508,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -531,13 +531,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -554,13 +554,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -599,13 +599,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -622,13 +622,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -645,13 +645,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -668,13 +668,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -713,13 +713,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -736,13 +736,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -759,13 +759,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -782,13 +782,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -827,13 +827,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -850,13 +850,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -873,13 +873,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -896,13 +896,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -941,13 +941,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -964,13 +964,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -987,13 +987,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -1010,13 +1010,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -1055,13 +1055,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -1078,13 +1078,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -1101,13 +1101,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
@@ -1124,13 +1124,13 @@ export const tourData = [
         description: "",
         timeline: [
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]
           },
           {
-            "partTitle": " Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
+            "partTitle": "Xe và hướng dẫn viên Mytour.vn đón Quý khách tại điểm hẹn, khởi hành đi thăm quan:",
             "partContent": [
               "Bảo tàng chứng tích chiến tranh trên đường Võ Văn Tầng: Là bảo tàng chuyên đề nghiên cứu, sưu tầm, lưu trữ, bảo quản và trưng bày những tư liệu, hình ảnh, hiện vật về những chứng tích tội ác và hậu quả của các cuộc chiến tranh mà các thế lực xâm lược đã gây ra đối với Việt Nam.",
               "Dinh Độc Lập (Dinh Thống Nhất): Công trình kiến trúc nổi tiếng ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt."            ]

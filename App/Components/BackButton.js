@@ -3,7 +3,7 @@ import TouchableScale from 'react-native-touchable-scale' // https://github.com/
 import Icon from 'react-native-vector-icons/Ionicons'
 import Colors from '../Theme/Colors'
 
-const BackButton = ({onItemPress}) => {
+const BackButton = ({onItemPress, textColor=Colors.navbarTextColor }) => {
   return (
     <TouchableScale activeScale={0.95}
                     friction={90}
@@ -11,7 +11,7 @@ const BackButton = ({onItemPress}) => {
                     onPress={onItemPress}
                     style={{paddingLeft:5}}
     >
-      <Icon name='md-arrow-round-back' color={Colors.navbarTextColor} size={26}/>
+      <Icon name='md-arrow-round-back' color={textColor} size={26}/>
     </TouchableScale>
   )
 }

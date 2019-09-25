@@ -35,7 +35,7 @@ class Home extends React.Component {
   // }
 
   goToTourDetail = (item) => {
-    console.log(item)
+    // console.log(item)
     this.props.navigation.navigate('TourDetail', { tour: item })
   }
 

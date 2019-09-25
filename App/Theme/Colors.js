@@ -18,5 +18,8 @@ export default {
   navbarTextColor: '#fff',
   // navbarColor: '#fff',
   // navbarTextColor: '#333'
+  mainBackgroundColor: '#f7f7fa',
+  mainBackgroundColorTitle: '#242b56',
+  mainBackgroundColorNormalText: '#575a72'
 
 }
