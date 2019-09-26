@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, Text, View } from 'react-native'
+import { ScrollView, Text, TouchableHighlight, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import AppHeader from '../../Components/AppHeader'
 import TourPhotoCarousel from '../../Components/TourPhotoCarousel'
@@ -7,9 +7,13 @@ import { runAfter } from '../../Utils/asyncFunc'
 import LoadingContainer from '../../Components/LoadingContainer'
 import Constants from '../../Theme/Constants'
 import RateComponent from '../../Components/RateComponent'
+import TourComment from '../../Components/TourComment'
 import { Button } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Colors from '../../Theme/Colors'
+import { RANGE } from '../../Utils/range'
+import {comments} from '../../Data/comments'
+import CardHorizontalFlatList from '../Home'
 
 class TourDetail extends React.Component {
   constructor(props) {
@@ -58,7 +62,7 @@ class TourDetail extends React.Component {
               <View style={{ marginLeft: 'auto' }}>
                 <Text
                   style={{ marginBottom: 0, fontSize: 18, fontWeight: 'bold', color: Colors.mainBackgroundColorTitle }}>30
-                  - 80$</Text>
+                  - 80$ per seat</Text>
               </View>
             </View>
             <View style={{ flexDirection: 'row' }}>
@@ -101,6 +105,18 @@ class TourDetail extends React.Component {
               {tour.introduce}
             </Text>
           </View>
+          <View style={{ flexDirection: 'row', paddingHorizontal: Constants.padding, marginBottom: 20 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Comments and Rates</Text>
+            <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
+              <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
+            </TouchableHighlight>
+          </View>
+
+          {
+            comments.map((item, index)=> (
+              <TourComment key={index} cmt={item}/>
+            ))
+          }
 
         </ScrollView>
       </View>
