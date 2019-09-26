@@ -35,10 +35,15 @@ class TourPayment extends React.Component {
     const { navigation } = this.props
     const tour = navigation.getParam('tour')
     const selectedTour = navigation.getParam('selectedTour')
+    const tourOptionsSeats = navigation.getParam('tourOptionsSeats')
+    const tourOptionsPrice = navigation.getParam('tourOptionsPrice')
+
     this.props.navigation.navigate('TourBookingReview', {
       tour: tour,
       selectedTour: selectedTour,
       paymentMethod: this.state.selectedCard,
+      tourOptionsPrice: tourOptionsPrice,
+      tourOptionsSeats: tourOptionsSeats
     })
 
   }
@@ -61,7 +66,7 @@ class TourPayment extends React.Component {
         <ScrollView>
           {loading && <LoadingContainer height={2780}/>}
           {!loading && <View style={{
-            marginTop: 20,
+            // marginTop: 20,
             paddingBottom: 10,
             color: Colors.mainBackgroundColorTitle,
             paddingHorizontal: contants.padding,

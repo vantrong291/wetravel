@@ -30,7 +30,7 @@ const styles = {
   },
 }
 
-const SelectInput = ({ containerStyle, items, single = true, subKey = 'children', placeholder, displayKey, showDropDowns = true, readOnlyHeadings = true, onSelectedItemsChange, selectedItems }) => {
+const SelectInput = ({ containerStyle, items, single = true, subKey = 'children', placeholder, displayKey, showDropDowns = true, readOnlyHeadings = true, onSelectedItemsChange, selectedItems, searchPlaceholderText, confirmText}) => {
   return (
     <View style={containerStyle}>
       <SectionedMultiSelect
@@ -44,6 +44,9 @@ const SelectInput = ({ containerStyle, items, single = true, subKey = 'children'
         // readOnlyHeadings={readOnlyHeadings}
         onSelectedItemsChange={onSelectedItemsChange}
         selectedItems={selectedItems}
+        searchPlaceholderText={searchPlaceholderText}
+        confirmText={confirmText}
+        showCancelButton={true}
         styles={styles}
       />
     </View>

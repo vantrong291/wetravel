@@ -7,36 +7,10 @@ import SelectInput from '../../Components/ReuseComponents/SelectInput'
 import Colors from '../../Theme/Colors'
 import contants from '../../Theme/Constants'
 import styles from './styles'
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import Icon from 'react-native-vector-icons/Ionicons'
 import { Button } from 'react-native-elements'
+import TouchableScale from 'react-native-touchable-scale'
 
-const items = [
-
-  {
-    name: 'Apple',
-    id: 10,
-  },
-  {
-    name: 'Strawberry',
-    id: 17,
-  },
-  {
-    name: 'Pineapple',
-    id: 13,
-  },
-  {
-    name: 'Banana',
-    id: 14,
-  },
-  {
-    name: 'Watermelon',
-    id: 15,
-  },
-  {
-    name: 'Kiwi fruit',
-    id: 16,
-  },
-]
 
 class TourOptions extends React.Component {
   constructor(props) {
@@ -68,6 +42,9 @@ class TourOptions extends React.Component {
           },
         ],
       },
+      tourOptionsSeats: 1,
+      tourOptionsPrice: 120,
+
     }
   };
 
@@ -83,7 +60,10 @@ class TourOptions extends React.Component {
   goPaymentScreen = () => {
     const { navigation } = this.props
     const tour = navigation.getParam('tour')
-    this.props.navigation.navigate('TourPayment', { tour: tour, selectedTour: this.state.selectedTour })
+    this.props.navigation.navigate('TourPayment', {
+      tour: tour, selectedTour: this.state.selectedTour, tourOptionsSeats: this.state.tourOptionsSeats,
+      tourOptionsPrice: this.state.tourOptionsPrice,
+    })
   }
 
   onSelectedItemsChange = (selectedItems) => {
@@ -93,6 +73,29 @@ class TourOptions extends React.Component {
     const result = tours.filter((item, index) => item.from === selectedItems[0])[0]
     this.setState({ selectedTour: result })
     this.setState({ selectedItems })
+    this.syncPrice(this.state.tourOptionsSeats, result)
+  }
+
+  subtractionSeat = () => {
+    const seats = this.state.tourOptionsSeats
+    if (seats > 1) {
+      this.setState({ tourOptionsSeats: seats - 1 })
+      this.syncPrice(seats - 1)
+    }
+  }
+
+  additionSeat = () => {
+    const seats = this.state.tourOptionsSeats
+    if (seats < 10) {
+      this.setState({ tourOptionsSeats: seats + 1 })
+      this.syncPrice(seats + 1)
+    }
+    // alert(tourOptions.seats)
+  }
+
+  syncPrice = (seats = this.state.tourOptionsSeats, selectedTour = this.state.selectedTour) => {
+    // const selectedTour = this.state.selectedTour
+    this.setState({ tourOptionsPrice: seats * selectedTour.price })
   }
 
   render() {
@@ -104,6 +107,9 @@ class TourOptions extends React.Component {
     const { loading } = this.state
     const selectedTour = this.state.selectedTour
 
+    const price = this.state.tourOptionsPrice
+    const seats = this.state.tourOptionsSeats
+
     return (
       <View style={{ flex: 1, backgroundColor: Colors.mainBackgroundColor }}>
         <AppHeader onItemPress={this.goBack} title={title} barStyle={'dark-content'}
@@ -111,7 +117,7 @@ class TourOptions extends React.Component {
         <ScrollView>
           {loading && <LoadingContainer height={2780}/>}
           {!loading && <View style={{
-            marginTop: 20,
+            // marginTop: 20,
             paddingBottom: 10,
             color: Colors.mainBackgroundColorTitle,
             paddingHorizontal: contants.padding,
@@ -119,12 +125,15 @@ class TourOptions extends React.Component {
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: Colors.mainBackgroundColorTitle }}>Tour
               Options
             </Text>
-            <View style={{ flexDirection: 'row' }}>
+            <Text>
+              Please select Starting place and choose number of seats you want to book, then press "Go to Pay"
+            </Text>
+            <View style={{ flexDirection: 'row', marginTop: 15 }}>
               <View style={{
-                width: '50%',
+                width: '100%',
                 flexWrap: 'wrap',
                 marginVertical: 5,
-                marginRight: 5,
+                // marginRight: 5,
               }}>
                 <Text style={styles.label}>Starting place</Text>
                 <SelectInput
@@ -138,14 +147,18 @@ class TourOptions extends React.Component {
                   displayKey={'from'}
                   onSelectedItemsChange={this.onSelectedItemsChange}
                   selectedItems={this.state.selectedItems}
-                  containerStyle={{ width: '80%' }}
+                  containerStyle={{ width: '100%' }}
+                  searchPlaceholderText={'Search place...'}
+                  confirmText={'Select'}
                 />
               </View>
+            </View>
+            <View style={{ flexDirection: 'row' }}>
               <View style={{
                 width: '50%',
                 flexWrap: 'wrap',
                 marginVertical: 5,
-                marginLeft: 5,
+                // marginLeft: 5,
               }}>
                 <Text style={styles.label}>Destination place</Text>
                 <View style={{
@@ -165,14 +178,36 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 marginRight: 5,
               }}>
-                <Text style={styles.label}>Price</Text>
+                <Text style={styles.label}>Number of seats</Text>
                 <View style={{
                   marginVertical: 5,
                   // paddingHorizontal: 10,
                   paddingVertical: 5,
                   height: 40,
+                  flexDirection: 'row',
+                  width: '80%',
                 }}>
-                  <Text style={styles.content}>{selectedTour.price + ' ' + selectedTour.currency}</Text>
+                  <View style={{ width: '30%', justifyContent: 'center', alignItems: 'center' }}>
+                    <TouchableScale activeScale={0.95}
+                                    friction={90}
+                                    tension={100}
+                                    onPress={() => this.subtractionSeat()}
+                    >
+                      <Icon name={'ios-remove'} size={25} color={Colors.mainBackgroundColorNormalText}/>
+                    </TouchableScale>
+                  </View>
+                  <View style={{ width: '40%', justifyContent: 'center', alignItems: 'center' }}>
+                    <Text style={styles.content}>{seats}</Text>
+                  </View>
+                  <View style={{ width: '30%', justifyContent: 'center', alignItems: 'center' }}>
+                    <TouchableScale activeScale={0.95}
+                                    friction={90}
+                                    tension={100}
+                                    onPress={() => this.additionSeat()}
+                    >
+                      <Icon name={'ios-add'} size={25} color={Colors.mainBackgroundColorNormalText}/>
+                    </TouchableScale>
+                  </View>
                 </View>
               </View>
               <View style={{
@@ -181,14 +216,14 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 marginLeft: 5,
               }}>
-                <Text style={styles.label}>Start at</Text>
+                <Text style={styles.label}>Price</Text>
                 <View style={{
                   marginVertical: 5,
                   // paddingHorizontal: 10,
                   paddingVertical: 5,
                   height: 40,
                 }}>
-                  <Text style={styles.content}>{selectedTour.timeStart}</Text>
+                  <Text style={styles.content}>{price + ' ' + selectedTour.currency}</Text>
                 </View>
               </View>
             </View>
@@ -232,6 +267,24 @@ class TourOptions extends React.Component {
                 width: '100%',
                 flexWrap: 'wrap',
                 marginVertical: 5,
+                // marginLeft: 5,
+              }}>
+                <Text style={styles.label}>Start at</Text>
+                <View style={{
+                  marginVertical: 5,
+                  // paddingHorizontal: 10,
+                  paddingVertical: 5,
+                  height: 40,
+                }}>
+                  <Text style={styles.content}>{selectedTour.timeStart}</Text>
+                </View>
+              </View>
+            </View>
+            <View style={{ flexDirection: 'row' }}>
+              <View style={{
+                width: '100%',
+                flexWrap: 'wrap',
+                marginVertical: 5,
                 marginRight: 5,
               }}>
                 <Text style={styles.label}>Main Activities</Text>
@@ -261,8 +314,13 @@ class TourOptions extends React.Component {
                 // }
                 title="Go to pay"
                 titleStyle={{ fontSize: 15 }}
-                buttonStyle={{ width: "100%", paddingVertical:10, backgroundColor: Colors.navbarColor, borderRadius: 2 }}
-                containerStyle={{ width: "100%"}}
+                buttonStyle={{
+                  width: '100%',
+                  paddingVertical: 10,
+                  backgroundColor: Colors.navbarColor,
+                  borderRadius: 2,
+                }}
+                containerStyle={{ width: '100%' }}
                 onPress={() => this.goPaymentScreen()}
               />
             </View>

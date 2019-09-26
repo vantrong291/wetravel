@@ -7,8 +7,8 @@ const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window'
 
 const LoadingContainer = ({ height = 320, width = viewportWidth, type = 'FadingCircleAlt' }) => {
   return (
-    <View style={{ height: height, width: width }}>
-      <Spinner type={type} size={30} color={Colors.navbarColor} style={{ alignSelf: 'center', paddingTop: 150 }}/>
+    <View style={{ height: height, width: width, justifyContent: 'center' }}>
+      <Spinner type={type} size={30} color={Colors.navbarColor} style={{ alignSelf: 'center' }}/>
     </View>
   )
 }

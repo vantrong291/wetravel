@@ -4,8 +4,14 @@ export default {
   container: {
     flex: 1,
   },
-  label: { textAlign: 'left', fontSize: 14, fontWeight: 'bold', color: Colors.mainBackgroundColorTitle },
-  content: { textAlign: 'left', fontSize: 18, fontWeight: 'bold', color: Colors.mainBackgroundColorNormalText },
+  label: { textAlign: 'left', fontSize: 12, fontWeight: 'bold', color: Colors.mainBackgroundColorTitle },
+  content: {
+    textAlign: 'left',
+    fontSize: 18,
+    fontWeight: 'bold',
+    // color: Colors.mainBackgroundColorNormalText
+    color: Colors.success
+  },
   timelineText: {
     textAlign: 'justify',
     fontSize: 14,

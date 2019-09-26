@@ -7,6 +7,7 @@ import contants from '../../Theme/Constants'
 
 import completeImage from '../../Assets/Images/confirmation.png'
 import { Button } from 'react-native-elements'
+import { runAfter } from '../../Utils/asyncFunc'
 
 class TourBookingComplete extends React.Component {
   constructor(props) {
@@ -18,8 +19,8 @@ class TourBookingComplete extends React.Component {
   };
 
   componentDidMount() {
-    // runAfter(() => this.setState({ loading: false }), 200)
-    this.setState({ loading: false })
+    runAfter(() => this.setState({ loading: false }), 2000)
+    // this.setState({ loading: false })
   };
 
   goBack = () => {
@@ -44,7 +45,7 @@ class TourBookingComplete extends React.Component {
         <StatusBar translucent backgroundColor={Colors.mainBackgroundColor} barStyle="dark-content"/>
 
         <ScrollView>
-          {loading && <LoadingContainer height={2780}/>}
+          {loading && <LoadingContainer height={550}/>}
           {!loading && <View style={{
             marginTop: 20,
             paddingBottom: 10,

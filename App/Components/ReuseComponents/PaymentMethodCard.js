@@ -36,7 +36,7 @@ class PaymentMethodCard extends React.Component {
     const selected = this.state.selected === card.id
     const marginTop = card.expire ? 0 : 8
     const height = card.expire ? 15 : 0
-    const backgroundColor = selected ? '#8bc34a26' : '#fff'
+    const backgroundColor = selected ? '#8bd23840' : '#fff'
     const icon = selected ? 'check' : 'dots-horizontal'
     const iconColor = selected ? 'green' : '#949aa8'
     return (
@@ -82,7 +82,7 @@ class PaymentMethodCard extends React.Component {
 
 const styles = {
   card: {
-    elevation: 1,
+    // elevation: 5,
     shadowColor: '#ffff',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.8,

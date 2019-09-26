@@ -40,6 +40,9 @@ class TourBookingReview extends React.Component {
     const tour = navigation.getParam('tour')
     const selectedTour = navigation.getParam('selectedTour')
     const paymentMethod = navigation.getParam('paymentMethod')
+    const tourOptionsSeats = navigation.getParam('tourOptionsSeats')
+    const tourOptionsPrice = navigation.getParam('tourOptionsPrice')
+
     const title = tour.destination
     const { loading } = this.state
 
@@ -53,7 +56,7 @@ class TourBookingReview extends React.Component {
         <ScrollView>
           {loading && <LoadingContainer height={2780}/>}
           {!loading && <View style={{
-            marginTop: 20,
+            // marginTop: 20,
             paddingBottom: 10,
             color: Colors.mainBackgroundColorTitle,
             paddingHorizontal: contants.padding,
@@ -145,14 +148,14 @@ class TourBookingReview extends React.Component {
                       flexWrap: 'wrap',
                       marginVertical: 5,
                     }}>
-                      <Text style={styles.label}>Seats</Text>
+                      <Text style={styles.label}>Number of seats</Text>
                       <View style={{
                         marginVertical: 5,
                         // paddingHorizontal: 10,
                         paddingVertical: 5,
                         height: 40,
                       }}>
-                        <Text style={styles.content}>{'2'}</Text>
+                        <Text style={styles.content}>{tourOptionsSeats}</Text>
                       </View>
                     </View>
                   </View>
@@ -180,21 +183,21 @@ class TourBookingReview extends React.Component {
                 </View>
                 <View style={{ flexDirection: 'row' }}>
                   <View style={{
-                    width: '40%',
+                    width: '45%',
                     backgroundColor: '#fff',
                     alignItems: 'center',
-                    borderRadius: 8,
-                    padding: 8,
+                    borderRadius: 0,
+                    padding: 10,
                   }}>
                     <Image source={qrImage} style={{ width: 120, height: 120 }}/>
                   </View>
-                  <View style={{ width: '60%', padding: 10 }}>
+                  <View style={{ width: '55%', padding: 10 }}>
                     <Text style={{ fontSize: 11, color: '#fff' }}>Price</Text>
                     <Text style={{
                       fontSize: 30,
                       fontWeight: 'bold',
                       color: '#fff',
-                    }}>{selectedTour.price + ' ' + selectedTour.currency}</Text>
+                    }}>{tourOptionsPrice + ' ' + selectedTour.currency}</Text>
                     <Text style={{ fontSize: 11, color: '#fff' }}>You can use this QR code to pay and check your billing
                       for this tour</Text>
                   </View>
