@@ -13,7 +13,7 @@ const TourComment = ({cmt}) => {
       <View style={styles.userRow}>
         <View style={{}}>
           <Image source={image}
-                 style={{ width: 60, height: 60 }}/>
+                 style={{ width: 60, height: 60, borderRadius: 4 }}/>
         </View>
         <View style={styles.userColumn}>
           <View style={{ flexDirection: 'row', marginBottom: 5 }}>

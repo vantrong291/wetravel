@@ -11,9 +11,7 @@ import TourComment from '../../Components/TourComment'
 import { Button } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Colors from '../../Theme/Colors'
-import { RANGE } from '../../Utils/range'
-import {comments} from '../../Data/comments'
-import CardHorizontalFlatList from '../Home'
+import { comments } from '../../Data/comments'
 
 class TourDetail extends React.Component {
   constructor(props) {
@@ -111,11 +109,13 @@ class TourDetail extends React.Component {
               <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
             </TouchableHighlight>
           </View>
+
           {
-            comments.map((item, index)=> (
+            comments.map((item, index) => (
               <TourComment key={index} cmt={item}/>
             ))
           }
+
         </ScrollView>
       </View>
     )

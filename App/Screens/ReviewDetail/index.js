@@ -36,7 +36,6 @@ class ReviewDetail extends React.Component {
     const loading = this.state.loading
     const { navigation } = this.props
     const reviewItem = navigation.getParam('review')
-    console.log(reviewItem)
 
     return (
       <View style={{ flex: 1, backgroundColor: Colors.mainBackgroundColor }}>
