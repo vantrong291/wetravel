@@ -15,6 +15,7 @@ import TourOptions from 'App/Screens/TourOptions'
 import TourPayment from 'App/Screens/TourPayment'
 import TourBookingReview from 'App/Screens/TourBookingReview'
 import TourBookingComplete from 'App/Screens/TourBookingComplete'
+import ReviewDetail from 'App/Screens/ReviewDetail'
 import AddCard from 'App/Screens/AddCard'
 import CustomTabBar from './CustomTabBar'
 import { Icon as EIcon, withBadge } from 'react-native-elements'
@@ -113,6 +114,7 @@ const StackNavigator = createStackNavigator(
     TourPayment: TourPayment,
     TourBookingReview: TourBookingReview,
     TourBookingComplete: TourBookingComplete,
+    ReviewDetail: ReviewDetail,
     AddCard: AddCard,
   },
   {

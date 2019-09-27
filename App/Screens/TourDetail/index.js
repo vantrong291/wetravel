@@ -111,13 +111,11 @@ class TourDetail extends React.Component {
               <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
             </TouchableHighlight>
           </View>
-
           {
             comments.map((item, index)=> (
               <TourComment key={index} cmt={item}/>
             ))
           }
-
         </ScrollView>
       </View>
     )

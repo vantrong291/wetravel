@@ -1,5 +1,6 @@
 import metrics from '../../Config/metrics'
 import contants from '../../Theme/Constants'
+import Colors from '../../Theme/Colors'
 const coverHeight = 260;
 const waveHeight = 60;
 
@@ -28,7 +29,7 @@ export default {
   // },
   outerFLoat: {
     top: coverHeight - waveHeight - 50,
-    backgroundColor: "#fff",
+    backgroundColor: Colors.mainBackgroundColor,
     marginBottom: 10,
     paddingBottom: 150,
     color: '#333',

@@ -12,6 +12,7 @@ import ParallaxScrollView from 'react-native-parallax-scroll-view'
 import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT } from '../../Components/ParallaxConfig'
 import Icon from 'react-native-vector-icons/Entypo'
 import Colors from '../../Theme/Colors'
+import LoadingContainer from '../../Components/LoadingContainer'
 
 const cover = require('../../Assets/Images/home-cover.jpg')
 const wave = require('../../Assets/Images/wave.png')
@@ -41,7 +42,7 @@ class Home extends React.Component {
 
   render() {
     const { loading } = this.state
-    return loading ? (<View><Text>a</Text></View>) : (
+    return loading ? (<LoadingContainer height={278}/>) : (
       <View style={styles.container}>
         <StatusBar translucent backgroundColor="transparent" barStyle="light-content"/>
         <ParallaxScrollView

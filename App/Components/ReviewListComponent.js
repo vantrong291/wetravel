@@ -1,25 +1,44 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, TouchableOpacity } from 'react-native'
 import { Image } from 'react-native-elements'
 import RateComponent from './RateComponent'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { reviews } from '../Data/reviews'
+import TouchableScale from 'react-native-touchable-scale'
 import metrics from '../Config/metrics'
 
 
-const ReviewListComponent = ({ image = require('../Assets/Images/TOM.png'), name = 'Hoi An', rate = 4, continents = 'Asia', country = 'VietNam' }) => {
+const ReviewListComponent = ({ reviewItem = reviews[0], goReviewDetails }) => {
+  const renderContent = () => {
+    return reviewItem.reviewContent.length <= 100 ? (
+      <View style={{ marginBottom: 10 }}>
+        <Text style={styles.reviewItemText}>
+          {reviewItem.reviewContent}
+        </Text>
+      </View>
+    ) : (
+      <View style={{ marginBottom: 10 }}>
+        <Text style={styles.reviewItemText}>
+          {reviewItem.reviewContent.substring(0, 99) + ' ...'}
+        </Text>
+        <Text style={styles.seeMore}>See More</Text>
+      </View>
+    )
+  }
+
   return (
     <View style={styles.card}>
       <View style={styles.userRow}>
         <View style={{}}>
-          <Image source={image}
+          <Image source={reviewItem.userAvatar}
                  style={{ width: 40, height: 40, borderRadius: 20 }}/>
         </View>
         <View style={styles.userColumn}>
           <View style={{ flexDirection: 'row' }}>
-            <Text style={styles.userName}>Phạm Văn Trọng</Text>
+            <Text style={styles.userName}>{reviewItem.userName}</Text>
           </View>
           <View style={{ flexDirection: 'row' }}>
-            <Text style={styles.postTime}>26 minutes ago</Text>
+            <Text style={styles.postTime}>{reviewItem.reviewTime}</Text>
           </View>
         </View>
         <View style={{ marginLeft: 'auto' }}>
@@ -27,72 +46,82 @@ const ReviewListComponent = ({ image = require('../Assets/Images/TOM.png'), name
         </View>
       </View>
       <View style={styles.content}>
-        <View style={styles.titleRate}>
-          <Text style={styles.title}>
-            Excellent
-          </Text>
-          <RateComponent rate={rate} size={28}/>
-        </View>
-        <View style={{marginBottom: 10}}>
-          <Text style={styles.reviewText}>
-            I am very happy with the services. I think this is the best place for all people ...
-          </Text>
-          <Text style={styles.seeMore}>See More</Text>
-        </View>
-        <View style={{marginBottom: 10}}>
-          <Image source={image} style={{ width: metrics.DEVICE_WIDTH - 60, height: 150, borderRadius: 8 }}/>
-        </View>
+        <TouchableOpacity activeOpacity={0.8} onPress={goReviewDetails}>
+          <View style={styles.titleRate}>
+            <Text style={styles.title}>
+              {reviewItem.reviewTitle}
+            </Text>
+            <RateComponent rate={reviewItem.rate} size={28}/>
+          </View>
+          {renderContent()}
+          <View style={{ marginBottom: 10 }}>
+            <Image source={{ uri: reviewItem.images[reviewItem.id - 1] }}
+                   style={{ width: metrics.DEVICE_WIDTH - 30, height: 250, borderRadius: 8 }}/>
+          </View>
+        </TouchableOpacity>
         <View style={styles.location}>
           <View style={styles.locationCountry}>
-            <View style={{flexDirection: 'row'}}>
+            <View style={{ flexDirection: 'row' }}>
               <Text style={styles.tagTitle}>Country</Text>
             </View>
-            <View style={{flexDirection: 'row'}}>
-              <Text style={styles.tagText}>Viet Nam</Text>
+            <View style={{ flexDirection: 'row' }}>
+              <Text style={styles.tagText}>{reviewItem.country}, {reviewItem.continents}</Text>
             </View>
           </View>
           <View style={styles.locationPlace}>
-            <View style={{flexDirection: 'row'}}>
+            <View style={{ flexDirection: 'row' }}>
               <Text style={styles.tagTitle}>Place</Text>
             </View>
-            <View style={{flexDirection: 'row'}}>
-              <Text st0yle={styles.tagText}>Ha Long Bay</Text>
+            <View style={{ flexDirection: 'row' }}>
+              <Text st0yle={styles.tagText}>{reviewItem.place}</Text>
             </View>
           </View>
         </View>
         <View style={styles.actions}>
-          <View style={styles.actionColumn}>
-            <View style={{flexDirection: 'row'}}>
+          <TouchableScale style={styles.actionColumn}
+                          activeScale={0.8}
+                          friction={90}
+                          tension={100}>
+            <View style={{ flexDirection: 'row' }}>
               <Icon name={'heart-outline'} size={24} style={{ color: '#949aa8' }}/>
             </View>
-            <View sty2le={{flexDirection: 'row'}}>
-              <Text style={styles.actionText}>69</Text>
+            <View sty2le={{ flexDirection: 'row' }}>
+              <Text style={styles.actionText}>{reviewItem.like}</Text>
             </View>
-          </View>
-          <View style={styles.actionColumn}>
-            <View style={{flexDirection: 'row'}}>
+          </TouchableScale>
+          <TouchableScale style={styles.actionColumn}
+                          activeScale={0.8}
+                          friction={90}
+                          tension={100}>
+            <View style={{ flexDirection: 'row' }}>
               <Icon name={'thumb-down-outline'} size={24} style={{ color: '#949aa8' }}/>
             </View>
-            <View sty2le={{flexDirection: 'row'}}>
-              <Text style={styles.actionText}>0</Text>
+            <View sty2le={{ flexDirection: 'row' }}>
+              <Text style={styles.actionText}>{reviewItem.dislike}</Text>
             </View>
-          </View>
-          <View style={styles.actionColumn}>
-            <View style={{flexDirection: 'row'}}>
+          </TouchableScale>
+          <TouchableScale style={styles.actionColumn}
+                          activeScale={0.8}
+                          friction={90}
+                          tension={100}>
+            <View style={{ flexDirection: 'row' }}>
               <Icon name={'comment-multiple-outline'} size={24} style={{ color: '#949aa8' }}/>
             </View>
-            <View sty2le={{flexDirection: 'row'}}>
-              <Text style={styles.actionText}>10</Text>
+            <View sty2le={{ flexDirection: 'row' }}>
+              <Text style={styles.actionText}>{reviewItem.comment}</Text>
             </View>
-          </View>
-          <View style={styles.actionColumn}>
-            <View style={{flexDirection: 'row'}}>
+          </TouchableScale>
+          <TouchableScale style={styles.actionColumn}
+                          activeScale={0.8}
+                          friction={90}
+                          tension={100}>
+            <View style={{ flexDirection: 'row' }}>
               <Icon name={'share-variant'} size={24} style={{ color: '#949aa8' }}/>
             </View>
-            <View sty2le={{flexDirection: 'row'}}>
-              <Text style={styles.actionText}>2</Text>
+            <View sty2le={{ flexDirection: 'row' }}>
+              <Text style={styles.actionText}>{reviewItem.share}</Text>
             </View>
-          </View>
+          </TouchableScale>
         </View>
       </View>
     </View>
@@ -101,22 +130,25 @@ const ReviewListComponent = ({ image = require('../Assets/Images/TOM.png'), name
 
 const styles = {
   card: {
-    borderRadius: 10,
+    // borderRadius: 10,
     marginBottom: 15,
-    marginHorizontal: 15,
+    // marginHorizontal: 15,
     backgroundColor: '#fff',
-    elevation: 4,
+    // elevation: 4,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.8,
     shadowRadius: 2,
+    borderBottomWidth: 1,
+    borderBottomColor: '#eaeaea',
+
   },
   userRow: {
     flexDirection: 'row',
-    borderBottomColor: '#eaeaea',
     padding: 15,
     paddingBottom: 8,
-    borderBottomWidth: 1,
+    // borderBottomColor: '#eaeaea',
+    // borderBottomWidth: 1,
   },
   userColumn: {
     flexDirection: 'column',
@@ -137,44 +169,44 @@ const styles = {
   },
   titleRate: {
     alignItems: 'center',
-    marginBottom: 20
+    marginBottom: 20,
   },
   title: {
     marginBottom: 8,
     marginTop: 5,
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#243559'
+    color: '#243559',
   },
-  reviewText: {
-    color: "#2a374d",
-    fontSize: 15
+  reviewItemText: {
+    color: '#2a374d',
+    fontSize: 15,
   },
   seeMore: {
     fontSize: 15,
-    color: "#9c9faa"
+    color: '#9c9faa',
   },
   location: {
     marginBottom: 10,
-    backgroundColor: "#f1f2f8",
+    backgroundColor: '#f1f2f8',
     alignContent: 'stretch',
     padding: 15,
     borderRadius: 10,
     flexWrap: 'wrap',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   locationCountry: {
-    width: "50%",
-    flexWrap:'wrap'
+    width: '50%',
+    flexWrap: 'wrap',
   },
   locationPlace: {
-    width: "50%",
-    flexWrap:'wrap'
+    width: '50%',
+    flexWrap: 'wrap',
   },
-  tagTitle: {fontWeight: "bold", fontSize: 14, color: '#525c6d', marginBottom: 3},
+  tagTitle: { fontWeight: 'bold', fontSize: 14, color: '#525c6d', marginBottom: 3 },
   tagText: {
     color: '#676f83',
-    fontSize: 16
+    fontSize: 16,
   },
   actions: {
     // marginBottom: 10,
@@ -182,17 +214,17 @@ const styles = {
     paddingHorizontal: 15,
     borderRadius: 10,
     flexWrap: 'wrap',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   actionColumn: {
-    width: "25%",
-    flexWrap:'wrap',
-    alignItems: 'center'
+    width: '25%',
+    flexWrap: 'wrap',
+    alignItems: 'center',
   },
   actionText: {
     color: '#676f83',
-    fontSize: 14
-  }
+    fontSize: 14,
+  },
 }
 
 export default ReviewListComponent
