@@ -47,18 +47,13 @@ const TourComment = ({cmt}) => {
           <Icon name={'dots-horizontal'} size={26} style={{ color: '#949aa8' }}/>
         </View>
       </View>
-
     </View>
   )
 }
 
 const styles = {
   card: {
-    // borderRadius: 10,
     marginBottom: 15,
-    marginHorizontal: 15,
-    // backgroundColor: '#fff',
-    // elevation: 4,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.8,
@@ -68,10 +63,8 @@ const styles = {
   },
   userRow: {
     flexDirection: 'row',
-    // borderBottomColor: '#eaeaea',
-    padding: 15,
+    paddingHorizontal: 15,
     paddingBottom: 8,
-    // borderBottomWidth: 1,
   },
   userColumn: {
     flexDirection: 'column',
@@ -84,7 +77,6 @@ const styles = {
   },
   postTime: {
     fontSize: 12,
-    // fontWeight: 'bold',
     color: '#9e9eaa',
   },
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, ScrollView, StatusBar, Text, View } from 'react-native'
+import { BackHandler, Image, ScrollView, StatusBar, Text, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import LoadingContainer from '../../Components/LoadingContainer'
 import Colors from '../../Theme/Colors'
@@ -12,7 +12,7 @@ import { runAfter } from '../../Utils/asyncFunc'
 class TourBookingComplete extends React.Component {
   constructor(props) {
     super(props)
-    // this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
+    this.handleBackButtonClick = this.handleBackButtonClick.bind(this)
     this.state = {
       loading: true,
     }
@@ -22,6 +22,18 @@ class TourBookingComplete extends React.Component {
     runAfter(() => this.setState({ loading: false }), 2000)
     // this.setState({ loading: false })
   };
+
+  componentWillMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick)
+  }
+
+  componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackButtonClick)
+    // this._isMounted = false;
+  }
+
+  async handleBackButtonClick() {
+  }
 
   goBack = () => {
     this.props.navigation.goBack()
@@ -57,13 +69,18 @@ class TourBookingComplete extends React.Component {
                 <Image source={completeImage} style={{ width: 220, height: 150 }}/>
               </View>
               <View style={{ flexDirection: 'row' }}>
-                <Text style={{ fontSize: 20, fontWeight: 'bold', marginBottom: 10, color: Colors.mainBackgroundColorTitle }}>Congratulations!</Text>
+                <Text style={{
+                  fontSize: 20,
+                  fontWeight: 'bold',
+                  marginBottom: 10,
+                  color: Colors.mainBackgroundColorTitle,
+                }}>Congratulations!</Text>
               </View>
               <View style={{ flexDirection: 'row' }}>
-                <Text style={{color: Colors.mainBackgroundColorNormalText}}>Your booking is completed</Text>
+                <Text style={{ color: Colors.mainBackgroundColorNormalText }}>Your booking is completed</Text>
               </View>
               <View style={{ flexDirection: 'row' }}>
-                <Text style={{color: Colors.mainBackgroundColorNormalText}}>We will contact you soon!</Text>
+                <Text style={{ color: Colors.mainBackgroundColorNormalText }}>We will contact you soon!</Text>
               </View>
             </View>
             <View style={{ flexDirection: 'row', marginTop: 30 }}>
@@ -84,21 +101,21 @@ class TourBookingComplete extends React.Component {
               />
             </View>
             {/*<View style={{ flexDirection: 'row', marginTop: 30 }}>*/}
-              {/*<Button*/}
-                {/*// icon={*/}
-                {/*//   <Icon name="book-plus" size={20} style={{ marginRight: 5, color: Colors.navbarTextColor }}/>*/}
-                {/*// }*/}
-                {/*title="Go Home"*/}
-                {/*titleStyle={{ fontSize: 15, color: Colors.mainBackgroundColorTitle }}*/}
-                {/*buttonStyle={{*/}
-                  {/*width: '100%',*/}
-                  {/*paddingVertical: 10,*/}
-                  {/*backgroundColor: Colors.navbarTextColor,*/}
-                  {/*borderRadius: 2,*/}
-                {/*}}*/}
-                {/*containerStyle={{ width: '100%' }}*/}
-                {/*onPress={() => this.goHome()}*/}
-              {/*/>*/}
+            {/*<Button*/}
+            {/*// icon={*/}
+            {/*//   <Icon name="book-plus" size={20} style={{ marginRight: 5, color: Colors.navbarTextColor }}/>*/}
+            {/*// }*/}
+            {/*title="Go Home"*/}
+            {/*titleStyle={{ fontSize: 15, color: Colors.mainBackgroundColorTitle }}*/}
+            {/*buttonStyle={{*/}
+            {/*width: '100%',*/}
+            {/*paddingVertical: 10,*/}
+            {/*backgroundColor: Colors.navbarTextColor,*/}
+            {/*borderRadius: 2,*/}
+            {/*}}*/}
+            {/*containerStyle={{ width: '100%' }}*/}
+            {/*onPress={() => this.goHome()}*/}
+            {/*/>*/}
             {/*</View>*/}
 
           </View>}
