@@ -105,7 +105,7 @@ khách hàng dồi dào, chọn lọc mà không cần bỏ ra nhiều chi phí 
 cáo. WeTravel là một cầu nối hoàn hảo cho công ty và khách hàng, giúp việc đi du
 lịch, trải nghiệm ngày một nâng cao hơn.
 
-Ứng dụng Mobile WeTravel là 1 phần của hệ thống WeTravel, đưa tour Du lịch tiếp cận với khách hàng ột cách dễ dàng nhất có thể. 
+Ứng dụng Mobile WeTravel là 1 phần của hệ thống WeTravel, đưa tour Du lịch tiếp cận với khách hàng một cách dễ dàng nhất có thể. 
 
 
 ### Built With
