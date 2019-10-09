@@ -1,17 +1,19 @@
-//{
-//  "plugins": [
-//    "react",
-//    "react-native",
-//    "prettier"
-//  ],
+{
+  "plugins": [
+    "react",
+    "react-native",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+
 //  "parserOptions": {
-//    "ecmaVersion": 2018,
-//    "ecmaFeatures": {
+////    "ecmaVersion": 2018,
+////    "ecmaFeatures": {
 ////      "jsx": true,
-//      "modules": true
-//    },
-//    "sourceType": "module",
-//    "useJSXTextNode": false
+////      "modules": true
+////    },
+////    "sourceType": "module",
+////    "useJSXTextNode": false
 //  },
 //  "env": {
 //    "react-native/react-native": true
@@ -30,4 +32,4 @@
 //  "rules": {
 //    "react-native/no-raw-text": 0 // Avoid false positive, wait for fix
 //  }
-//}
+}

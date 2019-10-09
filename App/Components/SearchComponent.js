@@ -5,20 +5,22 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import TouchableScale from 'react-native-touchable-scale' // https://github.com/kohver/react-native-touchable-scale
 import contants from '../Theme/Constants'
 
-const SearchComponent = ({}) => {
+const SearchComponent = ({onSearching}) => {
+  const [value, onChangeText] = React.useState('Ha Long Bay');
   return (
       <View style={styles.searchInput}>
         <Icon active name="search" size={20} style={{color: "#8096a0", paddingTop: 4}}/>
         <TextInput placeholder="Eg: Ha Long Bay, Hoi An,..."
                    style={{ paddingLeft: 10, paddingTop: 0, paddingBottom: 5}}
                    placeholderTextColor={"#8096a0"}
-                   // value={"Ha Long Bay"}
+                   onChangeText={text => onChangeText(text)}
+                   value={value}
         />
         <TouchableScale
           activeScale={0.5}
           friction={90}
           tension={100}
-          onPress={this.onSearch}
+          onPress={() => onSearching(value)}
           style={{marginLeft: 'auto'}}>
           <MaterialCommunityIcons active name="send" size={26} style={{ paddingBottom: 5, color: '#3578e5' }}/>
         </TouchableScale>

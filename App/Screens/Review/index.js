@@ -13,6 +13,7 @@ import Colors from '../../Theme/Colors'
 import {reviews} from '../../Data/reviews'
 
 const cover = require('../../Assets/Images/review-cover2.png')
+const cover2 = require('../../Assets/Images/review-cover.jpg')
 const resource = require('../../Assets/Images/texture.png')
 
 
@@ -47,7 +48,7 @@ class Review extends React.Component {
           backgroundSpeed={10}
           renderBackground={() => (
             <View key="background" style={{backgroundColor: "#fff"}}>
-              <Image source={cover}
+              <Image source={cover2}
                      style={{
                        width: window.width,
                        height: PARALLAX_HEADER_HEIGHT,

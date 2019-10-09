@@ -1,17 +1,17 @@
 import React from 'react'
-import { FlatList, Image, Text, View } from 'react-native'
+import { FlatList, Image, Text, TouchableHighlight, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import ReviewListComponent from '../../Components/ReviewListComponent'
 import styles from './styles'
 import { Text as EText } from 'react-native-elements'
-import EIcon from 'react-native-vector-icons/Entypo'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import { RANGE } from '../../Utils/range'
 import ParallaxScrollView from 'react-native-parallax-scroll-view'
 import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT, window } from '../../Components/ParallaxConfig'
 import TouchableScale from 'react-native-touchable-scale'
 import Colors from '../../Theme/Colors'
 import { logout } from '../../Services/AuthService'
+import { reviews } from '../../Data/reviews'
+import contants from '../../Theme/Constants'
 
 const cover = require('../../Assets/Images/personal-cover.png')
 const resource = require('../../Assets/Images/texture.png')
@@ -38,9 +38,34 @@ class Personal extends React.Component {
     // this.props.navigation.navigate('MainScreen')
   }
 
-  onSetting = () => {
-    alert('Open Setting ...')
+  goReviewDetails = (reviewItem) => {
+    this.props.navigation.navigate('ReviewDetail', { review: reviewItem })
   }
+
+  goToPersonalInfomation = (item) => {
+    this.props.navigation.navigate('PersonalInfomation')
+  }
+
+  goToAddCard = (item) => {
+    this.props.navigation.navigate('AddCard')
+  }
+
+  goToChangePassword = (item) => {
+    this.props.navigation.navigate('ChangePassword')
+  }
+
+  goToComingTours = (item) => {
+    this.props.navigation.navigate('ComingTours')
+  }
+
+  goToRecentTours = (item) => {
+    this.props.navigation.navigate('RecentTours')
+  }
+
+  goToSettings = (item) => {
+    this.props.navigation.navigate('Settings')
+  }
+
 
   render() {
     return (
@@ -54,7 +79,7 @@ class Personal extends React.Component {
           parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT + 80}
           backgroundSpeed={10}
           renderBackground={() => (
-            <View key="background" style={{backgroundColor: '#fff', height:PARALLAX_HEADER_HEIGHT + 80 }}>
+            <View key="background" style={{ backgroundColor: '#fff', height: PARALLAX_HEADER_HEIGHT + 80 }}>
               <Image source={cover}
                      style={{
                        width: window.width,
@@ -95,9 +120,10 @@ class Personal extends React.Component {
                       activeScale={0.8}
                       friction={90}
                       tension={100}
-                      onPress={this.onSetting}>
+                      onPress={this.goToPersonalInfomation}>
                       <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-                        <MaterialCommunityIcons name={'information-outline'} size={24} style={{ color: Colors.navbarColor }}/>
+                        <MaterialCommunityIcons name={'information-outline'} size={24}
+                                                style={{ color: Colors.navbarColor }}/>
                       </View>
                       <View style={styles.tagTextContainer}>
                         <Text style={styles.tagText}>Personal Infomation</Text>
@@ -109,9 +135,10 @@ class Personal extends React.Component {
                       activeScale={0.8}
                       friction={90}
                       tension={100}
-                      onPress={() => this.props.navigation.navigate('AddCard')}>
+                      onPress={this.goToAddCard}>
                       <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-                        <MaterialCommunityIcons name={'credit-card-plus'} size={24} style={{ color: Colors.navbarColor }}/>
+                        <MaterialCommunityIcons name={'credit-card-plus'} size={24}
+                                                style={{ color: Colors.navbarColor }}/>
                       </View>
                       <View style={styles.tagTextContainer}>
                         <Text style={styles.tagText}>Add Credit Card</Text>
@@ -123,9 +150,10 @@ class Personal extends React.Component {
                       activeScale={0.8}
                       friction={90}
                       tension={100}
-                      onPress={this.onSetting}>
+                      onPress={this.goToChangePassword}>
                       <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-                        <MaterialCommunityIcons name={'textbox-password'} size={24} style={{ color: Colors.navbarColor }}/>
+                        <MaterialCommunityIcons name={'textbox-password'} size={24}
+                                                style={{ color: Colors.navbarColor }}/>
                       </View>
                       <View style={styles.tagTextContainer}>
                         <Text style={styles.tagText}>Change Password</Text>
@@ -140,12 +168,13 @@ class Personal extends React.Component {
                       activeScale={0.8}
                       friction={90}
                       tension={100}
-                      onPress={this.onSetting}>
+                      onPress={this.goToComingTours}>
                       <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-                        <MaterialCommunityIcons name={'textbox-password'} size={24} style={{ color: Colors.navbarColor }}/>
+                        <MaterialCommunityIcons name={'alpha-c-circle-outline'} size={24}
+                                                style={{ color: Colors.navbarColor }}/>
                       </View>
                       <View style={styles.tagTextContainer}>
-                        <Text style={styles.tagText}>Change Password</Text>
+                        <Text style={styles.tagText}>Coming Tour</Text>
                       </View>
                     </TouchableScale>
                   </View>
@@ -154,12 +183,12 @@ class Personal extends React.Component {
                       activeScale={0.8}
                       friction={90}
                       tension={100}
-                      onPress={this.onSetting}>
+                      onPress={this.goToRecentTours}>
                       <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-                        <MaterialCommunityIcons name={'settings-outline'} size={24} style={{ color: Colors.navbarColor }}/>
+                        <MaterialCommunityIcons name={'history'} size={24} style={{ color: Colors.navbarColor }}/>
                       </View>
                       <View style={styles.tagTextContainer}>
-                        <Text style={styles.tagText}>Setting</Text>
+                        <Text style={styles.tagText}>Recent Tour</Text>
                       </View>
                     </TouchableScale>
                   </View>
@@ -168,35 +197,17 @@ class Personal extends React.Component {
                       activeScale={0.8}
                       friction={90}
                       tension={100}
-                      onPress={this.onSetting}>
+                      onPress={this.goToSettings}>
                       <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-                        <MaterialCommunityIcons name={'settings-outline'} size={24} style={{ color: Colors.navbarColor }}/>
+                        <MaterialCommunityIcons name={'settings-outline'} size={24}
+                                                style={{ color: Colors.navbarColor }}/>
                       </View>
                       <View style={styles.tagTextContainer}>
-                        <Text style={styles.tagText}>Setting</Text>
+                        <Text style={styles.tagText}>Settings</Text>
                       </View>
                     </TouchableScale>
                   </View>
                 </View>
-
-                {/*<View style={{flexDirection: 'row', marginBottom: 5}}>*/}
-                {/*<View style={styles.statisticColumn}>*/}
-                {/*<View style={{ flexDirection: 'row' }}>*/}
-                {/*<Text style={styles.tagTitle}>Country</Text>*/}
-                {/*</View>*/}
-                {/*<View style={{ flexDirection: 'row' }}>*/}
-                {/*<Text style={styles.tagText}>Viet Nam</Text>*/}
-                {/*</View>*/}
-                {/*</View>*/}
-                {/*<View style={styles.statisticColumn}>*/}
-                {/*<View style={{ flexDirection: 'row' }}>*/}
-                {/*<Text style={styles.tagTitle}>Place</Text>*/}
-                {/*</View>*/}
-                {/*<View style={{ flexDirection: 'row' }}>*/}
-                {/*<Text st0yle={styles.tagText}>Ha Long Bay</Text>*/}
-                {/*</View>*/}
-                {/*</View>*/}
-                {/*</View>*/}
               </View>
             </View>
           )}
@@ -229,13 +240,19 @@ class Personal extends React.Component {
           // )}
         >
           <View style={{ backgroundColor: 'transparent' }}>
+            <View style={{ flexDirection: 'row', marginTop: 30, marginHorizontal: contants.padding }}>
+              <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Your reviews</Text>
+              <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
+                <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
+              </TouchableHighlight>
+            </View>
+
             <FlatList
               keyExtractor={this.keyExtractor}
-              data={RANGE(1, 5)}
-              renderItem={({ item }) => <ReviewListComponent
-                // style={{paddingTop: 15}}
-              />}
-              style={{ paddingTop: 30, backgroundColor: 'transparent' }}
+              data={reviews}
+              renderItem={({ item }) => <ReviewListComponent reviewItem={item}
+                                                             goReviewDetails={() => this.goReviewDetails(item)}/>}
+              style={{ paddingTop: 10, backgroundColor: 'transparent' }}
             />
           </View>
         </ParallaxScrollView>

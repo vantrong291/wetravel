@@ -17,6 +17,13 @@ import TourBookingReview from 'App/Screens/TourBookingReview'
 import TourBookingComplete from 'App/Screens/TourBookingComplete'
 import ReviewDetail from 'App/Screens/ReviewDetail'
 import AddCard from 'App/Screens/AddCard'
+import PersonalInfomation from 'App/Screens/PersonalInfomation'
+import ChangePassword from 'App/Screens/ChangePassword'
+import SearchResults from 'App/Screens/SearchResults'
+import ListTours from 'App/Screens/ListTours'
+import ComingTours from 'App/Screens/ComingTours'
+import RecentTours from 'App/Screens/RecentTours'
+import Settings from 'App/Screens/Settings'
 import CustomTabBar from './CustomTabBar'
 import { Icon as EIcon, withBadge } from 'react-native-elements'
 import {Config} from '../Config'
@@ -116,6 +123,13 @@ const StackNavigator = createStackNavigator(
     TourBookingComplete: TourBookingComplete,
     ReviewDetail: ReviewDetail,
     AddCard: AddCard,
+    PersonalInfomation: PersonalInfomation,
+    ChangePassword: ChangePassword,
+    ComingTours: ComingTours,
+    RecentTours: RecentTours,
+    Settings: Settings,
+    SearchResults: SearchResults,
+    ListTours: ListTours
   },
   {
     initialRouteName: 'Main',

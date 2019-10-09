@@ -1,15 +1,12 @@
 import React, { Component } from 'react'
 import NavigationService from 'App/Services/NavigationService'
 import AppNavigator from 'App/Navigators/AppNavigator'
-import { View, StatusBar } from 'react-native'
+import { StatusBar, View } from 'react-native'
 import styles from './RootScreenStyle'
 import { connect } from 'react-redux'
 import StartupActions from 'App/Stores/Startup/Actions'
 import { PropTypes } from 'prop-types'
 import SplashScreen from 'react-native-splash-screen'
-import Colors from '../../Theme/Colors'
-import { getItem } from '../../Services/AsyncStorageService'
-import { login } from '../../Services/AuthService'
 
 class RootScreen extends Component {
   async componentDidMount() {

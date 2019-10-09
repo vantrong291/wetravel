@@ -40,6 +40,10 @@ class Home extends React.Component {
     this.props.navigation.navigate('TourDetail', { tour: item })
   }
 
+  onSearching = (value="Ba Na Hill") => {
+    this.props.navigation.navigate('SearchResults', {keyword: value})
+  }
+
   render() {
     const { loading } = this.state
     return loading ? (<LoadingContainer height={278}/>) : (
@@ -70,7 +74,7 @@ class Home extends React.Component {
                 <Icon name='location' color={Colors.navbarColor} size={18}/>
                 <Text style={{ paddingLeft: 10 }}>Ha Noi</Text>
               </View>
-              <SearchComponent/>
+              <SearchComponent onSearching={this.onSearching}/>
             </View>
           )}
 
