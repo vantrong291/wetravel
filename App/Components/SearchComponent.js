@@ -11,7 +11,7 @@ const SearchComponent = ({ onSearching }) => {
     <View style={styles.searchInput}>
       <Icon active name="search" size={20} style={{ color: '#8096a0', paddingTop: 4 }}/>
       <TextInput placeholder="Eg: Ha Long Bay, Hoi An,..."
-                 style={{ paddingLeft: 10, paddingTop: 0, paddingBottom: 5, width: '100%' }}
+                 style={{ paddingLeft: 10, paddingTop: 0, paddingBottom: 8, width: '100%' }}
                  placeholderTextColor={'#8096a0'}
                  onChangeText={text => onChangeText(text)}
                  value={value}

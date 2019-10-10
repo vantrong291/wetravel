@@ -8,7 +8,6 @@ export default {
     flex: 1,
   },
   inputContainer:{
-    flexDirection: "column",
     width: "90%"
   },
   searchInput: {
@@ -18,14 +17,14 @@ export default {
     elevation: 1,
     height: 45,
     backgroundColor: '#e8ecee',
-    marginTop: 20,
     paddingHorizontal: contants.padding,
     color: '#8096a0',
     borderRadius: 4,
   },
   backButton: {
-    flexDirection: "column",
+    justifyContent: 'center',
+    // alignItems: 'center',
     width: "10%",
-    height: 45
+    // height: 45
   }
 }
