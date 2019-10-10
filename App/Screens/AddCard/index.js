@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types'
 import { CreditCardInput } from 'react-native-credit-card-input'
 import { runAfter } from '../../Utils/asyncFunc'
 import Colors from '../../Theme/Colors'
-import AppHeader from '../PersonalInfomation'
+import AppHeader from '../../Components/AppHeader'
 import contants from '../../Theme/Constants'
 import LoadingContainer from '../../Components/LoadingContainer'
 
