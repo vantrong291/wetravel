@@ -69,8 +69,8 @@ class Home extends React.Component {
                     renderForeground={() => (
                         <View key="parallax-header" style={styles.floatArea}>
                             {/*<Image source={logo} style={{width: 171, height: 40, marginBottom: 20}}/>*/}
-                            <EText h4 style={{ color: '#333' }}>Hi, Van Trong</EText>
-                            <EText h4 style={{ color: '#333' }}>Where do you want to go?</EText>
+                            <EText h4 style={{ color: '#333' }}>Xin chào, Văn Trọng</EText>
+                            <EText h4 style={{ color: '#333' }}>Tuần này bạn muốn đi đâu?</EText>
                             <View style={{ flexDirection: 'row', marginTop: 10 }}>
                                 <Icon name='location' color={Colors.navbarColor} size={18}/>
                                 <Text style={{ paddingLeft: 10 }}>Hà Nội</Text>
@@ -108,12 +108,12 @@ class Home extends React.Component {
                 >
                     <View style={styles.outerFLoat}>
                         <View style={{ flexDirection: 'row' }}>
-                            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Điểm đến yêu thích</Text>
+                            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Khu vực yêu thích</Text>
                         </View>
                         <AreaChoiceCard/>
 
                         <View style={{ flexDirection: 'row' }}>
-                            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Top Place</Text>
+                            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Điểm đến hấp dẫn</Text>
                             <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
                                 <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
                             </TouchableHighlight>
@@ -121,7 +121,7 @@ class Home extends React.Component {
                         <CardHorizontalFlatList onItemPress={this.goToTourDetail}/>
 
                         <View style={{ flexDirection: 'row', marginTop: 30 }}>
-                            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>For you</Text>
+                            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Dành cho bạn</Text>
                             <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
                                 <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
                             </TouchableHighlight>

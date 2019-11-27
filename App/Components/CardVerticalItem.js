@@ -46,7 +46,7 @@ const styles = {
     },
     imageCol4: {
         width: metrics.DEVICE_WIDTH * 0.4,
-        borderRadius: 8,
+        // borderRadius: 8,
     },
     imageCol6: {
         width: metrics.DEVICE_WIDTH * 0.6,
