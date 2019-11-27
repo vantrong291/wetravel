@@ -13,6 +13,7 @@ const CardHorizontalFlatList = ({onItemPress}) => {
       data={tourData}
       renderItem={({item}) => <CardHorizontalItem item={item} onItemPress={onItemPress}/>}
       horizontal
+      showsHorizontalScrollIndicator={false}
     />
   )
 }

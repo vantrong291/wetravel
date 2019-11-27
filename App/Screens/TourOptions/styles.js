@@ -1,6 +1,9 @@
 import Colors from '../../Theme/Colors'
 
 export default {
+  list: {
+    flex: 1,
+  },
   container: {
     flex: 1,
   },

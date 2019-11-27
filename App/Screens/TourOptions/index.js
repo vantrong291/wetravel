@@ -10,6 +10,7 @@ import styles from './styles'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { Button } from 'react-native-elements'
 import TouchableScale from 'react-native-touchable-scale'
+import Timeline from 'react-native-timeline-listview'
 
 
 class TourOptions extends React.Component {
@@ -18,9 +19,9 @@ class TourOptions extends React.Component {
     // this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
     this.state = {
       loading: true,
-      selectedItems: ['Ha Noi'],
+      selectedItems: ['Hà Nội'],
       selectedTour: {
-        from: 'Ha Noi',
+        from: 'Hà Nội',
         price: 120,
         currency: 'USD',
         vehicle: 'Coach',
@@ -50,7 +51,13 @@ class TourOptions extends React.Component {
 
   componentDidMount() {
     // runAfter(() => this.setState({ loading: false }), 200)
+    const { navigation } = this.props
+    const tour = navigation.getParam('tour')
+    const tours = tour.tours
+    const result = tours.filter((item, index) => item.from === this.state.selectedItems[0])[0]
+    this.setState({ selectedTour: result })
     this.setState({ loading: false })
+
   };
 
   goBack = () => {
@@ -294,16 +301,31 @@ class TourOptions extends React.Component {
                   paddingVertical: 5,
                   // height: 40,
                 }}>
-                  {
-                    selectedTour.timeline.map((item, index) => (
-                      <View key={index}>
-                        <Text style={styles.timelineTitle}>{index + 1}. {item.partTitle}</Text>
-                        {item.partContent.map((part, partIndex) => (
-                          <Text key={partIndex} style={styles.timelineText}>+ {part}</Text>
-                        ))}
-                      </View>
-                    ))
-                  }
+                  <Timeline
+                      style={styles.list}
+                      data={selectedTour.timeline}
+                      circleSize={20}
+                      circleColor='rgb(45,156,219)'
+                      lineColor='rgb(45,156,219)'
+                      timeContainerStyle={{minWidth:52, marginTop: 0}}
+                      detailContainerStyle={{marginTop: -10}}
+                      timeStyle={{textAlign: 'center', backgroundColor:'#ff9797', color:'white', padding:5, borderRadius:15}}
+                      descriptionStyle={{color:'gray', textAlign: "justify"}}
+                      options={{
+                        style:{paddingTop:0}
+                      }}
+                      innerCircle={'dot'}
+                  />
+                  {/*{*/}
+                    {/*selectedTour.timeline.map((item, index) => (*/}
+                      {/*<View key={index}>*/}
+                        {/*<Text style={styles.timelineTitle}>{index + 1}. {item.partTitle}</Text>*/}
+                        {/*{item.partContent.map((part, partIndex) => (*/}
+                          {/*<Text key={partIndex} style={styles.timelineText}>+ {part}</Text>*/}
+                        {/*))}*/}
+                      {/*</View>*/}
+                    {/*))*/}
+                  {/*}*/}
                 </View>
               </View>
             </View>

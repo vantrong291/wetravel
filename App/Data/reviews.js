@@ -17,7 +17,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
@@ -50,7 +50,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
@@ -83,7 +83,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
@@ -116,7 +116,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
@@ -149,7 +149,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
@@ -182,7 +182,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
@@ -215,7 +215,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
@@ -248,7 +248,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
@@ -281,7 +281,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
@@ -314,7 +314,7 @@ export const reviews = [
     dislike: Math.floor(Math.random() * 5) + 1,
     liked: false,
     place : 'Hoi An',
-    continents : 'Asia',
+    continents : 'Châu Á',
     country : 'VietNam',
     images: [
       'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',

@@ -37,7 +37,7 @@ const TabNavigator = createMaterialTopTabNavigator(
     Home: {
       screen: Home,
       navigationOptions: {
-        tabBarLabel: 'Home',
+        tabBarLabel: 'Trang chủ',
         tabBarIcon: ({ tintColor }) => (
           <EIcon type="ionicon" name="ios-home" color={tintColor} size={24}/>
         ),
@@ -46,7 +46,7 @@ const TabNavigator = createMaterialTopTabNavigator(
     Review: {
       screen: Review,
       navigationOptions: {
-        tabBarLabel: 'Review',
+        tabBarLabel: 'Bài viết',
         tabBarIcon: ({ tintColor }) => (
           <EIcon type="ionicon" name="ios-star-half" color={tintColor} size={24}/>
         ),
@@ -55,7 +55,7 @@ const TabNavigator = createMaterialTopTabNavigator(
     Notifications: {
       screen: Notifications,
       navigationOptions: ({}) => ({
-        tabBarLabel: 'Notifications',
+        tabBarLabel: 'Thông báo',
         tabBarIcon: ({ tintColor }) => (
           <BadgedIcon type="ionicon" name="ios-notifications" color={tintColor} size={24}/>
         ),
@@ -64,7 +64,7 @@ const TabNavigator = createMaterialTopTabNavigator(
     Personal: {
       screen: Personal,
       navigationOptions: {
-        tabBarLabel: 'Personal',
+        tabBarLabel: 'Cá nhân',
         tabBarIcon: ({ tintColor }) => (
           <EIcon type="ionicon" name="ios-contact" color={tintColor} size={24}/>
         ),

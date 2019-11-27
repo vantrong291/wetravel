@@ -20,13 +20,14 @@ const CardHorizontalItem = ({ item, onItemPress }) => {
                     }}
     >
       <View style={styles.card}>
-        <Image source={{ uri: item.images[item.id - 1]}} style={styles.cardImage}/>
+        <Image source={{ uri: item.images[0]}} style={styles.cardImage}/>
         <View style={{padding:15}}>
         <Text style={{ marginBottom: 0, fontSize: 16, fontWeight: 'bold', color: '#333' }}>
           {item.destination}
         </Text>
         <Text style={{ marginBottom: 5, fontSize: 12 }}>
-          {item.country}, {item.continent}
+          {item.country}
+          {/*, {item.continent}*/}
         </Text>
         <RateComponent rate={item.rating}/>
         </View>
