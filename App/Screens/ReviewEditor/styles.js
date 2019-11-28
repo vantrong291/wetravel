@@ -29,14 +29,14 @@ export default {
         alignItems: 'center',
     },
     textareaContainer: {
-        height: 260,
+        height: 210,
         paddingVertical: 5,
         backgroundColor: colors.white,
         // backgroundColor: "green",
     },
     textarea: {
         textAlignVertical: 'top',  // hack android
-        height: 250,
+        height: 200,
         fontSize: 14,
         color: '#333',
     },

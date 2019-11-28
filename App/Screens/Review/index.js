@@ -11,6 +11,7 @@ import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT, window } 
 import Colors from '../../Theme/Colors'
 import { reviews } from '../../Data/reviews'
 import ActionButton from 'react-native-action-button'
+import ActionSheet from 'react-native-actionsheet'
 
 const cover = require('../../Assets/Images/review-cover2.png')
 const cover2 = require('../../Assets/Images/review-cover.jpg')
@@ -65,12 +66,12 @@ class Review extends React.Component {
                                 icon={
                                     <Icon
                                         name="edit"
-                                        size={18}
+                                        size={14}
                                         color="#333"
                                     />
                                 }
-                                title=" Viết Review"
-                                titleStyle={{ color: '#333' }}
+                                title="&nbsp; Viết Review"
+                                titleStyle={{ color: '#333', fontSize: 14, marginBottom: 3 }}
                                 buttonStyle={styles.writeBtn}
                                 onPress={() => this.props.navigation.navigate('ReviewEditor')}
                             />

@@ -9,6 +9,11 @@ import AppHeader from '../../Components/AppHeader'
 import styles from './styles'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Textarea from 'react-native-textarea';
+import { Button } from 'react-native-elements'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import ActionSheet from 'react-native-actionsheet'
+
+const cancelButtonIndex = 3
 
 class ReviewEditor extends React.Component {
     constructor(props) {
@@ -25,12 +30,23 @@ class ReviewEditor extends React.Component {
         // this.setState({ loading: false })
     };
 
+    handleChoosePhoto = () => {
+        this.ActionSheet.show()
+
+    }
+
     goBack = () => {
         this.props.navigation.goBack()
     }
 
     onChange = (e) => {
         this.setState({content: e})
+    }
+
+    onSelectPhotoSource = (index) => {
+        if(index !== 3) {
+            alert("Bạn đã chọn lựa chọn số " + index + ". Tính năng này đang phát triển.. Chúng tôi sẽ sớm cập nhật trong các bản cập nhật tới.. Rất xin lối vì sự bất tiện này..")
+        }
     }
 
     render() {
@@ -73,7 +89,9 @@ class ReviewEditor extends React.Component {
                                 </View>
                                 <View style={{ marginLeft: 'auto' }}>
                                     <TouchableOpacity>
-                                        <Icon name={'dots-horizontal'} size={26} style={{ color: '#949aa8' }}/>
+                                        {/*<Text style={{ marginTop: 5, fontSize: 14, color: '#3284c6', fontWeight: 'bold' }}>Submit</Text>*/}
+                                        {/*<MaterialCommunityIcons active name="send" size={26} style={{ marginTop: 5, color: '#3578e5' }}/>*/}
+                                        {/*<Icon name={'dots-horizontal'} size={26} style={{ color: '#949aa8' }}/>*/}
                                     </TouchableOpacity>
                                 </View>
                             </View>
@@ -89,6 +107,40 @@ class ReviewEditor extends React.Component {
                                     placeholderTextColor={'#c7c7c7'}
                                     underlineColorAndroid={'transparent'}
                                     multiline
+                                />
+                            </View>
+                            <View style={{ marginTop: 10}}>
+                                <View style={{ flexDirection: 'row' }}>
+                                    <TouchableOpacity onPress={this.handleChoosePhoto}>
+                                        <Icon name={'image-multiple'} size={26} style={{ color: '#949aa8' }}/>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }}
+                                                      onPress={() => this.goToMore('2')}>
+                                    </TouchableOpacity>
+                                </View>
+                            </View>
+                            <View style={{marginTop: 15}}>
+                                <Button
+                                    title="Submit"
+                                    titleStyle={{ fontSize: 14 }}
+                                    buttonStyle={{
+                                        width: '100%',
+                                        paddingVertical: 8,
+                                        backgroundColor: Colors.navbarColor,
+                                        borderRadius: 2,
+                                    }}
+                                    containerStyle={{ width: '100%' }}
+                                    onPress={() => alert("done")}
+                                />
+                            </View>
+                            <View>
+                                <ActionSheet
+                                    ref={o => this.ActionSheet = o}
+                                    title={'Bạn muốn lấy ảnh từ đâu?'}
+                                    options={['Chọn từ Thư viện', 'Chụp ảnh mới', 'Chọn từ Google Photos', 'Hủy']}
+                                    cancelButtonIndex={cancelButtonIndex}
+                                    // destructiveButtonIndex={2}
+                                    onPress={this.onSelectPhotoSource}
                                 />
                             </View>
 
