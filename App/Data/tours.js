@@ -197,7 +197,6 @@ export const tourData = [
             'https://mytourcdn.com/upload_images/Image/Location/23_11_2015/Du-lich-vinh-ha-long-mytour-8.jpg',
         ],
         introduce: 'Vịnh Hạ Long là một cái tên quá quen thuộc với bạn bè trong nước và quốc tế, vậy nên cũng không có gì lạ khi mới đây trang Business Insider của Mỹ đã giới thiệu bài viết về thắng cảnh nổi tiếng của Việt Nam với tựa đề: "Hãy xem để biết tại sao Vịnh Hạ Long là một trong những điểm đến đẹp nhất thế giới” và trang Globalgrasshopper của Anh đã xếp hạng vịnh Hạ Long là một trong 10 điểm đến đẹp nhất hành tinh năm 2015. Vậy tại sao vịnh Hạ Long lại có sức hấp dẫn kỳ lạ như thế?\n' +
-            '\n' +
             'Nằm cách Hà Nội khoảng 165km, Vịnh Hạ Long nằm ngoài khơi bờ biển phía đông bắc của Việt Nam, sở hữu khoảng 2.000 đảo và mỏm đá vôi với đủ hình thù và kích cỡ lớn bé khác nhau, nổi lên trên mặt nước biển trong xanh tĩnh lặng. Không khí xung quanh thường được bao phủ trong màn sương, điều này góp phần làm cho nơi đây thêm phần kỳ bí.' +
             'Bên cạnh đó, vịnh Hạ Long còn là nơi tập trung đa dạng sinh học cao với những hệ sinh thái điển hình cùng với hàng nghìn loài động thực vật vô cùng phong phú, đa dạng. Nơi đây còn gắn liền với những giá trị văn hóa – lịch sử hào hùng của dân tộc.',
         tours: [

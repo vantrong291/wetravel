@@ -20,6 +20,6 @@ export default {
   // navbarTextColor: '#333'
   mainBackgroundColor: '#f7f7fa',
   mainBackgroundColorTitle: '#242b56',
-  mainBackgroundColorNormalText: '#575a72'
-
+  mainBackgroundColorNormalText: '#575a72',
+  white: "#fff"
 }
