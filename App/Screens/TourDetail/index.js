@@ -12,6 +12,7 @@ import { Button } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Colors from '../../Theme/Colors'
 import { comments } from '../../Data/comments'
+import CommentComponent from '../../Components/CommentComponent'
 
 class TourDetail extends React.Component {
     constructor(props) {
@@ -119,6 +120,7 @@ class TourDetail extends React.Component {
                             {/*<Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>*/}
                         {/*</TouchableHighlight>*/}
                     </View>
+                    <CommentComponent/>
 
                     {
                         comments.map((item, index) => (

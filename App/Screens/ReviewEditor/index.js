@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native'
+import { Alert, Image, ScrollView, Text, TouchableOpacity, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import LoadingContainer from '../../Components/LoadingContainer'
 import Colors from '../../Theme/Colors'
@@ -8,9 +8,8 @@ import { runAfter } from '../../Utils/asyncFunc'
 import AppHeader from '../../Components/AppHeader'
 import styles from './styles'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import Textarea from 'react-native-textarea';
+import Textarea from 'react-native-textarea'
 import { Button } from 'react-native-elements'
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import ActionSheet from 'react-native-actionsheet'
 
 const cancelButtonIndex = 3
@@ -21,7 +20,7 @@ class ReviewEditor extends React.Component {
         // this.handleBackButtonClick = this.handleBackButtonClick.bind(this)
         this.state = {
             loading: true,
-            content: ''
+            content: '',
         }
     };
 
@@ -36,16 +35,32 @@ class ReviewEditor extends React.Component {
     }
 
     goBack = () => {
-        this.props.navigation.goBack()
+        if (this.state.content === '') this.props.navigation.goBack()
+        else {
+            Alert.alert(
+                'Chưa hoàn tất',
+                'Bạn chưa hoàn tất bài viết. Nếu bạn thoát, nội dung bài viết sẽ không được lưu lại, bạn có chắc chắn muốn thoát?',
+                [
+                    // {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
+                    {
+                        text: 'Hủy bỏ',
+                        onPress: () => console.log('Cancel Pressed'),
+                        style: 'cancel',
+                    },
+                    { text: 'Xác nhận rời', onPress: () => this.props.navigation.goBack() },
+                ],
+                { cancelable: true },
+            )
+        }
     }
 
     onChange = (e) => {
-        this.setState({content: e})
+        this.setState({ content: e })
     }
 
     onSelectPhotoSource = (index) => {
-        if(index !== 3) {
-            alert("Bạn đã chọn lựa chọn số " + index + ". Tính năng này đang phát triển.. Chúng tôi sẽ sớm cập nhật trong các bản cập nhật tới.. Rất xin lối vì sự bất tiện này..")
+        if (index !== 3) {
+            alert('Bạn đã chọn lựa chọn số ' + (index + 1) + '. Tính năng này đang phát triển.. Chúng tôi sẽ sớm cập nhật trong các bản cập nhật tới.. Rất xin lối vì sự bất tiện này..')
         }
     }
 
@@ -95,7 +110,7 @@ class ReviewEditor extends React.Component {
                                     </TouchableOpacity>
                                 </View>
                             </View>
-                            <View style={{marginTop: 0}}>
+                            <View style={{ marginTop: 0 }}>
                                 <Textarea
                                     containerStyle={styles.textareaContainer}
                                     style={styles.textarea}
@@ -109,7 +124,7 @@ class ReviewEditor extends React.Component {
                                     multiline
                                 />
                             </View>
-                            <View style={{ marginTop: 10}}>
+                            <View style={{ marginTop: 10 }}>
                                 <View style={{ flexDirection: 'row' }}>
                                     <TouchableOpacity onPress={this.handleChoosePhoto}>
                                         <Icon name={'image-multiple'} size={26} style={{ color: '#949aa8' }}/>
@@ -119,7 +134,7 @@ class ReviewEditor extends React.Component {
                                     </TouchableOpacity>
                                 </View>
                             </View>
-                            <View style={{marginTop: 15}}>
+                            <View style={{ marginTop: 15 }}>
                                 <Button
                                     title="Submit"
                                     titleStyle={{ fontSize: 14 }}
@@ -130,7 +145,7 @@ class ReviewEditor extends React.Component {
                                         borderRadius: 2,
                                     }}
                                     containerStyle={{ width: '100%' }}
-                                    onPress={() => alert("done")}
+                                    onPress={() => alert('done')}
                                 />
                             </View>
                             <View>

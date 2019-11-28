@@ -13,6 +13,7 @@ import TouchableScale from 'react-native-touchable-scale'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import {comments} from '../../Data/reviewComments'
 import ReviewComment from '../../Components/ReviewComment'
+import CommentComponent from '../../Components/CommentComponent'
 
 class ReviewDetail extends React.Component {
   constructor(props) {
@@ -159,6 +160,7 @@ class ReviewDetail extends React.Component {
               <View style={{ flexDirection: 'row', paddingHorizontal: contants.padding, marginBottom: 20 }}>
                 <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Comments</Text>
               </View>
+              <CommentComponent placeholder={'Bạn nghĩ gì về review này ?'}/>
               {
                 comments.map((item, index)=> (
                   <ReviewComment key={index} cmt={item}/>
