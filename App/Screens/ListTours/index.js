@@ -32,7 +32,6 @@ class ListTours extends React.Component {
             this.setState({ filter: filter })
             this.setState({ heading: `Điểm đến hấp dẫn nhất ${filter}` })
             tours = tourData.filter((item) => item.continent === filter)
-
         }
         else if(filter === '1') {
             this.setState({ heading: `Điểm đến hấp dẫn nhất` })
@@ -74,7 +73,7 @@ class ListTours extends React.Component {
                 <ScrollView>
                     {loading && <LoadingContainer height={550}/>}
                     {!loading && <View style={{
-                        marginTop: 20,
+                        marginTop: 10,
                         paddingBottom: 10,
                         color: Colors.mainBackgroundColorTitle,
                         paddingHorizontal: contants.padding,

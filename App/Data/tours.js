@@ -548,7 +548,7 @@ export const tourData = [
         id: 4,
         destination: 'Phú Quốc',
         country: 'Việt Nam',
-        continent: 'Châu Á',
+        continent: 'Trong nước',
         rating: 4,
         images: [
             'https://staticproxy.mytourcdn.com/1000x600,q90/resources/pictures/hotels/2/0xa1533984190_premier_village_phu_quoc_resort.jpg',

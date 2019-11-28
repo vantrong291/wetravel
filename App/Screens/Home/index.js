@@ -42,10 +42,7 @@ class Home extends React.Component {
     }
 
     goToMore = (filter = '1') => {
-        if(filter !== '1' && filter !== '2') {
-            this.props.navigation.navigate('ListTours', {filter: filter})
-        }
-        else this.props.navigation.navigate('ListTours')
+        this.props.navigation.navigate('ListTours', { filter: filter })
     }
 
     onSearching = (value = 'Ba Na Hill') => {
@@ -121,7 +118,8 @@ class Home extends React.Component {
 
                         <View style={{ flexDirection: 'row' }}>
                             <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Điểm đến hấp dẫn</Text>
-                            <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => this.goToMore('1')}>
+                            <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }}
+                                              onPress={() => this.goToMore('1')}>
                                 <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
                             </TouchableOpacity>
                         </View>
@@ -129,7 +127,8 @@ class Home extends React.Component {
 
                         <View style={{ flexDirection: 'row', marginTop: 30 }}>
                             <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Dành cho bạn</Text>
-                            <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => this.goToMore('2')}>
+                            <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }}
+                                              onPress={() => this.goToMore('2')}>
                                 <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
                             </TouchableOpacity>
                         </View>
