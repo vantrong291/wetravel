@@ -63,10 +63,10 @@ class TourBookingReview extends React.Component {
           }}>
             <Text
               style={{ fontSize: 20, fontWeight: 'bold', color: Colors.mainBackgroundColorTitle, marginBottom: 15 }}>
-              Tour Infomation
+              Thông tin tour
             </Text>
             <Text>
-              Below is all infomation about the tour, please read carefully and confirm payment
+              Dưới đây là thông tin về việc đặt vé của bạn, hãy kiểm tra cẩn thận, sau đó bấm "Xác nhận"
             </Text>
             <View>
               <View style={styles.card}>
@@ -97,7 +97,7 @@ class TourBookingReview extends React.Component {
                       flexWrap: 'wrap',
                       marginVertical: 5,
                     }}>
-                      <Text style={styles.label}>Start at</Text>
+                      <Text style={styles.label}>Khởi hành lúc</Text>
                       <View style={{
                         marginVertical: 5,
                         // paddingHorizontal: 10,
@@ -114,7 +114,7 @@ class TourBookingReview extends React.Component {
                       flexWrap: 'wrap',
                       marginVertical: 5,
                     }}>
-                      <Text style={styles.label}>Vehicle</Text>
+                      <Text style={styles.label}>Phương tiện di chuyển</Text>
                       <View style={{
                         marginVertical: 5,
                         // paddingHorizontal: 10,
@@ -131,7 +131,7 @@ class TourBookingReview extends React.Component {
                       flexWrap: 'wrap',
                       marginVertical: 5,
                     }}>
-                      <Text style={styles.label}>Time</Text>
+                      <Text style={styles.label}>Thời gian tour</Text>
                       <View style={{
                         marginVertical: 5,
                         // paddingHorizontal: 10,
@@ -148,7 +148,7 @@ class TourBookingReview extends React.Component {
                       flexWrap: 'wrap',
                       marginVertical: 5,
                     }}>
-                      <Text style={styles.label}>Number of seats</Text>
+                      <Text style={styles.label}>Số chỗ</Text>
                       <View style={{
                         marginVertical: 5,
                         // paddingHorizontal: 10,
@@ -188,18 +188,20 @@ class TourBookingReview extends React.Component {
                     alignItems: 'center',
                     borderRadius: 0,
                     padding: 10,
+                    marginTop: 10
                   }}>
                     <Image source={qrImage} style={{ width: 120, height: 120 }}/>
                   </View>
                   <View style={{ width: '55%', padding: 10 }}>
-                    <Text style={{ fontSize: 11, color: '#fff' }}>Price</Text>
+                    <Text style={{ fontSize: 11, color: '#fff' }}>Tổng chi phí</Text>
                     <Text style={{
                       fontSize: 30,
                       fontWeight: 'bold',
                       color: '#fff',
                     }}>{tourOptionsPrice + ' ' + selectedTour.currency}</Text>
-                    <Text style={{ fontSize: 11, color: '#fff' }}>You can use this QR code to pay and check your billing
-                      for this tour</Text>
+                    <Text style={{ fontSize: 11, color: '#fff' }}>
+                      Bạn có thể sử dụng mã QR này để chi trả và xem lại lịch sử thanh toán cho tour này
+                    </Text>
                   </View>
                 </View>
               </View>
@@ -209,7 +211,7 @@ class TourBookingReview extends React.Component {
                 // icon={
                 //   <Icon name="book-plus" size={20} style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
                 // }
-                title="Confirm and Pay"
+                title="Xác nhận"
                 titleStyle={{ fontSize: 15 }}
                 buttonStyle={{
                   width: '100%',

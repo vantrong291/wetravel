@@ -73,7 +73,7 @@ class TourPayment extends React.Component {
           }}>
             <Text
               style={{ fontSize: 20, fontWeight: 'bold', color: Colors.mainBackgroundColorTitle, marginBottom: 15 }}>
-              Select Payment Method
+              Chọn phương thức thanh toán
             </Text>
             <PaymentMethodCard
               onItemPress={(card) => this.onSelectCard(card)}
@@ -83,7 +83,7 @@ class TourPayment extends React.Component {
                 // icon={
                 //   <Icon name="book-plus" size={20} style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
                 // }
-                title="Checkout"
+                title="Xác nhận"
                 titleStyle={{ fontSize: 15 }}
                 buttonStyle={{
                   width: '100%',

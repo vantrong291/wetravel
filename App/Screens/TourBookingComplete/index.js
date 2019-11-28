@@ -19,7 +19,7 @@ class TourBookingComplete extends React.Component {
   };
 
   componentDidMount() {
-    runAfter(() => this.setState({ loading: false }), 2000)
+    runAfter(() => this.setState({ loading: false }), 1000)
     // this.setState({ loading: false })
   };
 
@@ -74,13 +74,16 @@ class TourBookingComplete extends React.Component {
                   fontWeight: 'bold',
                   marginBottom: 10,
                   color: Colors.mainBackgroundColorTitle,
-                }}>Congratulations!</Text>
+                }}>Đặt vé thành công!</Text>
               </View>
               <View style={{ flexDirection: 'row' }}>
-                <Text style={{ color: Colors.mainBackgroundColorNormalText }}>Your booking is completed</Text>
+                <Text style={{ color: Colors.mainBackgroundColorNormalText }}>Quá trình đặt vé hoàn tất</Text>
               </View>
               <View style={{ flexDirection: 'row' }}>
-                <Text style={{ color: Colors.mainBackgroundColorNormalText }}>We will contact you soon!</Text>
+                <Text style={{ color: Colors.mainBackgroundColorNormalText, textAlign: 'center' }}>Chúng tôi sẽ liên hệ cho bạn sớm nhất có thể.</Text>
+              </View>
+              <View style={{ flexDirection: 'row' }}>
+                <Text style={{ color: Colors.mainBackgroundColorNormalText, textAlign: 'center' }}>Xin chân thành cảm ơn!</Text>
               </View>
             </View>
             <View style={{ flexDirection: 'row', marginTop: 30 }}>
@@ -88,7 +91,7 @@ class TourBookingComplete extends React.Component {
                 // icon={
                 //   <Icon name="book-plus" size={20} style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
                 // }
-                title="Go Home"
+                title="Trở về Màn hình chính"
                 titleStyle={{ fontSize: 15 }}
                 buttonStyle={{
                   width: '100%',

@@ -129,11 +129,10 @@ class TourOptions extends React.Component {
             color: Colors.mainBackgroundColorTitle,
             paddingHorizontal: contants.padding,
           }}>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: Colors.mainBackgroundColorTitle }}>Tour
-              Options
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: Colors.mainBackgroundColorTitle }}>Tùy chọn tour
             </Text>
             <Text>
-              Please select Starting place and choose number of seats you want to book, then press "Go to Pay"
+              Hãy chọn địa điểm xuất phát và số chỗ bạn muốn đặt, sau đó nhấn "Thanh toán"
             </Text>
             <View style={{ flexDirection: 'row', marginTop: 15 }}>
               <View style={{
@@ -142,7 +141,7 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 // marginRight: 5,
               }}>
-                <Text style={styles.label}>Starting place</Text>
+                <Text style={styles.label}>Nơi xuất phát</Text>
                 <SelectInput
                   items={tour.tours}
                   uniqueKey="from"
@@ -167,7 +166,7 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 // marginLeft: 5,
               }}>
-                <Text style={styles.label}>Destination place</Text>
+                <Text style={styles.label}>Nơi đến</Text>
                 <View style={{
                   marginVertical: 5,
                   // paddingHorizontal: 10,
@@ -185,7 +184,7 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 marginRight: 5,
               }}>
-                <Text style={styles.label}>Number of seats</Text>
+                <Text style={styles.label}>Số chỗ muốn đặt</Text>
                 <View style={{
                   marginVertical: 5,
                   // paddingHorizontal: 10,
@@ -223,7 +222,7 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 marginLeft: 5,
               }}>
-                <Text style={styles.label}>Price</Text>
+                <Text style={styles.label}>Tổng chi phí</Text>
                 <View style={{
                   marginVertical: 5,
                   // paddingHorizontal: 10,
@@ -242,7 +241,7 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 marginRight: 5,
               }}>
-                <Text style={styles.label}>Vehicle</Text>
+                <Text style={styles.label}>Phương tiện di chuyển</Text>
                 <View style={{
                   marginVertical: 5,
                   // paddingHorizontal: 10,
@@ -258,7 +257,7 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 marginLeft: 5,
               }}>
-                <Text style={styles.label}>Time</Text>
+                <Text style={styles.label}>Thời gian tour</Text>
                 <View style={{
                   marginVertical: 5,
                   // paddingHorizontal: 10,
@@ -276,7 +275,7 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 // marginLeft: 5,
               }}>
-                <Text style={styles.label}>Start at</Text>
+                <Text style={styles.label}>Khởi hành lúc</Text>
                 <View style={{
                   marginVertical: 5,
                   // paddingHorizontal: 10,
@@ -294,7 +293,7 @@ class TourOptions extends React.Component {
                 marginVertical: 5,
                 marginRight: 5,
               }}>
-                <Text style={styles.label}>Main Activities</Text>
+                <Text style={styles.label}>Các hoạt động chính của tour</Text>
                 <View style={{
                   marginVertical: 5,
                   // paddingHorizontal: 10,
@@ -334,7 +333,7 @@ class TourOptions extends React.Component {
                 // icon={
                 //   <Icon name="book-plus" size={20} style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
                 // }
-                title="Go to pay"
+                title="Thanh toán"
                 titleStyle={{ fontSize: 15 }}
                 buttonStyle={{
                   width: '100%',
