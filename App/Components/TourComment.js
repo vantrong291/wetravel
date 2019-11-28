@@ -1,7 +1,6 @@
 import React from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
 import { Image } from 'react-native-elements'
-import RateComponent from './RateComponent'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Colors from '../Theme/Colors'
 
@@ -18,13 +17,28 @@ const TourComment = ({ cmt }) => {
                 <View style={styles.userColumn}>
                     <View style={{ flexDirection: 'row', marginBottom: 5 }}>
                         <Text style={styles.userName}>{cmt.userName}</Text>
+                        {
+                            Math.round(Math.random()) >= 0.4 ?
+                                <View style={{ flexDirection: 'row', paddingTop: 3 }}>
+                                    <Icon name={'check-circle-outline'} size={14}
+                                          style={{ color: Colors.success }}/>
+                                    <Text style={{
+                                        fontSize: 12,
+                                        // fontWeight: 'bold',
+                                        color: Colors.success,
+                                    }}>{' Đã đi tour'}</Text>
+                                </View>
+                                : <View>
+
+                                </View>
+                        }
                     </View>
                     <View style={{ flexDirection: 'row', marginBottom: 5 }}>
                         <Text style={styles.postTime}>{cmt.commentTime}</Text>
                     </View>
-                    <View style={{ flexDirection: 'row', marginBottom: 5 }}>
-                        <RateComponent rate={cmt.rate} size={14}/>
-                    </View>
+                    {/*<View style={{ flexDirection: 'row', marginBottom: 5 }}>*/}
+                    {/*<RateComponent rate={cmt.rate} size={14}/>*/}
+                    {/*</View>*/}
                     <View style={{ flexDirection: 'row', marginVertical: 5 }}>
                         <Text style={{
                             textAlign: 'justify',
@@ -79,6 +93,7 @@ const styles = {
         fontSize: 15,
         fontWeight: 'bold',
         color: Colors.mainBackgroundColorTitle,
+        marginRight: 10,
     },
     postTime: {
         fontSize: 12,

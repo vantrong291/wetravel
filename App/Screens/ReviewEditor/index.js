@@ -9,7 +9,7 @@ import AppHeader from '../../Components/AppHeader'
 import styles from './styles'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Textarea from 'react-native-textarea'
-import { Button } from 'react-native-elements'
+import { Button, Rating } from 'react-native-elements'
 import ActionSheet from 'react-native-actionsheet'
 
 const cancelButtonIndex = 3
@@ -109,6 +109,9 @@ class ReviewEditor extends React.Component {
                                         {/*<Icon name={'dots-horizontal'} size={26} style={{ color: '#949aa8' }}/>*/}
                                     </TouchableOpacity>
                                 </View>
+                            </View>
+                            <View style={{marginVertical: 10}}>
+                                <Rating showRating={false} imageSize={30} fractions={0} startingValue={4} />
                             </View>
                             <View style={{ marginTop: 0 }}>
                                 <Textarea
