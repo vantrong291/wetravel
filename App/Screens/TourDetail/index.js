@@ -61,11 +61,10 @@ class TourDetail extends React.Component {
                                 <Text
                                     style={{
                                         marginBottom: 0,
-                                        fontSize: 18,
+                                        fontSize: 14,
                                         fontWeight: 'bold',
                                         color: Colors.mainBackgroundColorTitle,
-                                    }}>30
-                                    - 80$ per seat</Text>
+                                    }}>3.000.000 - 3.500.000 VND / người</Text>
                             </View>
                         </View>
                         <View style={{ flexDirection: 'row' }}>
@@ -89,7 +88,7 @@ class TourDetail extends React.Component {
                                         <Icon name="book-plus" size={22}
                                               style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
                                     }
-                                    title="Book this tour"
+                                    title="Đặt vé"
                                     titleStyle={{ fontSize: 14 }}
                                     buttonStyle={{ backgroundColor: Colors.success, borderRadius: 2 }}
                                     onPress={() => this.goTourOptionScreen()}
@@ -115,10 +114,10 @@ class TourDetail extends React.Component {
                         {/*</Text>*/}
                     </View>
                     <View style={{ flexDirection: 'row', paddingHorizontal: Constants.padding, marginBottom: 20 }}>
-                        <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Comments and Rates</Text>
-                        <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
-                            <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
-                        </TouchableHighlight>
+                        <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Nhận xét và đánh giá</Text>
+                        {/*<TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>*/}
+                            {/*<Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>*/}
+                        {/*</TouchableHighlight>*/}
                     </View>
 
                     {

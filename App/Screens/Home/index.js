@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, ImageBackground, StatusBar, Text, TouchableHighlight, View } from 'react-native'
+import { Image, ImageBackground, StatusBar, Text, TouchableOpacity, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import styles from './styles'
 import { Text as EText } from 'react-native-elements'
@@ -121,17 +121,17 @@ class Home extends React.Component {
 
                         <View style={{ flexDirection: 'row' }}>
                             <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Điểm đến hấp dẫn</Text>
-                            <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => this.goToMore('1')}>
+                            <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => this.goToMore('1')}>
                                 <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
-                            </TouchableHighlight>
+                            </TouchableOpacity>
                         </View>
                         <CardHorizontalFlatList onItemPress={this.goToTourDetail}/>
 
                         <View style={{ flexDirection: 'row', marginTop: 30 }}>
                             <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Dành cho bạn</Text>
-                            <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => this.goToMore('2')}>
+                            <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => this.goToMore('2')}>
                                 <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
-                            </TouchableHighlight>
+                            </TouchableOpacity>
                         </View>
                         <CardVerticalFlatList onItemPress={this.goToTourDetail}/>
                     </View>
