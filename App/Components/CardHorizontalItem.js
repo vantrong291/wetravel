@@ -39,7 +39,7 @@ const CardHorizontalItem = ({ item, onItemPress }) => {
 const styles = {
   card: {
     backgroundColor: '#fff',
-    elevation: 1,
+    elevation: 2,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.8,

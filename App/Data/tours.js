@@ -185,7 +185,7 @@ export const tourData = [
         id: 2,
         destination: 'Vịnh Hạ Long',
         country: 'Việt Nam',
-        continent: 'Châu Á',
+        continent: 'Trong nước',
         rating: 4,
         images: [
             'https://mytourcdn.com/upload_images/Image/Location/23_11_2015/Du-lich-vinh-ha-long-mytour-2.jpg',
@@ -363,7 +363,7 @@ export const tourData = [
         id: 3,
         destination: 'Đà Lạt',
         country: 'Việt Nam',
-        continent: 'Châu Á',
+        continent: 'Trong nước',
         rating: 4,
         images: [
             'https://staticproxy.mytourcdn.com/1000x600,q90/resources/pictures/hotels/12/dvf1507175863_terracotta_hotel_and_resort_da_lat.jpg',
@@ -733,7 +733,7 @@ export const tourData = [
         id: 5,
         destination: 'Sapa',
         country: 'Việt Nam',
-        continent: 'Châu Á',
+        continent: 'Trong nước',
         rating: 4,
         images: [
             'https://mytourcdn.com/upload_images/Image/Location/24_10_2016/8/mua-thu-Sapa-mytour-1.jpg',
@@ -917,7 +917,7 @@ export const tourData = [
         id: 6,
         destination: 'Đồ Sơn',
         country: 'Việt Nam',
-        continent: 'Châu Á',
+        continent: 'Trong nước',
         rating: 4,
         images: [
             'https://mytourcdn.com/upload_images/Image/Minh%20Hoang/Linh%201/13/3/do-son-1.jpg',

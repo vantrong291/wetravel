@@ -1,6 +1,6 @@
 import React from 'react'
-import { Text, View } from 'react-native'
-import { Image } from 'react-native-elements'
+import { Text, View, Image} from 'react-native'
+// import { Image } from 'react-native-elements'
 import metrics from '../Config/metrics'
 
 import RateComponent from './RateComponent'
@@ -47,6 +47,7 @@ const styles = {
     imageCol4: {
         width: metrics.DEVICE_WIDTH * 0.4,
         // borderRadius: 8,
+        borderRadius: 8
     },
     imageCol6: {
         width: metrics.DEVICE_WIDTH * 0.6,

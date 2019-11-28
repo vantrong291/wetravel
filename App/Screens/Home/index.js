@@ -41,6 +41,13 @@ class Home extends React.Component {
         this.props.navigation.navigate('TourDetail', { tour: item })
     }
 
+    goToMore = (filter = '1') => {
+        if(filter !== '1' && filter !== '2') {
+            this.props.navigation.navigate('ListTours', {filter: filter})
+        }
+        else this.props.navigation.navigate('ListTours')
+    }
+
     onSearching = (value = 'Ba Na Hill') => {
         this.props.navigation.navigate('SearchResults', { keyword: value })
     }
@@ -110,20 +117,20 @@ class Home extends React.Component {
                         <View style={{ flexDirection: 'row' }}>
                             <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Khu vực yêu thích</Text>
                         </View>
-                        <AreaChoiceCard/>
+                        <AreaChoiceCard onItemPress={this.goToMore}/>
 
                         <View style={{ flexDirection: 'row' }}>
                             <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Điểm đến hấp dẫn</Text>
-                            <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
-                                <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
+                            <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => this.goToMore('1')}>
+                                <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
                             </TouchableHighlight>
                         </View>
                         <CardHorizontalFlatList onItemPress={this.goToTourDetail}/>
 
                         <View style={{ flexDirection: 'row', marginTop: 30 }}>
                             <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Dành cho bạn</Text>
-                            <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
-                                <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
+                            <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => this.goToMore('2')}>
+                                <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
                             </TouchableHighlight>
                         </View>
                         <CardVerticalFlatList onItemPress={this.goToTourDetail}/>

@@ -243,7 +243,7 @@ class Personal extends React.Component {
             <View style={{ flexDirection: 'row', marginTop: 30, marginHorizontal: contants.padding }}>
               <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Your reviews</Text>
               <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
-                <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
+                <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
               </TouchableHighlight>
             </View>
 

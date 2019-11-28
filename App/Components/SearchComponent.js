@@ -6,11 +6,11 @@ import TouchableScale from 'react-native-touchable-scale' // https://github.com/
 import contants from '../Theme/Constants'
 
 const SearchComponent = ({ onSearching }) => {
-  const [value, onChangeText] = React.useState('Ha Long Bay')
+  const [value, onChangeText] = React.useState('Vịnh Hạ Long')
   return (
     <View style={styles.searchInput}>
       <Icon active name="search" size={20} style={{ color: '#8096a0', paddingTop: 4 }}/>
-      <TextInput placeholder="Eg: Ha Long Bay, Hoi An,..."
+      <TextInput placeholder="Eg: Vịnh Hạ Long, Hoi An,..."
                  style={{ paddingLeft: 10, paddingTop: 0, paddingBottom: 8, width: '100%' }}
                  placeholderTextColor={'#8096a0'}
                  onChangeText={text => onChangeText(text)}

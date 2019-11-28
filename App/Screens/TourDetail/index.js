@@ -117,7 +117,7 @@ class TourDetail extends React.Component {
                     <View style={{ flexDirection: 'row', paddingHorizontal: Constants.padding, marginBottom: 20 }}>
                         <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Comments and Rates</Text>
                         <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
-                            <Text style={{ fontSize: 14, color: '#3284c6' }}>More</Text>
+                            <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
                         </TouchableHighlight>
                     </View>
 

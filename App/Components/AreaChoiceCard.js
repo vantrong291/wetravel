@@ -31,12 +31,12 @@ const data = [
 
 const { width: screenWidth } = Dimensions.get('window')
 
-const Item = ({ title, image }) => {
+const Item = ({ title, image, onItemPress }) => {
     return (
         <TouchableScale activeScale={0.95}
                         friction={90}
                         tension={100}
-                        onPress={() => alert("Clicked")}
+                        onPress={onItemPress}
         >
             <View style={styles.item}>
                 <ImageBackground source={{ uri: image }} style={{ width: 200, height: 100, borderRadius: 15 }}   imageStyle={{ borderRadius: 15 }}>
@@ -68,7 +68,7 @@ const AreaChoiceCard = (props) => {
                 keyExtractor={keyExtractor}
                 data={data}
                 renderItem={({ item }) => <Item title={item.title}
-                                                // onItemPress={onItemPress}
+                                                onItemPress={() => props.onItemPress(item.title)}
                                                 image={item.thumbnail}
                 />}
                 horizontal

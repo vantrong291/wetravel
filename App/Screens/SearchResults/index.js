@@ -73,7 +73,7 @@ class SearchResults extends React.Component {
                     </View>
                     <View style={styles.inputContainer}>
                         <View style={styles.searchInput}>
-                            <TextInput placeholder="Eg: Ha Long Bay, Hoi An,..."
+                            <TextInput placeholder="Eg: Vịnh Hạ Long, Hoi An,..."
                                        style={{ paddingTop: 0, paddingBottom: 8, width: '100%' }}
                                        placeholderTextColor={'#8096a0'}
                                        onChangeText={text => this.onChangeText(text)}
