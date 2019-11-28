@@ -25,8 +25,8 @@ class ReviewEditor extends React.Component {
     };
 
     componentDidMount() {
-        runAfter(() => this.setState({ loading: false }), 1000)
-        // this.setState({ loading: false })
+        // runAfter(() => this.setState({ loading: false }), 1000)
+        this.setState({ loading: false })
     };
 
     handleChoosePhoto = () => {
