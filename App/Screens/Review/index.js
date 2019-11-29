@@ -10,9 +10,8 @@ import ParallaxScrollView from 'react-native-parallax-scroll-view'
 import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT, window } from '../../Components/ParallaxConfig'
 import Colors from '../../Theme/Colors'
 import { reviews } from '../../Data/reviews'
-import ActionButton from 'react-native-action-button'
-import ActionSheet from 'react-native-actionsheet'
 
+const shareOptions = ['Facebook', 'Twitter', 'Lotus', 'Hủy']
 const cover = require('../../Assets/Images/review-cover2.png')
 const cover2 = require('../../Assets/Images/review-cover.jpg')
 const resource = require('../../Assets/Images/texture.png')
@@ -35,6 +34,17 @@ class Review extends React.Component {
     }
 
     keyExtractor = (item, index) => index.toString()
+
+    onSelectShareOption = (index) => {
+        if (index !== 3) {
+            alert(`Chia sẻ lên ${shareOptions[index]}`)
+        }
+    }
+
+    handleShare = () => {
+        this.ActionSheet.show()
+
+    }
 
     render() {
         return (
@@ -116,20 +126,20 @@ class Review extends React.Component {
                             style={{ paddingTop: 15 }}
                         />
 
-                        <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
+                        {/*<View style={{flex:1, backgroundColor: '#f3f3f3'}}>*/}
                             {/* Rest of the app comes ABOVE the action button component !*/}
-                            <ActionButton buttonColor="rgba(231,76,60,1)">
-                                <ActionButton.Item buttonColor='#9b59b6' title="New Task" onPress={() => console.log("notes tapped!")}>
-                                    <Icon name="md-create" style={styles.actionButtonIcon} />
-                                </ActionButton.Item>
-                                <ActionButton.Item buttonColor='#3498db' title="Notifications" onPress={() => {}}>
-                                    <Icon name="md-notifications-off" style={styles.actionButtonIcon} />
-                                </ActionButton.Item>
-                                <ActionButton.Item buttonColor='#1abc9c' title="All Tasks" onPress={() => {}}>
-                                    <Icon name="md-done-all" style={styles.actionButtonIcon} />
-                                </ActionButton.Item>
-                            </ActionButton>
-                        </View>
+                            {/*<ActionButton buttonColor="rgba(231,76,60,1)">*/}
+                                {/*<ActionButton.Item buttonColor='#9b59b6' title="New Task" onPress={() => console.log("notes tapped!")}>*/}
+                                    {/*<Icon name="md-create" style={styles.actionButtonIcon} />*/}
+                                {/*</ActionButton.Item>*/}
+                                {/*<ActionButton.Item buttonColor='#3498db' title="Notifications" onPress={() => {}}>*/}
+                                    {/*<Icon name="md-notifications-off" style={styles.actionButtonIcon} />*/}
+                                {/*</ActionButton.Item>*/}
+                                {/*<ActionButton.Item buttonColor='#1abc9c' title="All Tasks" onPress={() => {}}>*/}
+                                    {/*<Icon name="md-done-all" style={styles.actionButtonIcon} />*/}
+                                {/*</ActionButton.Item>*/}
+                            {/*</ActionButton>*/}
+                        {/*</View>*/}
 
                     </View>
                 </ParallaxScrollView>

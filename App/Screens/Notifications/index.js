@@ -54,7 +54,7 @@ class Notifications extends React.Component {
     }
 
     handleLinkTo = (name) => {
-        alert(name)
+        // alert(name)
         if (name) this.props.navigation.navigate(name)
     }
 
@@ -138,7 +138,8 @@ class Notifications extends React.Component {
                                 paddingVertical: 10,
                             }}>
                                 <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#333' }}>Mới nhất</Text>
-                                <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => alert("Đánh dấu là đã đọc")}>
+                                <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }}
+                                                  onPress={() => alert('Đánh dấu là đã đọc')}>
                                     <Text style={{ fontSize: 14, color: '#3284c6' }}>Đánh dấu đã đọc</Text>
                                 </TouchableOpacity>
                             </View>
