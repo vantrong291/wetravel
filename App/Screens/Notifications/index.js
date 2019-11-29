@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, RefreshControl, SafeAreaView, Text, TouchableHighlight, View } from 'react-native'
+import { Image, SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import NotificationItem from '../../Components/NoficationItem'
 import contants from '../../Theme/Constants'
@@ -24,7 +24,7 @@ class Notifications extends React.Component {
         // this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
         this.state = {
             loading: true,
-            refresh: false
+            refresh: false,
         }
     };
 
@@ -59,9 +59,9 @@ class Notifications extends React.Component {
     }
 
     handleRefresh = () => {
-        this.setState({refresh: true})
+        this.setState({ refresh: true })
         setTimeout(() => {
-            this.setState({refresh: false})
+            this.setState({ refresh: false })
         }, 1000)
     }
 
@@ -131,53 +131,53 @@ class Notifications extends React.Component {
                 >
                     <SafeAreaView>
                         {/*<RefreshControl refreshing={refresh} onRefresh={this.handleRefresh}>*/}
-                            <View style={{ marginBottom: 20 }}>
-                                <View style={{
-                                    flexDirection: 'row',
-                                    paddingHorizontal: contants.padding,
-                                    paddingVertical: 10,
-                                }}>
-                                    <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#333' }}>Mới nhất</Text>
-                                    <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
-                                        <Text style={{ fontSize: 14, color: '#3284c6' }}>Đánh dấu đã đọc</Text>
-                                    </TouchableHighlight>
-                                </View>
-                                {
-                                    notifications.filter(item => item.type === 'unread').map((item, index) => (
-                                        <NotificationItem
-                                            key={index}
-                                            image={item.image}
-                                            content={item.title}
-                                            time={item.time}
-                                            handlePress={() => this.handleLinkTo(item.linkTo)}
-                                            onPressItemOption={this.handleNotiOption}/>
-                                    ))
-                                }
+                        <View style={{ marginBottom: 20 }}>
+                            <View style={{
+                                flexDirection: 'row',
+                                paddingHorizontal: contants.padding,
+                                paddingVertical: 10,
+                            }}>
+                                <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#333' }}>Mới nhất</Text>
+                                <TouchableOpacity style={{ paddingTop: 4, marginLeft: 'auto' }} onPress={() => alert("Đánh dấu là đã đọc")}>
+                                    <Text style={{ fontSize: 14, color: '#3284c6' }}>Đánh dấu đã đọc</Text>
+                                </TouchableOpacity>
                             </View>
-                            <View>
-                                <View style={{
-                                    flexDirection: 'row',
-                                    paddingHorizontal: contants.padding,
-                                    paddingBottom: 10,
-                                }}>
-                                    <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#333' }}>Cũ hơn</Text>
-                                    {/*<TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>*/}
-                                    {/*/!*<Text style={{ fontSize: 14, color: '#3284c6' }}></Text>*!/*/}
-                                    {/*</TouchableHighlight>*/}
-                                </View>
-                                {
-                                    notifications.filter(item => item.type === 'read').map((item, index) => (
-                                        <NotificationItem
-                                            unread={false}
-                                            key={index}
-                                            image={item.image}
-                                            content={item.title}
-                                            time={item.time}
-                                            handlePress={() => this.handleLinkTo(item.linkTo)}
-                                            onPressItemOption={this.handleUnreadNotiOption}/>
-                                    ))
-                                }
+                            {
+                                notifications.filter(item => item.type === 'unread').map((item, index) => (
+                                    <NotificationItem
+                                        key={index}
+                                        image={item.image}
+                                        content={item.title}
+                                        time={item.time}
+                                        handlePress={() => this.handleLinkTo(item.linkTo)}
+                                        onPressItemOption={this.handleNotiOption}/>
+                                ))
+                            }
+                        </View>
+                        <View>
+                            <View style={{
+                                flexDirection: 'row',
+                                paddingHorizontal: contants.padding,
+                                paddingBottom: 10,
+                            }}>
+                                <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#333' }}>Cũ hơn</Text>
+                                {/*<TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>*/}
+                                {/*/!*<Text style={{ fontSize: 14, color: '#3284c6' }}></Text>*!/*/}
+                                {/*</TouchableHighlight>*/}
                             </View>
+                            {
+                                notifications.filter(item => item.type === 'read').map((item, index) => (
+                                    <NotificationItem
+                                        unread={false}
+                                        key={index}
+                                        image={item.image}
+                                        content={item.title}
+                                        time={item.time}
+                                        handlePress={() => this.handleLinkTo(item.linkTo)}
+                                        onPressItemOption={this.handleUnreadNotiOption}/>
+                                ))
+                            }
+                        </View>
                         {/*</RefreshControl>*/}
                         <View>
                             <ActionSheet
