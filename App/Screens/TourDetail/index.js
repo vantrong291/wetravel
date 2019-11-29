@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, Text, TouchableHighlight, View } from 'react-native'
+import { ScrollView, Text, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import AppHeader from '../../Components/AppHeader'
 import TourPhotoCarousel from '../../Components/TourPhotoCarousel'
@@ -13,6 +13,9 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Colors from '../../Theme/Colors'
 import { comments } from '../../Data/comments'
 import CommentComponent from '../../Components/CommentComponent'
+import ActionSheet from 'react-native-actionsheet'
+
+const shareOptions = ['Facebook', 'Twitter', 'Lotus', 'Hủy']
 
 class TourDetail extends React.Component {
     constructor(props) {
@@ -36,6 +39,17 @@ class TourDetail extends React.Component {
         const { navigation } = this.props
         const tour = navigation.getParam('tour')
         this.props.navigation.navigate('TourOptions', { tour: tour })
+    }
+
+    onSelectShareOption = (index) => {
+        if (index !== 3) {
+            alert(`Chia sẻ lên ${shareOptions[index]}`)
+        }
+    }
+
+    handleShare = () => {
+        this.ActionSheet.show()
+
     }
 
     render() {
@@ -84,16 +98,28 @@ class TourDetail extends React.Component {
                                 </Text>
                             </View>
                             <View style={{ marginLeft: 'auto' }}>
-                                <Button
-                                    icon={
-                                        <Icon name="book-plus" size={22}
-                                              style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
-                                    }
-                                    title="Đặt vé"
-                                    titleStyle={{ fontSize: 14 }}
-                                    buttonStyle={{ backgroundColor: Colors.success, borderRadius: 2 }}
-                                    onPress={() => this.goTourOptionScreen()}
-                                />
+                                <View style={{ flexDirection: 'row' }}>
+                                    <Button
+                                        icon={
+                                            <Icon name="share-outline" size={22}
+                                                  style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
+                                        }
+                                        title="Chia sẻ"
+                                        titleStyle={{ fontSize: 14 }}
+                                        buttonStyle={{ backgroundColor: Colors.primary, borderRadius: 2, marginRight: 5 }}
+                                        onPress={this.handleShare}
+                                    />
+                                    <Button
+                                        icon={
+                                            <Icon name="book-plus" size={22}
+                                                  style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
+                                        }
+                                        title="Đặt vé"
+                                        titleStyle={{ fontSize: 14 }}
+                                        buttonStyle={{ backgroundColor: Colors.success, borderRadius: 2 }}
+                                        onPress={() => this.goTourOptionScreen()}
+                                    />
+                                </View>
                             </View>
                         </View>
 
@@ -117,7 +143,7 @@ class TourDetail extends React.Component {
                     <View style={{ flexDirection: 'row', paddingHorizontal: Constants.padding, marginBottom: 20 }}>
                         <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Nhận xét và đánh giá</Text>
                         {/*<TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>*/}
-                            {/*<Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>*/}
+                        {/*<Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>*/}
                         {/*</TouchableHighlight>*/}
                     </View>
                     <CommentComponent/>
@@ -127,6 +153,17 @@ class TourDetail extends React.Component {
                             <TourComment key={index} cmt={item}/>
                         ))
                     }
+
+                    <View>
+                        <ActionSheet
+                            ref={o => this.ActionSheet = o}
+                            title={'Bạn muốn chia sẻ tới đâu?'}
+                            options={shareOptions}
+                            cancelButtonIndex={3}
+                            // destructiveButtonIndex={2}
+                            onPress={this.onSelectShareOption}
+                        />
+                    </View>
 
                 </ScrollView>
             </View>
