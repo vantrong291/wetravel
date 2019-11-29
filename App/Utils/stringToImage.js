@@ -1,7 +1,7 @@
 const visaLogo = require('../Assets/Images/Payments/visa.png')
 const masterLogo = require('../Assets/Images/Payments/mastercard.png')
 const paypalLogo = require('../Assets/Images/Payments/paypal.png')
-const cashLogo = require('../Assets/Images/Payments/cash.png')
+const cashLogo = require('../Assets/Images/Payments/cash.jpg')
 
 export const stringToImage = (str) => {
     if (str.includes('visa')) {
