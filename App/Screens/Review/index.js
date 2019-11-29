@@ -10,12 +10,14 @@ import ParallaxScrollView from 'react-native-parallax-scroll-view'
 import { PARALLAX_HEADER_HEIGHT, parallaxStyles, STICKY_HEADER_HEIGHT, window } from '../../Components/ParallaxConfig'
 import Colors from '../../Theme/Colors'
 import { reviews } from '../../Data/reviews'
+import ActionSheet from 'react-native-actionsheet'
 
-const shareOptions = ['Facebook', 'Twitter', 'Lotus', 'Hủy']
 const cover = require('../../Assets/Images/review-cover2.png')
 const cover2 = require('../../Assets/Images/review-cover.jpg')
 const resource = require('../../Assets/Images/texture.png')
 
+const actions = ['Báo cáo', 'Hủy']
+const shareOptions = ['Facebook', 'Twitter', 'Lotus', 'Hủy']
 
 class Review extends React.Component {
     constructor(props) {
@@ -35,6 +37,17 @@ class Review extends React.Component {
 
     keyExtractor = (item, index) => index.toString()
 
+    onSelectOption = (index) => {
+        if (index !== 1) {
+            alert(actions[index])
+        }
+    }
+
+    handleOptions = () => {
+        this.PostActionSheet.show()
+
+    }
+
     onSelectShareOption = (index) => {
         if (index !== 3) {
             alert(`Chia sẻ lên ${shareOptions[index]}`)
@@ -42,8 +55,7 @@ class Review extends React.Component {
     }
 
     handleShare = () => {
-        this.ActionSheet.show()
-
+        this.ShareActionSheet.show()
     }
 
     render() {
@@ -122,7 +134,10 @@ class Review extends React.Component {
                             keyExtractor={this.keyExtractor}
                             data={reviews}
                             renderItem={({ item }) => <ReviewListComponent reviewItem={item}
-                                                                           goReviewDetails={() => this.goReviewDetails(item)}/>}
+                                                                           goReviewDetails={() => this.goReviewDetails(item)}
+                                                                            onPressAction={this.handleOptions}
+                                                                            onPressShare={this.handleShare}
+                            />}
                             style={{ paddingTop: 15 }}
                         />
 
@@ -141,6 +156,26 @@ class Review extends React.Component {
                             {/*</ActionButton>*/}
                         {/*</View>*/}
 
+                    </View>
+                    <View>
+                        <ActionSheet
+                            ref={o => this.PostActionSheet = o}
+                            title={'Hành động'}
+                            options={actions}
+                            cancelButtonIndex={1}
+                            // destructiveButtonIndex={2}
+                            onPress={this.onSelectOption}
+                        />
+                    </View>
+                    <View>
+                        <ActionSheet
+                            ref={o => this.ShareActionSheet = o}
+                            title={'Bạn muốn chia sẻ tới đâu?'}
+                            options={shareOptions}
+                            cancelButtonIndex={3}
+                            // destructiveButtonIndex={2}
+                            onPress={this.onSelectShareOption}
+                        />
                     </View>
                 </ParallaxScrollView>
             </View>

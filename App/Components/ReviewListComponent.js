@@ -8,7 +8,7 @@ import TouchableScale from 'react-native-touchable-scale'
 import metrics from '../Config/metrics'
 
 
-const ReviewListComponent = ({ reviewItem = reviews[0], goReviewDetails }) => {
+const ReviewListComponent = ({ reviewItem = reviews[0], goReviewDetails, onPressAction, onPressShare }) => {
     const renderContent = () => {
         return reviewItem.reviewContent.length <= 100 ? (
             <View style={{ marginBottom: 10 }}>
@@ -42,7 +42,9 @@ const ReviewListComponent = ({ reviewItem = reviews[0], goReviewDetails }) => {
                     </View>
                 </View>
                 <View style={{ marginLeft: 'auto' }}>
-                    <Icon name={'dots-horizontal'} size={26} style={{ color: '#949aa8' }}/>
+                    <TouchableOpacity onPress={onPressAction}>
+                        <Icon name={'dots-horizontal'} size={26} style={{ color: '#949aa8' }}/>
+                    </TouchableOpacity>
                 </View>
             </View>
             <View style={styles.content}>
@@ -114,7 +116,9 @@ const ReviewListComponent = ({ reviewItem = reviews[0], goReviewDetails }) => {
                     <TouchableScale style={styles.actionColumn}
                                     activeScale={0.8}
                                     friction={90}
-                                    tension={100}>
+                                    tension={100}
+                                    onPress={onPressShare}
+                    >
                         <View style={{ flexDirection: 'row' }}>
                             <Icon name={'share-variant'} size={24} style={{ color: '#949aa8' }}/>
                         </View>
