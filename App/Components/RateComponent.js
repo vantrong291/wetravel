@@ -10,12 +10,12 @@ const RateComponent = ({rate, size = 18}) => {
     <View style={{flexDirection: 'row'}}>
       {
         RANGE(1, roundedRate).map((item, index) => (
-          <Icon name={"star"} size={size} style={{ color: "#fde226" }}/>
+          <Icon key={index} name={"star"} size={size} style={{ color: "#fde226" }}/>
         ))
       }
       {
         RANGE(1, rest).map((item, index) => (
-          <Icon name={"star"} size={size} style={{ color: "#e8e8e8" }}/>
+          <Icon key={index} name={"star"} size={size} style={{ color: "#e8e8e8" }}/>
         ))
       }
     </View>
