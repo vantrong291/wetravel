@@ -46,7 +46,7 @@ class RecentTours extends React.Component {
                 <ScrollView>
                     {loading && <LoadingContainer height={550}/>}
                     {!loading && <View style={{
-                        marginTop: 20,
+                        marginTop: 10,
                         paddingBottom: 10,
                         color: Colors.mainBackgroundColorTitle,
                         paddingHorizontal: contants.padding,
