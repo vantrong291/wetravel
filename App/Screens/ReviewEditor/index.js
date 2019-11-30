@@ -150,7 +150,7 @@ class ReviewEditor extends React.Component {
                                     maxLength={10000}
                                     onChangeText={this.onChangeContent}
                                     defaultValue={this.state.content}
-                                    placeholder={'Bạn đang nghĩ gì?'}
+                                    placeholder={'Nội dung review...'}
                                     placeholderTextColor={'#c7c7c7'}
                                     underlineColorAndroid={'transparent'}
                                     multiline
