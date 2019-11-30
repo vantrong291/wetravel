@@ -1,3 +1,4 @@
+const reviewSummaries = ['Tuyệt vời', 'Cảnh đẹp', 'Dịch vụ tốt', 'Bình thường', 'Người dân thân thiện']
 export const reviews = [
     {
         id: 1,
@@ -5,7 +6,7 @@ export const reviews = [
         userName: 'Phạm Văn Trọng',
         reviewTime: '25 phút trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Du lịch phải là tham gia những hoạt động tham quan, vui chơi giải trí ban ngày tại những địa điểm nổi tiếng chuyên được khai thác phục vụ du khách? Quan niệm này giờ đã không còn đúng khi sự phát triển của các hoạt động về đêm ngày càng được quan tâm chú trọng. Tương tự, đến với Hội An, bạn cũng nhất định đừng bỏ qua 6 trải nghiệm khi “mặt trời khuất núi” được báo nước ngoài hết lời gợi ý sau đây để có một chuyến đi trọn vẹn.\nKhông ít khách du lịch trong và ngoài nước đã phải sửng sốt trước vẻ đẹp Hội An khi ánh mặt trời dần được thay thế bởi những ngọn đèn đường, và khẳng định vẻ đẹp ấy thậm chí còn lung linh và cuốn hút hơn gấp bội lúc trời sáng. Vì vậy dạo bộ quanh các con đường khi phố đã lên đèn là lựa chọn của nhiều người.',
         like: Math.floor(Math.random() * 100) + 1,
         comment: Math.floor(Math.random() * 20) + 1,
@@ -34,7 +35,7 @@ export const reviews = [
         userName: 'Trần Hữu Tuân',
         reviewTime: '1 giờ trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -64,7 +65,7 @@ export const reviews = [
         userName: 'Nguyễn Quang Thái',
         reviewTime: '25 ngày trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -97,7 +98,7 @@ export const reviews = [
         userName: 'Trần Mạnh Tùng',
         reviewTime: '1 month trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -130,7 +131,7 @@ export const reviews = [
         userName: 'Nguyễn Văn Minh',
         reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -162,7 +163,7 @@ export const reviews = [
         userName: 'Nguyễn Văn Hoàn',
         reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -194,7 +195,7 @@ export const reviews = [
         userName: 'Lê Công Thương',
         reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -227,7 +228,7 @@ export const reviews = [
         userName: 'Nguyễn Thị Huyền',
         reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -260,7 +261,7 @@ export const reviews = [
         userName: 'Đoàn Thị Hoài Thu',
         reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -292,7 +293,7 @@ export const reviews = [
         userName: 'Nguyễn Quỳnh Trang',
         reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Tuyệt vời',
+        reviewTitle: reviewSummaries[Math.floor(Math.random() * 5)],
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
