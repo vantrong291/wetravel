@@ -1,15 +1,18 @@
 import React from 'react'
-import { ScrollView, StatusBar, Text, TextInput, View } from 'react-native'
+import { Dimensions, FlatList, ScrollView, StatusBar, Text, TextInput, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import LoadingContainer from '../../Components/LoadingContainer'
 import Colors from '../../Theme/Colors'
 import contants from '../../Theme/Constants'
 import styles from './styles'
-import { runAfter } from '../../Utils/asyncFunc'
 import TouchableScale from 'react-native-touchable-scale'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import CardVerticalFlatList from '../../Components/CardVerticalFlatList'
+import { tourData } from '../../Data/tours'
+import CardVerticalItem from '../../Components/CardVerticalItem'
+import Icon from 'react-native-vector-icons/AntDesign'
+
+const { width: screenWidth, height: screenHeight } = Dimensions.get('window')
 
 class SearchResults extends React.Component {
     constructor(props) {
@@ -19,6 +22,7 @@ class SearchResults extends React.Component {
             loading: true,
             keyword: '',
             tmpKeyword: '',
+            tourResults: [],
         }
     };
 
@@ -26,7 +30,10 @@ class SearchResults extends React.Component {
         const { navigation } = this.props
         const keyword = navigation.getParam('keyword')
         this.setState({ keyword: keyword, tmpKeyword: keyword })
-        runAfter(() => this.setState({ loading: false }), 1000)
+        const tours = tourData.filter(item => item.destination.includes(keyword))
+        this.setState({ tourResults: tours })
+        this.setState({ loading: false })
+        // runAfter(() => this.setState({ loading: false }), 1000)
     };
 
     onChangeText = (text) => {
@@ -43,15 +50,22 @@ class SearchResults extends React.Component {
     }
 
     onSearching = () => {
-        const keyword = this.state.keyword
         this.setState({ loading: true })
-        runAfter(() => this.setState({ loading: false, tmpKeyword: keyword }), 1000)
+        const keyword = this.state.keyword
+        const tours = tourData.filter(item => item.destination.includes(keyword))
+        this.setState({ tourResults: tours })
+        this.setState({ tmpKeyword: keyword })
+        this.setState({ loading: false })
+        // runAfter(() => this.setState({ loading: false, tmpKeyword: keyword }), 1000)
     }
+
+    keyExtractor = (item, index) => index.toString()
 
     render() {
         const loading = this.state.loading
         const { navigation } = this.props
         const keyword = navigation.getParam('keyword')
+        const tours = this.state.tourResults
 
         return (
             <View style={{ flex: 1, backgroundColor: Colors.mainBackgroundColor }}>
@@ -108,9 +122,41 @@ class SearchResults extends React.Component {
                         color: Colors.mainBackgroundColorTitle,
                         paddingHorizontal: contants.padding,
                     }}>
-                        <View style={{}}>
-                            <CardVerticalFlatList onItemPress={this.goToTourDetail}/>
-                        </View>
+                        {
+                            tours.length === 0 && (
+                                <View style={{
+                                    width: screenWidth - 30,
+                                    height: screenHeight - 150,
+                                }}>
+                                    <View style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        right: 0,
+                                        bottom: 0,
+                                        justifyContent: 'center',
+                                        alignItems: 'center',
+                                    }}>
+                                        <Icon name={'warning'} size={22} style={{ color: '#949aa8' }}/>
+                                        <Text style={{ color: '#949aa8', fontSize: 12, marginTop: 5 }}>Danh sách
+                                            trống</Text>
+                                    </View>
+                                </View>
+                            )
+                        }
+                        {
+                            tours.length > 0 && (
+                                <View style={{}}>
+                                    <FlatList
+                                        keyExtractor={this.keyExtractor}
+                                        data={this.state.tourResults}
+                                        renderItem={({ item }) => <CardVerticalItem item={item}
+                                                                                    onItemPress={this.goToTourDetail}
+                                            // style={{paddingTop: 15}}
+                                        />}
+                                    />
+                                </View>)
+                        }
                     </View>}
                 </ScrollView>
             </View>
