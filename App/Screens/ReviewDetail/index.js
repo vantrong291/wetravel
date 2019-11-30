@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, Text, TouchableOpacity, View, Image } from 'react-native'
+import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native'
 import { PropTypes } from 'prop-types'
 import LoadingContainer from '../../Components/LoadingContainer'
 import Colors from '../../Theme/Colors'
@@ -17,6 +17,7 @@ import CommentComponent from '../../Components/CommentComponent'
 import ActionSheet from 'react-native-actionsheet'
 
 const actions = ['Báo cáo', 'Hủy']
+const commentActions = ['Báo cáo', 'Ẩn', 'Hủy']
 const shareOptions = ['Facebook', 'Twitter', 'Lotus', 'Hủy']
 
 
@@ -55,8 +56,18 @@ class ReviewDetail extends React.Component {
         }
     }
 
+    onSelectCommentOption = (index) => {
+        if (index !== 2) {
+            alert(commentActions[index])
+        }
+    }
+
     handleShare = () => {
         this.ShareActionSheet.show()
+    }
+
+    handleCommentOptionShow = () => {
+        this.CommentActionSheet.show()
     }
 
     render() {
@@ -208,7 +219,7 @@ class ReviewDetail extends React.Component {
                             <CommentComponent placeholder={'Bạn nghĩ gì về review này ?'}/>
                             {
                                 comments.map((item, index) => (
-                                    <ReviewComment key={index} cmt={item}/>
+                                    <ReviewComment key={index} cmt={item} onShow={this.handleCommentOptionShow} />
                                 ))
                             }
                         </View>
@@ -232,6 +243,16 @@ class ReviewDetail extends React.Component {
                         cancelButtonIndex={3}
                         // destructiveButtonIndex={2}
                         onPress={this.onSelectShareOption}
+                    />
+                </View>
+                <View>
+                    <ActionSheet
+                        ref={o => this.CommentActionSheet = o}
+                        title={'Hành động'}
+                        options={commentActions}
+                        cancelButtonIndex={2}
+                        // destructiveButtonIndex={2}
+                        onPress={this.onSelectCommentOption}
                     />
                 </View>
             </View>

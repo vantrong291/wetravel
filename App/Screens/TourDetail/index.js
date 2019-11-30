@@ -16,6 +16,7 @@ import CommentComponent from '../../Components/CommentComponent'
 import ActionSheet from 'react-native-actionsheet'
 
 const shareOptions = ['Facebook', 'Twitter', 'Lotus', 'Hủy']
+const commentActions = ['Báo cáo', 'Ẩn', 'Hủy']
 
 class TourDetail extends React.Component {
     constructor(props) {
@@ -50,6 +51,16 @@ class TourDetail extends React.Component {
     handleShare = () => {
         this.ActionSheet.show()
 
+    }
+
+    onSelectCommentOption = (index) => {
+        if (index !== 2) {
+            alert(commentActions[index])
+        }
+    }
+
+    handleCommentOptionShow = () => {
+        this.CommentActionSheet.show()
     }
 
     render() {
@@ -150,7 +161,7 @@ class TourDetail extends React.Component {
 
                     {
                         comments.map((item, index) => (
-                            <TourComment key={index} cmt={item}/>
+                            <TourComment key={index} cmt={item} onShow={this.handleCommentOptionShow}/>
                         ))
                     }
 
@@ -162,6 +173,16 @@ class TourDetail extends React.Component {
                             cancelButtonIndex={3}
                             // destructiveButtonIndex={2}
                             onPress={this.onSelectShareOption}
+                        />
+                    </View>
+                    <View>
+                        <ActionSheet
+                            ref={o => this.CommentActionSheet = o}
+                            title={'Hành động'}
+                            options={commentActions}
+                            cancelButtonIndex={2}
+                            // destructiveButtonIndex={2}
+                            onPress={this.onSelectCommentOption}
                         />
                     </View>
 

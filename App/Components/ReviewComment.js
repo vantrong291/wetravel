@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Colors from '../Theme/Colors'
 
 
-const ReviewComment = ({ cmt }) => {
+const ReviewComment = ({ cmt, onShow }) => {
     const image = cmt.userAvatar ? cmt.userAvatar : require('../Assets/Images/TOM.png')
     return (
         <View style={styles.card}>
@@ -49,7 +49,7 @@ const ReviewComment = ({ cmt }) => {
                         </View>
                     </View>
                 </View>
-                <TouchableOpacity style={{ marginLeft: 'auto' }}>
+                <TouchableOpacity style={{ marginLeft: 'auto' }} onPress={onShow}>
                     <Icon name={'dots-horizontal'} size={26} style={{ color: '#949aa8' }}/>
                 </TouchableOpacity>
             </View>
