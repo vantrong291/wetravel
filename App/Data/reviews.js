@@ -2,8 +2,8 @@ export const reviews = [
     {
         id: 1,
         userAvatar: require('../Assets/Images/Users/1.jpg'),
-        userName: 'Pham Van Trong',
-        reviewTime: '25 minutes ago',
+        userName: 'Phạm Văn Trọng',
+        reviewTime: '25 phút trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Du lịch phải là tham gia những hoạt động tham quan, vui chơi giải trí ban ngày tại những địa điểm nổi tiếng chuyên được khai thác phục vụ du khách? Quan niệm này giờ đã không còn đúng khi sự phát triển của các hoạt động về đêm ngày càng được quan tâm chú trọng. Tương tự, đến với Hội An, bạn cũng nhất định đừng bỏ qua 6 trải nghiệm khi “mặt trời khuất núi” được báo nước ngoài hết lời gợi ý sau đây để có một chuyến đi trọn vẹn.\nKhông ít khách du lịch trong và ngoài nước đã phải sửng sốt trước vẻ đẹp Hội An khi ánh mặt trời dần được thay thế bởi những ngọn đèn đường, và khẳng định vẻ đẹp ấy thậm chí còn lung linh và cuốn hút hơn gấp bội lúc trời sáng. Vì vậy dạo bộ quanh các con đường khi phố đã lên đèn là lựa chọn của nhiều người.',
@@ -31,12 +31,12 @@ export const reviews = [
     {
         id: 2,
         userAvatar: require('../Assets/Images/Users/2.jpg'),
-        userName: 'Tran Huu Tuan',
-        reviewTime: '1 hours ago',
+        userName: 'Trần Hữu Tuân',
+        reviewTime: '1 giờ trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
-            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
+            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
             'The atmosphere is so special that it really felt like home to all of us. All respect for Nico who does a great job there; a true sample of excellent tour guide!\n' +
             'Many thanks again and I recommend Sibiu Guide Nico to everyone!',
@@ -61,12 +61,12 @@ export const reviews = [
     {
         id: 3,
         userAvatar: require('../Assets/Images/Users/3.jpg'),
-        userName: 'Nguyen Quang Thai',
-        reviewTime: '25 days ago',
+        userName: 'Nguyễn Quang Thái',
+        reviewTime: '25 ngày trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
-            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
+            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
             'The atmosphere is so special that it really felt like home to all of us. All respect for Nico who does a great job there; a true sample of excellent tour guide!\n' +
             'Many thanks again and I recommend Sibiu Guide Nico to everyone!',
@@ -94,12 +94,12 @@ export const reviews = [
     {
         id: 4,
         userAvatar: require('../Assets/Images/Users/4.jpg'),
-        userName: 'Tran Manh Tung',
-        reviewTime: '1 month ago',
+        userName: 'Trần Mạnh Tùng',
+        reviewTime: '1 month trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
-            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
+            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
             'The atmosphere is so special that it really felt like home to all of us. All respect for Nico who does a great job there; a true sample of excellent tour guide!\n' +
             'Many thanks again and I recommend Sibiu Guide Nico to everyone!',
@@ -127,12 +127,12 @@ export const reviews = [
     {
         id: 5,
         userAvatar: require('../Assets/Images/Users/5.jpg'),
-        userName: 'Nguyen Van Minh',
-        reviewTime: '2 months ago',
+        userName: 'Nguyễn Văn Minh',
+        reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
-            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
+            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
             'The atmosphere is so special that it really felt like home to all of us. All respect for Nico who does a great job there; a true sample of excellent tour guide!\n' +
             'Many thanks again and I recommend Sibiu Guide Nico to everyone!',
@@ -159,12 +159,12 @@ export const reviews = [
     {
         id: 6,
         userAvatar: require('../Assets/Images/Users/6.jpg'),
-        userName: 'Nguyen Van Hoan',
-        reviewTime: '2 months ago',
+        userName: 'Nguyễn Văn Hoàn',
+        reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
-            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
+            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
             'The atmosphere is so special that it really felt like home to all of us. All respect for Nico who does a great job there; a true sample of excellent tour guide!\n' +
             'Many thanks again and I recommend Sibiu Guide Nico to everyone!',
@@ -191,12 +191,12 @@ export const reviews = [
     {
         id: 7,
         userAvatar: require('../Assets/Images/Users/7.jpg'),
-        userName: 'Le Cong Thuong',
-        reviewTime: '2 months ago',
+        userName: 'Lê Công Thương',
+        reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
-            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
+            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
             'The atmosphere is so special that it really felt like home to all of us. All respect for Nico who does a great job there; a true sample of excellent tour guide!\n' +
             'Many thanks again and I recommend Sibiu Guide Nico to everyone!',
@@ -224,12 +224,12 @@ export const reviews = [
     {
         id: 8,
         userAvatar: require('../Assets/Images/Users/8.jpg'),
-        userName: 'Nguyen Thi Huyen',
-        reviewTime: '2 months ago',
+        userName: 'Nguyễn Thị Huyền',
+        reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
-            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
+            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
             'The atmosphere is so special that it really felt like home to all of us. All respect for Nico who does a great job there; a true sample of excellent tour guide!\n' +
             'Many thanks again and I recommend Sibiu Guide Nico to everyone!',
@@ -247,7 +247,7 @@ export const reviews = [
             'https://mytourcdn.com/upload_images/Image/Location%20Articles/5_1_2018/4/du-lich-Maldives-tu-tuc-mytour-3.jpg',
             'https://travel.com.vn/Images/tour/tfd_20150623_LUX-Maldives-06-0.jpg',
             'https://travel.com.vn/Images/tour/tfd_20150624_paradise-maldives-yoga-retreat.jpg',
-            'https://travel.com.vn/Images/tour/tfd_20150624_family-holidays-banner.jpg',
+            'https://travel.com.vn/Images/tour/tfd_20150624_family-holingày-banner.jpg',
             'https://travel.com.vn/Images/tour/tfd_20150624_sdsa.jpg',
             'https://travel.com.vn/Images/tour/tfd_20150623_masjid-al-sultan-.jpg',
             'https://mytourcdn.com/upload_images/Image/Location%20Articles/5_1_2018/4/du-lich-Maldives-tu-tuc-mytour-4.jpg',
@@ -257,12 +257,12 @@ export const reviews = [
     {
         id: 9,
         userAvatar: require('../Assets/Images/Users/9.jpg'),
-        userName: 'Doan Thi Hoai Thu',
-        reviewTime: '2 months ago',
+        userName: 'Đoàn Thị Hoài Thu',
+        reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
-            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
+            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
             'The atmosphere is so special that it really felt like home to all of us. All respect for Nico who does a great job there; a true sample of excellent tour guide!\n' +
             'Many thanks again and I recommend Sibiu Guide Nico to everyone!',
@@ -289,12 +289,12 @@ export const reviews = [
     {
         id: 10,
         userAvatar: require('../Assets/Images/Users/10.jpg'),
-        userName: 'Nguyen Quynh Trang',
-        reviewTime: '2 months ago',
+        userName: 'Nguyễn Quỳnh Trang',
+        reviewTime: '2 tháng trước',
         rate: Math.floor(Math.random() * 5) + 1,
         reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
-            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
+            'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great ngày there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
             'The atmosphere is so special that it really felt like home to all of us. All respect for Nico who does a great job there; a true sample of excellent tour guide!\n' +
             'Many thanks again and I recommend Sibiu Guide Nico to everyone!',
