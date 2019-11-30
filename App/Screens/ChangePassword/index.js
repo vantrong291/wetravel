@@ -30,17 +30,14 @@ class ChangePassword extends React.Component {
     }
 
     onPressChangePassword = () => {
-        if(this.state.password === '') {
-            this.onAlert("Lỗi","Bạn chưa nhập mật khẩu hiện tại")
-        }
-        else if(this.state.newPassword === '') {
-            this.onAlert("Lỗi","Bạn chưa nhập mật khẩu mới")
-        }
-        else if(this.state.confirmNewPassword === '') {
-            this.onAlert("Lỗi","Bạn chưa nhập lại mật khẩu mới")
-        }
-        else if(this.state.newPassword !== this.state.confirmNewPassword) {
-            this.onAlert("Lỗi","Mật khẩu bạn nhập không khớp. Xin vui lòng kiểm tra lại!")
+        if (this.state.password === '') {
+            this.onAlert('Lỗi', 'Bạn chưa nhập mật khẩu hiện tại')
+        } else if (this.state.newPassword === '') {
+            this.onAlert('Lỗi', 'Bạn chưa nhập mật khẩu mới')
+        } else if (this.state.confirmNewPassword === '') {
+            this.onAlert('Lỗi', 'Bạn chưa nhập lại mật khẩu mới')
+        } else if (this.state.newPassword !== this.state.confirmNewPassword) {
+            this.onAlert('Lỗi', 'Mật khẩu bạn nhập không khớp. Xin vui lòng kiểm tra lại!')
         }
     }
 
@@ -61,15 +58,15 @@ class ChangePassword extends React.Component {
     }
 
     onChangePassword = (e) => {
-        this.setState({password: e})
+        this.setState({ password: e })
     }
 
     onChangeNewPassword = (e) => {
-        this.setState({newPassword: e})
+        this.setState({ newPassword: e })
     }
 
     onChangeConfirmNewPassword = (e) => {
-        this.setState({confirmNewPassword: e})
+        this.setState({ confirmNewPassword: e })
     }
 
 
@@ -91,48 +88,63 @@ class ChangePassword extends React.Component {
                         paddingHorizontal: contants.padding,
                     }}>
                         <View>
-                            <View style={{marginBottom:10}}>
+                            <View style={{ marginBottom: 10 }}>
                                 <View>
-                                    <Text style={{fontSize: 15, fontWeight: 'bold'}}>Mật khẩu hiện tại</Text>
+                                    <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Mật khẩu hiện tại</Text>
                                 </View>
-                                <View style={{marginTop: 5}}>
+                                <View style={{ marginTop: 5 }}>
                                     <TextInput placeholder={'*********'}
                                                autoCompleteType={'password'}
                                                secureTextEntry={true}
                                                autoFocus
                                                defaultValue={this.state.password}
                                                onChangeText={this.onChangePassword}
-                                               style={{backgroundColor: '#fff', paddingHorizontal: 10, paddingVertical: 5, borderRadius: 2}}
+                                               style={{
+                                                   backgroundColor: '#fff',
+                                                   paddingHorizontal: 10,
+                                                   paddingVertical: 5,
+                                                   borderRadius: 2,
+                                               }}
                                     />
                                 </View>
                             </View>
-                            <View style={{marginBottom:10}}>
+                            <View style={{ marginBottom: 10 }}>
                                 <View>
-                                    <Text style={{fontSize: 15, fontWeight: 'bold'}}>Mật khẩu mới</Text>
+                                    <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Mật khẩu mới</Text>
                                 </View>
-                                <View style={{marginTop: 5}}>
+                                <View style={{ marginTop: 5 }}>
                                     <TextInput placeholder={'*********'}
                                                autoCompleteType={'password'}
                                                secureTextEntry={true}
                                                autoFocus
                                                defaultValue={this.state.newPassword}
                                                onChangeText={this.onChangeNewPassword}
-                                               style={{backgroundColor: '#fff', paddingHorizontal: 10, paddingVertical: 5, borderRadius: 2}}
+                                               style={{
+                                                   backgroundColor: '#fff',
+                                                   paddingHorizontal: 10,
+                                                   paddingVertical: 5,
+                                                   borderRadius: 2,
+                                               }}
                                     />
                                 </View>
                             </View>
-                            <View style={{marginBottom:10}}>
+                            <View style={{ marginBottom: 10 }}>
                                 <View>
-                                    <Text style={{fontSize: 15, fontWeight: 'bold'}}>Xác nhận mật khẩu mới</Text>
+                                    <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Xác nhận mật khẩu mới</Text>
                                 </View>
-                                <View style={{marginTop: 5}}>
+                                <View style={{ marginTop: 5 }}>
                                     <TextInput placeholder={'*********'}
                                                autoCompleteType={'password'}
                                                secureTextEntry={true}
                                                defaultValue={this.state.confirmNewPassword}
                                                onChangeText={this.onChangeConfirmNewPassword}
                                                autoFocus
-                                               style={{backgroundColor: '#fff', paddingHorizontal: 10, paddingVertical: 5, borderRadius: 2}}
+                                               style={{
+                                                   backgroundColor: '#fff',
+                                                   paddingHorizontal: 10,
+                                                   paddingVertical: 5,
+                                                   borderRadius: 2,
+                                               }}
                                     />
                                 </View>
                             </View>
