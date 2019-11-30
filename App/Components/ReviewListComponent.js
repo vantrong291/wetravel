@@ -86,7 +86,14 @@ const ReviewListComponent = ({ reviewItem = reviews[0], goReviewDetails, onPress
                                     friction={90}
                                     tension={100}>
                         <View style={{ flexDirection: 'row' }}>
-                            <Icon name={'heart-outline'} size={24} style={{ color: '#949aa8' }}/>
+                            {
+                                reviewItem.liked && <Icon name={'heart'} size={24}
+                                                   style={{ color: '#e74c56' }}/>
+                            }
+                            {
+                                !reviewItem.liked && <Icon name={'heart-outline'} size={24}
+                                                    style={{ color: '#949aa8' }}/>
+                            }
                         </View>
                         <View style={{ flexDirection: 'row' }}>
                             <Text style={styles.actionText}>{reviewItem.like}</Text>

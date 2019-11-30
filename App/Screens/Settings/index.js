@@ -7,7 +7,7 @@ import contants from '../../Theme/Constants'
 import AppHeader from '../../Components/AppHeader'
 
 import completeImage from '../../Assets/Images/confirmation.png'
-import { Button } from 'react-native-elements'
+import { Button, CheckBox } from 'react-native-elements'
 import { runAfter } from '../../Utils/asyncFunc'
 
 class Settings extends React.Component {
@@ -16,12 +16,15 @@ class Settings extends React.Component {
     // this.handleBackButtonClick = this.handleBackButtonClick.bind(this)
     this.state = {
       loading: true,
+      enableNoti: true,
+      enableEmail: true,
+      enableStatistic: false
     }
   };
 
   componentDidMount() {
-    runAfter(() => this.setState({ loading: false }), 2000)
-    // this.setState({ loading: false })
+    // runAfter(() => this.setState({ loading: false }), 2000)
+    this.setState({ loading: false })
   };
 
   goBack = () => {
@@ -40,13 +43,33 @@ class Settings extends React.Component {
         <ScrollView>
           {loading && <LoadingContainer height={550}/>}
           {!loading && <View style={{
-            marginTop: 20,
+            marginTop: 10,
             paddingBottom: 10,
             color: Colors.mainBackgroundColorTitle,
-            paddingHorizontal: contants.padding,
+            paddingHorizontal: 5,
           }}>
-            <View style={{ height: 550, justifyContent: 'center', alignItems: 'center' }}>
-
+            <View style={{}}>
+              <View>
+                <CheckBox
+                    title='Nhận thông báo ứng dụng'
+                    checked={this.state.enableNoti}
+                    onPress={() => this.setState({enableNoti: !this.state.enableNoti})}
+                />
+              </View>
+              <View>
+                <CheckBox
+                    title='Nhận thông báo Email'
+                    checked={this.state.enableEmail}
+                    onPress={() => this.setState({enableEmail: !this.state.enableEmail})}
+                />
+              </View>
+              <View>
+                <CheckBox
+                    title='Gửi dữ liệu phân tích'
+                    checked={this.state.enableStatistic}
+                    onPress={() => this.setState({enableStatistic: !this.state.enableStatistic})}
+                />
+              </View>
             </View>
 
           </View>}

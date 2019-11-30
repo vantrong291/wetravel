@@ -152,7 +152,7 @@ class Personal extends React.Component {
                                                                         style={{ color: Colors.navbarColor }}/>
                                             </View>
                                             <View style={styles.tagTextContainer}>
-                                                <Text style={styles.tagText}>Personal Infomation</Text>
+                                                <Text style={styles.tagText}>Thông tin cá nhân</Text>
                                             </View>
                                         </TouchableScale>
                                     </View>
@@ -167,7 +167,7 @@ class Personal extends React.Component {
                                                                         style={{ color: Colors.navbarColor }}/>
                                             </View>
                                             <View style={styles.tagTextContainer}>
-                                                <Text style={styles.tagText}>Add Credit Card</Text>
+                                                <Text style={styles.tagText}>Thêm thẻ thanh toán</Text>
                                             </View>
                                         </TouchableScale>
                                     </View>
@@ -182,7 +182,7 @@ class Personal extends React.Component {
                                                                         style={{ color: Colors.navbarColor }}/>
                                             </View>
                                             <View style={styles.tagTextContainer}>
-                                                <Text style={styles.tagText}>Change Password</Text>
+                                                <Text style={styles.tagText}>Thay đổi mật khẩu</Text>
                                             </View>
                                         </TouchableScale>
                                     </View>
@@ -200,7 +200,7 @@ class Personal extends React.Component {
                                                                         style={{ color: Colors.navbarColor }}/>
                                             </View>
                                             <View style={styles.tagTextContainer}>
-                                                <Text style={styles.tagText}>Coming Tour</Text>
+                                                <Text style={styles.tagText}>Tour sắp tới</Text>
                                             </View>
                                         </TouchableScale>
                                     </View>
@@ -215,7 +215,7 @@ class Personal extends React.Component {
                                                                         style={{ color: Colors.navbarColor }}/>
                                             </View>
                                             <View style={styles.tagTextContainer}>
-                                                <Text style={styles.tagText}>Recent Tour</Text>
+                                                <Text style={styles.tagText}>Tour mới đi</Text>
                                             </View>
                                         </TouchableScale>
                                     </View>
@@ -230,7 +230,7 @@ class Personal extends React.Component {
                                                                         style={{ color: Colors.navbarColor }}/>
                                             </View>
                                             <View style={styles.tagTextContainer}>
-                                                <Text style={styles.tagText}>Settings</Text>
+                                                <Text style={styles.tagText}>Cài đặt</Text>
                                             </View>
                                         </TouchableScale>
                                     </View>
@@ -268,15 +268,34 @@ class Personal extends React.Component {
                 >
                     <View style={{ backgroundColor: 'transparent' }}>
                         <View style={{ flexDirection: 'row', marginTop: 30, marginHorizontal: contants.padding }}>
-                            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Your reviews</Text>
-                            <TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>
-                                <Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>
-                            </TouchableHighlight>
+                            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Review của bạn</Text>
+                            {/*<TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>*/}
+                                {/*<Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>*/}
+                            {/*</TouchableHighlight>*/}
                         </View>
 
                         <FlatList
                             keyExtractor={this.keyExtractor}
-                            data={reviews}
+                            data={reviews.filter(item => item.id  === 1)}
+                            renderItem={({ item }) => <ReviewListComponent reviewItem={item}
+                                                                           goReviewDetails={() => this.goReviewDetails(item)}
+                                                                           onPressAction={this.handleOptions}
+                                                                           onPressShare={this.handleShare}
+                            />}
+                            style={{ paddingTop: 10, backgroundColor: 'transparent' }}
+                        />
+                    </View>
+                    <View style={{ backgroundColor: 'transparent' }}>
+                        <View style={{ flexDirection: 'row', marginTop: 30, marginHorizontal: contants.padding }}>
+                            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Review của bạn bè</Text>
+                            {/*<TouchableHighlight style={{ paddingTop: 4, marginLeft: 'auto' }}>*/}
+                                {/*<Text style={{ fontSize: 14, color: '#3284c6' }}>Xem tất cả</Text>*/}
+                            {/*</TouchableHighlight>*/}
+                        </View>
+
+                        <FlatList
+                            keyExtractor={this.keyExtractor}
+                            data={reviews.filter(item => item.id  !== 1)}
                             renderItem={({ item }) => <ReviewListComponent reviewItem={item}
                                                                            goReviewDetails={() => this.goReviewDetails(item)}
                                                                            onPressAction={this.handleOptions}

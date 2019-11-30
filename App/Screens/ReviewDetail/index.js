@@ -148,7 +148,14 @@ class ReviewDetail extends React.Component {
                                                     friction={90}
                                                     tension={100}>
                                         <View style={{ flexDirection: 'row' }}>
-                                            <Icon name={'heart-outline'} size={24} style={{ color: '#949aa8' }}/>
+                                            {
+                                                reviewItem.liked && <Icon name={'heart'} size={24}
+                                                                          style={{ color: '#e74c56' }}/>
+                                            }
+                                            {
+                                                !reviewItem.liked && <Icon name={'heart-outline'} size={24}
+                                                                           style={{ color: '#949aa8' }}/>
+                                            }
                                         </View>
                                         <View sty2le={{ flexDirection: 'row' }}>
                                             <Text style={styles.actionText}>{reviewItem.like}</Text>
