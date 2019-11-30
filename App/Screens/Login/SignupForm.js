@@ -48,7 +48,7 @@ export default class SignupForm extends Component {
         <View style={styles.form} ref={(ref) => this.formRef = ref}>
           <CustomTextInput
             ref={(ref) => this.mobileInputRef = ref}
-            placeholder={'Full name'}
+            placeholder={'Tên đầy đủ'}
             editable={!isLoading}
             returnKeyType={'next'}
             blurOnSubmit={false}
@@ -59,7 +59,7 @@ export default class SignupForm extends Component {
           />
           <CustomTextInput
             ref={(ref) => this.emailInputRef = ref}
-            placeholder={'Email'}
+            placeholder={'Địa chỉ email'}
             keyboardType={'email-address'}
             editable={!isLoading}
             returnKeyType={'next'}
@@ -71,7 +71,7 @@ export default class SignupForm extends Component {
           />
           <CustomTextInput
             ref={(ref) => this.passwordInputRef = ref}
-            placeholder={'Password'}
+            placeholder={'Mật khẩu'}
             editable={!isLoading}
             returnKeyType={'done'}
             secureTextEntry={true}
@@ -88,7 +88,7 @@ export default class SignupForm extends Component {
               isLoading={this.state.isBtnLoading}
               buttonStyle={styles.createAccountButton}
               textStyle={styles.createAccountButtonText}
-              text={'Create Account'}
+              text={'Tạo tài khoản'}
             />
           </View>
           <Text
@@ -99,7 +99,7 @@ export default class SignupForm extends Component {
             // duration={600}
             // delay={10}
           >
-            {'Already have an account?'}
+            {'Đã có tài khoản?'}
           </Text>
         </View>
       </View>

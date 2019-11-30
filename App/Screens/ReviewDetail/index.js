@@ -214,7 +214,7 @@ class ReviewDetail extends React.Component {
 
                             <View
                                 style={{ flexDirection: 'row', paddingHorizontal: contants.padding, marginBottom: 20 }}>
-                                <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Comments</Text>
+                                <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#333' }}>Nhận xét và phản hồi</Text>
                             </View>
                             <CommentComponent placeholder={'Bạn nghĩ gì về review này ?'}/>
                             {

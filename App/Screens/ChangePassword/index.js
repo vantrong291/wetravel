@@ -69,6 +69,23 @@ class ChangePassword extends React.Component {
         this.setState({ confirmNewPassword: e })
     }
 
+    onPressForgotPassword = () => {
+        Alert.alert(
+            'Quên mật khẩu',
+            'Nếu bạn chắc chắn quên mật khẩu, bấm "Xác nhận" để chúng tôi gửi mã reset mật khẩu tới số điện thoại của bạn',
+            [
+                // {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
+                {
+                    text: 'Hủy bỏ',
+                    onPress: () => console.log('Cancel Pressed'),
+                    style: 'cancel',
+                },
+                { text: 'Xác nhận', onPress: () => this.onAlert("Thành công", "Vui lòng kiểm tra tin nhắn điện thoại của bạn") },
+            ],
+            { cancelable: true },
+        )
+    }
+
 
     render() {
         const loading = this.state.loading
@@ -165,6 +182,24 @@ class ChangePassword extends React.Component {
                                     onPress={this.onPressChangePassword}
                                 />
                             </View>
+                            <View style={{ flexDirection: 'row', marginTop: 20 }}>
+                                <Button
+                                    // icon={
+                                    //   <Icon name="book-plus" size={20} style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
+                                    // }
+                                    title="Quên mật khẩu?"
+                                    titleStyle={{ fontSize: 15 }}
+                                    buttonStyle={{
+                                        width: '100%',
+                                        paddingVertical: 10,
+                                        backgroundColor: Colors.error,
+                                        borderRadius: 2,
+                                    }}
+                                    containerStyle={{ width: '100%' }}
+                                    onPress={this.onPressForgotPassword}
+                                />
+                            </View>
+
 
                         </View>
 

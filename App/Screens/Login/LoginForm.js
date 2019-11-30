@@ -49,7 +49,7 @@ export default class LoginForm extends Component {
           <CustomTextInput
             name={'email'}
             ref={(ref) => this.emailInputRef = ref}
-            placeholder={'Email'}
+            placeholder={'Địa chỉ email'}
             keyboardType={'email-address'}
             editable={!isLoading}
             returnKeyType={'next'}
@@ -62,7 +62,7 @@ export default class LoginForm extends Component {
           <CustomTextInput
             name={'password'}
             ref={(ref) => this.passwordInputRef = ref}
-            placeholder={'Password'}
+            placeholder={'Mật khẩu'}
             editable={!isLoading}
             returnKeyType={'done'}
             secureTextEntry={true}
@@ -79,7 +79,7 @@ export default class LoginForm extends Component {
               isLoading={this.state.isBtnLoading}
               buttonStyle={styles.loginButton}
               textStyle={styles.loginButtonText}
-              text={'Log In'}
+              text={'Đăng nhập'}
             />
           </View>
           <Text
@@ -90,7 +90,7 @@ export default class LoginForm extends Component {
             // duration={600}
             // delay={10}
           >
-            {'Not registered yet?'}
+            {'Chưa có tài khoản?'}
           </Text>
         </View>
       </View>
