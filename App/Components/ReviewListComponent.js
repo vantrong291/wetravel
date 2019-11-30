@@ -1,6 +1,6 @@
 import React from 'react'
-import { Text, TouchableOpacity, View } from 'react-native'
-import { Image } from 'react-native-elements'
+import { Image, Text, TouchableOpacity, View } from 'react-native'
+// import { Image } from 'react-native-elements'
 import RateComponent from './RateComponent'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { reviews } from '../Data/reviews'
@@ -30,8 +30,9 @@ const ReviewListComponent = ({ reviewItem = reviews[0], goReviewDetails, onPress
         <View style={styles.card}>
             <View style={styles.userRow}>
                 <View style={{}}>
-                    <Image source={reviewItem.userAvatar}
-                           style={{ width: 40, height: 40, borderRadius: 20 }}/>
+                    <Image
+                        source={reviewItem.userAvatar}
+                        style={{ width: 40, height: 40, borderRadius: 20 }}/>
                 </View>
                 <View style={styles.userColumn}>
                     <View style={{ flexDirection: 'row' }}>
