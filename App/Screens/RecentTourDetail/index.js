@@ -43,7 +43,7 @@ class RecentTourDetail extends React.Component {
         const tour = navigation.getParam('tour')
         const title = tour.destination
         const paymentMethod = cards[Math.floor(Math.random() * 4)]
-        const tourOptionsPrice = '12.000.000'
+        const tourOptionsPrice = tour.tours[0].price ? tour.tours[0].price : '12.000.000'
         const marginTop = paymentMethod.expire ? 0 : 8
         const height = paymentMethod.expire ? 15 : 0
 
