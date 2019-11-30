@@ -5,16 +5,16 @@ export const reviews = [
         userName: 'Pham Van Trong',
         reviewTime: '25 minutes ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Du lịch phải là tham gia những hoạt động tham quan, vui chơi giải trí ban ngày tại những địa điểm nổi tiếng chuyên được khai thác phục vụ du khách? Quan niệm này giờ đã không còn đúng khi sự phát triển của các hoạt động về đêm ngày càng được quan tâm chú trọng. Tương tự, đến với Hội An, bạn cũng nhất định đừng bỏ qua 6 trải nghiệm khi “mặt trời khuất núi” được báo nước ngoài hết lời gợi ý sau đây để có một chuyến đi trọn vẹn.\nKhông ít khách du lịch trong và ngoài nước đã phải sửng sốt trước vẻ đẹp Hội An khi ánh mặt trời dần được thay thế bởi những ngọn đèn đường, và khẳng định vẻ đẹp ấy thậm chí còn lung linh và cuốn hút hơn gấp bội lúc trời sáng. Vì vậy dạo bộ quanh các con đường khi phố đã lên đèn là lựa chọn của nhiều người.',
         like: Math.floor(Math.random() * 100) + 1,
         comment: Math.floor(Math.random() * 20) + 1,
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
         liked: false,
-        place: 'Hoi An',
+        place: 'Hội An',
         continents: 'Châu Á',
-        country: 'VietNam',
+        country: 'Việt Nam',
         images: [
             'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-1.jpg',
             'https://static.mytour.vn/upload_images/Image/Location/29_9_2015/7-du-lich-pho-co-hoi-an-mytour-2.jpg',
@@ -34,7 +34,7 @@ export const reviews = [
         userName: 'Tran Huu Tuan',
         reviewTime: '1 hours ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -45,9 +45,9 @@ export const reviews = [
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
         liked: false,
-        place: 'Hoi An',
+        place: 'Vịnh Hạ Long',
         continents: 'Châu Á',
-        country: 'VietNam',
+        country: 'Việt Nam',
         images: [
             'https://mytourcdn.com/upload_images/Image/Location/23_11_2015/Du-lich-vinh-ha-long-mytour-2.jpg',
             'https://mytourcdn.com/upload_images/Image/Location/23_11_2015/Du-lich-vinh-ha-long-mytour-3.jpg',
@@ -64,7 +64,7 @@ export const reviews = [
         userName: 'Nguyen Quang Thai',
         reviewTime: '25 days ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -74,10 +74,10 @@ export const reviews = [
         comment: Math.floor(Math.random() * 20) + 1,
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
-        liked: false,
-        place: 'Hoi An',
+        liked: true,
+        place: 'Đà Lạt',
         continents: 'Châu Á',
-        country: 'VietNam',
+        country: 'Việt Nam',
         images: [
             'https://staticproxy.mytourcdn.com/1000x600,q90/resources/pictures/hotels/12/dvf1507175863_terracotta_hotel_and_resort_da_lat.jpg',
             'https://staticproxy.mytourcdn.com/1000x600,q90/resources/pictures/hotels/12/4th1507175866_terracotta_hotel_and_resort_da_lat.jpg',
@@ -97,7 +97,7 @@ export const reviews = [
         userName: 'Tran Manh Tung',
         reviewTime: '1 month ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -108,9 +108,9 @@ export const reviews = [
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
         liked: false,
-        place: 'Hoi An',
+        place: 'Phú Quốc',
         continents: 'Châu Á',
-        country: 'VietNam',
+        country: 'Việt Nam',
         images: [
             'https://staticproxy.mytourcdn.com/1000x600,q90/resources/pictures/hotels/2/0xa1533984190_premier_village_phu_quoc_resort.jpg',
             'https://staticproxy.mytourcdn.com/1000x600,q90/resources/pictures/hotels/2/DP3bk5hKSVO6QqK0WSyMlg-26-05.%2520Overviewjpg.jpeg',
@@ -130,7 +130,7 @@ export const reviews = [
         userName: 'Nguyen Van Minh',
         reviewTime: '2 months ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -141,9 +141,9 @@ export const reviews = [
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
         liked: false,
-        place: 'Hoi An',
+        place: 'Sapa',
         continents: 'Châu Á',
-        country: 'VietNam',
+        country: 'Việt Nam',
         images: [
             'https://mytourcdn.com/upload_images/Image/Location/24_10_2016/8/mua-thu-Sapa-mytour-1.jpg',
             'https://mytourcdn.com/upload_images/Image/Location/24_10_2016/8/mua-thu-Sapa-mytour-2.jpg',
@@ -162,7 +162,7 @@ export const reviews = [
         userName: 'Nguyen Van Hoan',
         reviewTime: '2 months ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -173,9 +173,9 @@ export const reviews = [
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
         liked: false,
-        place: 'Hoi An',
+        place: 'Đồ Sơn',
         continents: 'Châu Á',
-        country: 'VietNam',
+        country: 'Việt Nam',
         images: [
             'https://mytourcdn.com/upload_images/Image/Minh%20Hoang/Linh%201/13/3/do-son-1.jpg',
             'https://mytourcdn.com/upload_images/Image/Minh%20Hoang/Linh%201/13/3/do-son-2.jpg',
@@ -194,7 +194,7 @@ export const reviews = [
         userName: 'Le Cong Thuong',
         reviewTime: '2 months ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -205,9 +205,9 @@ export const reviews = [
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
         liked: false,
-        place: 'Hoi An',
+        place: 'Bangkok',
         continents: 'Châu Á',
-        country: 'VietNam',
+        country: 'Thái Lan',
         images: [
             'https://mytourcdn.com/upload_images/T%C6%B0%E1%BB%9Dng/190121%20-%20BKK%20-%20Du%20lich%20Bangkok%20mua%20nao%20tot%20nhat/du%20lich%20bangkok%20nen%20o%20khu%20nao%20(3).jpg',
             'https://mytourcdn.com/upload_images/T%C6%B0%E1%BB%9Dng/190121%20-%20BKK%20-%20Du%20lich%20Bangkok%20mua%20nao%20tot%20nhat/du%20lich%20bangkok%20nen%20o%20khu%20nao%20(5)(1).jpg',
@@ -227,7 +227,7 @@ export const reviews = [
         userName: 'Nguyen Thi Huyen',
         reviewTime: '2 months ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -238,9 +238,9 @@ export const reviews = [
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
         liked: false,
-        place: 'Hoi An',
+        place: 'Maldives',
         continents: 'Châu Á',
-        country: 'VietNam',
+        country: 'Maldives',
         images: [
             'https://mytourcdn.com/upload_images/Image/Location%20Articles/5_1_2018/4/du-lich-Maldives-tu-tuc-mytour-1.jpg',
             'https://mytourcdn.com/upload_images/Image/Location%20Articles/5_1_2018/4/du-lich-Maldives-tu-tuc-mytour-2.jpg',
@@ -260,7 +260,7 @@ export const reviews = [
         userName: 'Doan Thi Hoai Thu',
         reviewTime: '2 months ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -271,9 +271,9 @@ export const reviews = [
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
         liked: false,
-        place: 'Hoi An',
+        place: 'Hawaii',
         continents: 'Châu Á',
-        country: 'VietNam',
+        country: 'Hoa Kỳ',
         images: [
             'https://mytourcdn.com/upload_images/Image/Location/9_6_2016/12/du-lich-hawaii-my-mytour-2.jpg',
             'https://mytourcdn.com/upload_images/Image/Location/9_6_2016/12/du-lich-hawaii-my-mytour-3.jpg',
@@ -292,7 +292,7 @@ export const reviews = [
         userName: 'Nguyen Quynh Trang',
         reviewTime: '2 months ago',
         rate: Math.floor(Math.random() * 5) + 1,
-        reviewTitle: 'Excellent',
+        reviewTitle: 'Tuyệt vời',
         reviewContent: 'Without doubt one of the favourite city in Romania ( East Europe/Transylvania!).\n' +
             'Upon arrival we were warmly welcomed by Sibiu Guide Nico , our names were mentioned on the board and we felt welcomed and with such a friendly atmosphere we had a fantastic start! The guide and tour was extremely good, very flexible (appreciate this!) and for that she deserves a special thanks. We had two great days there, which obviously also added up to the experience.\n' +
             'Nico is such a warm personality and highly motivated guide (recommendable!). I truly enjoyed walking the six of us through the area. The scenery was beautiful and it was a relieve to walk in such a quiet and peaceful environment. The natural bath on the end was a great way to end the tour.\n' +
@@ -303,9 +303,9 @@ export const reviews = [
         share: Math.floor(Math.random() * 10) + 1,
         dislike: Math.floor(Math.random() * 5) + 1,
         liked: false,
-        place: 'Hoi An',
-        continents: 'Châu Á',
-        country: 'VietNam',
+        place: 'Paris',
+        continents: 'Châu Âu',
+        country: 'Pháp',
         images: [
             'https://mytourcdn.com/upload_images/Image/Mai%20Loc/Paris/41589_1377483029.jpg',
             'https://mytourcdn.com/upload_images/Image/Mai%20Loc/Paris/23960_1363671945.jpg',

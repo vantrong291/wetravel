@@ -126,7 +126,7 @@ class ReviewDetail extends React.Component {
                                 <View style={styles.location}>
                                     <View style={styles.locationCountry}>
                                         <View style={{ flexDirection: 'row' }}>
-                                            <Text style={styles.tagTitle}>Country</Text>
+                                            <Text style={styles.tagTitle}>Quốc gia</Text>
                                         </View>
                                         <View style={{ flexDirection: 'row' }}>
                                             <Text
@@ -135,7 +135,7 @@ class ReviewDetail extends React.Component {
                                     </View>
                                     <View style={styles.locationPlace}>
                                         <View style={{ flexDirection: 'row' }}>
-                                            <Text style={styles.tagTitle}>Place</Text>
+                                            <Text style={styles.tagTitle}>Địa danh</Text>
                                         </View>
                                         <View style={{ flexDirection: 'row' }}>
                                             <Text st0yle={styles.tagText}>{reviewItem.place}</Text>
