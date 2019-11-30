@@ -112,6 +112,23 @@ class RecentTourDetail extends React.Component {
                                         </View>
                                         <View style={{ flexDirection: 'row' }}>
                                             <View style={{
+                                                width: '100%',
+                                                flexWrap: 'wrap',
+                                                marginVertical: 5,
+                                            }}>
+                                                <Text style={styles.label}>Khởi hành tại</Text>
+                                                <View style={{
+                                                    marginVertical: 5,
+                                                    // paddingHorizontal: 10,
+                                                    paddingVertical: 5,
+                                                    height: 40,
+                                                }}>
+                                                    <Text style={styles.content}>{'144 Xuân Thủy, Cầu Giấy'}</Text>
+                                                </View>
+                                            </View>
+                                        </View>
+                                        <View style={{ flexDirection: 'row' }}>
+                                            <View style={{
                                                 width: '50%',
                                                 flexWrap: 'wrap',
                                                 marginVertical: 5,
