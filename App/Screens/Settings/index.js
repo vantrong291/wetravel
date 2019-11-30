@@ -36,7 +36,7 @@ class Settings extends React.Component {
     return (
       <View style={{ flex: 1, backgroundColor: Colors.mainBackgroundColor }}>
 
-        <AppHeader onItemPress={this.goBack} title={"Settings"} barStyle={'dark-content'}
+        <AppHeader onItemPress={this.goBack} title={"Cài dặt"} barStyle={'dark-content'}
         backgroundColor={Colors.mainBackgroundColor} textColor={Colors.mainBackgroundColorTitle}/>
         {/*<StatusBar translucent backgroundColor={Colors.mainBackgroundColor} barStyle="dark-content"/>*/}
 

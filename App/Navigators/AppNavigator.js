@@ -25,6 +25,7 @@ import ComingTours from 'App/Screens/ComingTours'
 import RecentTours from 'App/Screens/RecentTours'
 import Settings from 'App/Screens/Settings'
 import ReviewEditor from 'App/Screens/ReviewEditor'
+import RecentTourDetail from 'App/Screens/RecentTourDetail'
 
 import CustomTabBar from './CustomTabBar'
 import { Icon as EIcon, withBadge } from 'react-native-elements'
@@ -133,6 +134,7 @@ const StackNavigator = createStackNavigator(
         SearchResults: SearchResults,
         ListTours: ListTours,
         ReviewEditor: ReviewEditor,
+        RecentTourDetail: RecentTourDetail
     },
     {
         initialRouteName: 'Main',
