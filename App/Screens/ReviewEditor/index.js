@@ -131,7 +131,7 @@ class ReviewEditor extends React.Component {
                                     defaultValue={this.state.destination}
                                     placeholderTextColor={'#c7c7c7'}
                                     autoFocus
-                                    autoCapitalize
+                                    autoCapitaliz={'words'}
                                 />
                             </View>
                             <View style={{ marginTop: 0 }}>
@@ -140,13 +140,13 @@ class ReviewEditor extends React.Component {
                                     placeholderTextColor={'#c7c7c7'}
                                     onChangeText={this.onChangeReviewSummary}
                                     defaultValue={this.state.reviewSummary}
+                                    autoCapitaliz={'sentences'}
                                 />
                             </View>
                             <View style={{ marginTop: 0 }}>
                                 <Textarea
                                     containerStyle={styles.textareaContainer}
                                     style={styles.textarea}
-                                    autoCapitalize
                                     maxLength={10000}
                                     onChangeText={this.onChangeContent}
                                     defaultValue={this.state.content}
@@ -177,7 +177,7 @@ class ReviewEditor extends React.Component {
                                         borderRadius: 2,
                                     }}
                                     containerStyle={{ width: '100%' }}
-                                    onPress={() => alert('done')}
+                                    onPress={() => alert('Bài review đang được đăng...')}
                                 />
                             </View>
                             <View>
