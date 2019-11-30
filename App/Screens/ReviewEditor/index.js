@@ -1,5 +1,5 @@
 import React from 'react'
-import { Alert, Image, ScrollView, Text, TouchableOpacity, View } from 'react-native'
+import { Alert, Image, ScrollView, Text, TouchableOpacity, View, TextInput } from 'react-native'
 import { PropTypes } from 'prop-types'
 import LoadingContainer from '../../Components/LoadingContainer'
 import Colors from '../../Theme/Colors'
@@ -21,6 +21,8 @@ class ReviewEditor extends React.Component {
         this.state = {
             loading: true,
             content: '',
+            destination: '',
+            reviewSummary: ''
         }
     };
 
@@ -35,7 +37,7 @@ class ReviewEditor extends React.Component {
     }
 
     goBack = () => {
-        if (this.state.content === '') this.props.navigation.goBack()
+        if (this.state.content === '' && this.state.reviewSummary === '' && this.state.destination === '') this.props.navigation.goBack()
         else {
             Alert.alert(
                 'Chưa hoàn tất',
@@ -54,8 +56,16 @@ class ReviewEditor extends React.Component {
         }
     }
 
-    onChange = (e) => {
+    onChangeContent = (e) => {
         this.setState({ content: e })
+    }
+
+    onChangeDestination = (e) => {
+        this.setState({ destination: e })
+    }
+
+    onChangeReviewSummary = (e) => {
+        this.setState({ reviewSummary: e })
     }
 
     onSelectPhotoSource = (index) => {
@@ -84,7 +94,7 @@ class ReviewEditor extends React.Component {
                         paddingHorizontal: contants.padding,
                     }}>
                         <View style={{
-                            height: 550,
+                            // height: 550,
                             // justifyContent: 'center',
                             // alignItems: 'center'
                         }}>
@@ -115,12 +125,30 @@ class ReviewEditor extends React.Component {
                                 <Rating showRating={false} imageSize={30} fractions={0} startingValue={4} />
                             </View>
                             <View style={{ marginTop: 0 }}>
+                                <TextInput
+                                    placeholder={'Địa điểm review...'}
+                                    onChangeText={this.onChangeDestination}
+                                    defaultValue={this.state.destination}
+                                    placeholderTextColor={'#c7c7c7'}
+                                    autoFocus
+                                    autoCapitalize
+                                />
+                            </View>
+                            <View style={{ marginTop: 0 }}>
+                                <TextInput
+                                    placeholder={'Tiêu đề review...'}
+                                    placeholderTextColor={'#c7c7c7'}
+                                    onChangeText={this.onChangeReviewSummary}
+                                    defaultValue={this.state.reviewSummary}
+                                />
+                            </View>
+                            <View style={{ marginTop: 0 }}>
                                 <Textarea
                                     containerStyle={styles.textareaContainer}
                                     style={styles.textarea}
-                                    autoFocus
+                                    autoCapitalize
                                     maxLength={10000}
-                                    onChangeText={this.onChange}
+                                    onChangeText={this.onChangeContent}
                                     defaultValue={this.state.content}
                                     placeholder={'Bạn đang nghĩ gì?'}
                                     placeholderTextColor={'#c7c7c7'}
