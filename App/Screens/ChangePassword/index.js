@@ -133,7 +133,6 @@ class ChangePassword extends React.Component {
                                     <TextInput placeholder={'*********'}
                                                autoCompleteType={'password'}
                                                secureTextEntry={true}
-                                               autoFocus
                                                defaultValue={this.state.newPassword}
                                                onChangeText={this.onChangeNewPassword}
                                                style={{
@@ -155,7 +154,6 @@ class ChangePassword extends React.Component {
                                                secureTextEntry={true}
                                                defaultValue={this.state.confirmNewPassword}
                                                onChangeText={this.onChangeConfirmNewPassword}
-                                               autoFocus
                                                style={{
                                                    backgroundColor: '#fff',
                                                    paddingHorizontal: 10,
@@ -199,10 +197,32 @@ class ChangePassword extends React.Component {
                                     onPress={this.onPressForgotPassword}
                                 />
                             </View>
-
-
+                            {/*<View style={{ flexDirection: 'row', marginTop: 20 }}>*/}
+                                {/*<Button*/}
+                                    {/*title="Quên mật khẩu?"*/}
+                                    {/*titleStyle={{ fontSize: 15 }}*/}
+                                    {/*buttonStyle={{*/}
+                                        {/*paddingVertical: 10,*/}
+                                        {/*paddingHorizontal: 15,*/}
+                                        {/*backgroundColor: Colors.error,*/}
+                                        {/*borderRadius: 2,*/}
+                                    {/*}}*/}
+                                    {/*onPress={this.onPressForgotPassword}*/}
+                                {/*/>*/}
+                                {/*<Button*/}
+                                    {/*title="Xác nhận"*/}
+                                    {/*titleStyle={{ fontSize: 15 }}*/}
+                                    {/*buttonStyle={{*/}
+                                        {/*paddingVertical: 10,*/}
+                                        {/*paddingHorizontal: 15,*/}
+                                        {/*backgroundColor: Colors.navbarColor,*/}
+                                        {/*borderRadius: 2,*/}
+                                    {/*}}*/}
+                                    {/*containerStyle={{ marginLeft: 'auto' }}*/}
+                                    {/*onPress={this.onPressChangePassword}*/}
+                                {/*/>*/}
+                            {/*</View>*/}
                         </View>
-
                     </View>}
                 </ScrollView>
             </View>
