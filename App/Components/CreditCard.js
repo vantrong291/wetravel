@@ -14,6 +14,8 @@ export const CreditCard = ({ title, image, onItemPress }) => {
                 backgroundColor: "#fff",
                 paddingHorizontal: 20,
                 paddingVertical: 5,
+                justifyContent: 'center',
+                alignItems: 'center',
             }}>
                 <Image source={stringToImage(image)} style={{ width: 60, height: 60 }}/>
             </View>
