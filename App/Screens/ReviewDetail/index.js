@@ -78,7 +78,7 @@ class ReviewDetail extends React.Component {
         return (
             <View style={{ flex: 1, backgroundColor: Colors.mainBackgroundColor }}>
                 <AppHeader onItemPress={this.goBack} title={reviewItem.userName + ' - ' + reviewItem.place}
-                           titleSize={18} barStyle={'dark-content'}
+                           titleSize={16} barStyle={'dark-content'}
                            backgroundColor={Colors.mainBackgroundColor} textColor={Colors.mainBackgroundColorTitle}/>
                 <ScrollView>
                     {loading && <LoadingContainer height={550}/>}
