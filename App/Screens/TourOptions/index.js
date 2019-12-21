@@ -11,6 +11,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import { Button } from 'react-native-elements'
 import TouchableScale from 'react-native-touchable-scale'
 import Timeline from 'react-native-timeline-listview'
+import { formatter } from '../../Utils/currencyFomatter'
 
 
 class TourOptions extends React.Component {
@@ -44,7 +45,7 @@ class TourOptions extends React.Component {
                 ],
             },
             tourOptionsSeats: 1,
-            tourOptionsPrice: 120,
+            tourOptionsPrice: 7000000,
 
         }
     };
@@ -148,15 +149,15 @@ class TourOptions extends React.Component {
                                     uniqueKey="from"
                                     single={true}
                                     // subKey="children"
-                                    placeholder="Your location ..."
+                                    placeholder="Vị trí của bạn ..."
                                     // showDropDownst={true}
                                     // readOnlyHeadings={true}
                                     displayKey={'from'}
                                     onSelectedItemsChange={this.onSelectedItemsChange}
                                     selectedItems={this.state.selectedItems}
                                     containerStyle={{ width: '100%' }}
-                                    searchPlaceholderText={'Search place...'}
-                                    confirmText={'Select'}
+                                    searchPlaceholderText={'Tìm kiếm ...'}
+                                    confirmText={'Chọn'}
                                 />
                             </View>
                         </View>
@@ -198,6 +199,13 @@ class TourOptions extends React.Component {
                                         <TouchableScale activeScale={0.95}
                                                         friction={90}
                                                         tension={100}
+                                                        style={{
+                                                            backgroundColor: '#fff',
+                                                            paddingVertical: 5,
+                                                            paddingHorizontal: 10,
+                                                            borderRadius: 3,
+                                                            elevation: 1,
+                                                        }}
                                                         onPress={() => this.subtractionSeat()}
                                         >
                                             <Icon name={'ios-remove'} size={25}
@@ -206,11 +214,28 @@ class TourOptions extends React.Component {
                                     </View>
                                     <View style={{ width: '40%', justifyContent: 'center', alignItems: 'center' }}>
                                         <Text style={styles.content}>{seats}</Text>
+                                        {/*<TextInput placeholder={'Tên người dùng'}*/}
+                                        {/*defaultValue={seats}*/}
+                                        {/*// onChangeText={this.onChangePassword}*/}
+                                        {/*style={{*/}
+                                        {/*backgroundColor: '#fff',*/}
+                                        {/*paddingHorizontal: 10,*/}
+                                        {/*paddingVertical: 5,*/}
+                                        {/*borderRadius: 2,*/}
+                                        {/*}}*/}
+                                        {/*/>*/}
                                     </View>
                                     <View style={{ width: '30%', justifyContent: 'center', alignItems: 'center' }}>
                                         <TouchableScale activeScale={0.95}
                                                         friction={90}
                                                         tension={100}
+                                                        style={{
+                                                            backgroundColor: '#fff',
+                                                            paddingVertical: 5,
+                                                            paddingHorizontal: 10,
+                                                            borderRadius: 3,
+                                                            elevation: 1,
+                                                        }}
                                                         onPress={() => this.additionSeat()}
                                         >
                                             <Icon name={'ios-add'} size={25}
@@ -232,7 +257,7 @@ class TourOptions extends React.Component {
                                     paddingVertical: 5,
                                     height: 40,
                                 }}>
-                                    <Text style={styles.content}>{price + ' ' + selectedTour.currency}</Text>
+                                    <Text style={styles.content}>{formatter(price) + ' ' + selectedTour.currency}</Text>
                                 </View>
                             </View>
                         </View>
@@ -324,24 +349,11 @@ class TourOptions extends React.Component {
                                         }}
                                         innerCircle={'dot'}
                                     />
-                                    {/*{*/}
-                                    {/*selectedTour.timeline.map((item, index) => (*/}
-                                    {/*<View key={index}>*/}
-                                    {/*<Text style={styles.timelineTitle}>{index + 1}. {item.partTitle}</Text>*/}
-                                    {/*{item.partContent.map((part, partIndex) => (*/}
-                                    {/*<Text key={partIndex} style={styles.timelineText}>+ {part}</Text>*/}
-                                    {/*))}*/}
-                                    {/*</View>*/}
-                                    {/*))*/}
-                                    {/*}*/}
                                 </View>
                             </View>
                         </View>
                         <View style={{ flexDirection: 'row' }}>
                             <Button
-                                // icon={
-                                //   <Icon name="book-plus" size={20} style={{ marginRight: 5, color: Colors.navbarTextColor }}/>
-                                // }
                                 title="Thanh toán"
                                 titleStyle={{ fontSize: 15 }}
                                 buttonStyle={{

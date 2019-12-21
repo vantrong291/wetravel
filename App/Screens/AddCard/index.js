@@ -10,52 +10,49 @@ import LoadingContainer from '../../Components/LoadingContainer'
 
 
 class AddCard extends React.Component {
-  constructor(props) {
-    super(props)
-    // this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
-    this.state = {
-      loading: true,
+    constructor(props) {
+        super(props)
+        // this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
+        this.state = {
+            loading: true,
+        }
+    };
+
+    componentDidMount() {
+        runAfter(() => this.setState({ loading: false }), 500)
+        // this.setState({ loading: false })
+    };
+
+    _onChange = form => console.log(form)
+
+
+    goBack = () => {
+        this.props.navigation.goBack()
     }
-  };
 
-  componentDidMount() {
-    runAfter(() => this.setState({ loading: false }), 500)
-    // this.setState({ loading: false })
-  };
+    render() {
+        const loading = this.state.loading
+        return (
+            <View style={{ flex: 1, backgroundColor: Colors.mainBackgroundColor }}>
 
-  _onChange = form => console.log(form)
-
-
-  goBack = () => {
-    this.props.navigation.goBack()
-  }
-
-  render() {
-    const loading = this.state.loading
-    return (
-      <View style={{ flex: 1, backgroundColor: Colors.mainBackgroundColor }}>
-
-        <AppHeader onItemPress={this.goBack} title={'Thêm thẻ quốc tế'} barStyle={'dark-content'}
-                   backgroundColor={Colors.mainBackgroundColor} textColor={Colors.mainBackgroundColorTitle}/>
-        {/*<StatusBar translucent backgroundColor={Colors.mainBackgroundColor} barStyle="dark-content"/>*/}
-
-        <ScrollView>
-          {loading && <LoadingContainer height={550}/>}
-          {!loading && <View style={{
-            marginTop: 20,
-            paddingBottom: 10,
-            color: Colors.mainBackgroundColorTitle,
-            paddingHorizontal: contants.padding,
-          }}>
-            <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-              <CreditCardInput onChange={this._onChange}/>
+                <AppHeader onItemPress={this.goBack} title={'Thêm thẻ quốc tế'} barStyle={'dark-content'}
+                           backgroundColor={Colors.mainBackgroundColor} textColor={Colors.mainBackgroundColorTitle}/>
+                <ScrollView>
+                    {loading && <LoadingContainer height={550}/>}
+                    {!loading && <View style={{
+                        marginTop: 20,
+                        paddingBottom: 10,
+                        color: Colors.mainBackgroundColorTitle,
+                        paddingHorizontal: contants.padding,
+                    }}>
+                        <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+                            <CreditCardInput onChange={this._onChange}/>
+                        </View>
+                    </View>}
+                </ScrollView>
             </View>
-
-          </View>}
-        </ScrollView>
-      </View>
-    )
-  }
+        )
+    }
 }
 
 export default AddCard

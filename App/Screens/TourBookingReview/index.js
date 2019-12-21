@@ -11,6 +11,7 @@ import { stringToImage } from '../../Utils/stringToImage'
 
 import qrImage from '../../Assets/Images/Payments/qr-code.png'
 import { Button } from 'react-native-elements'
+import { formatter } from '../../Utils/currencyFomatter'
 
 class TourBookingReview extends React.Component {
   constructor(props) {
@@ -212,10 +213,10 @@ class TourBookingReview extends React.Component {
                   <View style={{ width: '55%', padding: 10 }}>
                     <Text style={{ fontSize: 11, color: '#fff' }}>Tổng chi phí</Text>
                     <Text style={{
-                      fontSize: 30,
+                      fontSize: 25,
                       fontWeight: 'bold',
                       color: '#fff',
-                    }}>{tourOptionsPrice + ' ' + selectedTour.currency}</Text>
+                    }}>{formatter(tourOptionsPrice) + ' ' + selectedTour.currency}</Text>
                     <Text style={{ fontSize: 11, color: '#fff' }}>
                       Bạn có thể sử dụng mã QR này để chi trả và xem lại lịch sử thanh toán cho tour này
                     </Text>

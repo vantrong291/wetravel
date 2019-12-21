@@ -13,7 +13,7 @@ export default {
     fontSize: 18,
     fontWeight: 'bold',
     // color: Colors.mainBackgroundColorNormalText
-    color: Colors.success
+    color: Colors.mainColor
   },
   timelineText: {
     textAlign: 'justify',
