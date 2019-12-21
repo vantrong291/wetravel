@@ -84,7 +84,7 @@ class CardList extends React.Component {
                                     nước</Text>
                             </View>
                             <View style={{ flexDirection: 'row' }}>
-                                <TouchableOpacity style={{}}
+                                <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                                                   onPress={() => this.onAlert(INTRA_CARDS[0])}
                                 >
                                     <View style={{
@@ -98,10 +98,10 @@ class CardList extends React.Component {
                                         justifyContent: 'center',
                                     }}>
                                         <Image source={stringToImage(INTRA_CARDS[0])}
-                                               style={{ width: 80, height: 35 }}/>
+                                               style={{ width: 65, height: 28 }}/>
                                     </View>
                                 </TouchableOpacity>
-                                <TouchableOpacity style={{}}
+                                <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                                                   onPress={() => this.onAlert(INTRA_CARDS[1])}
                                 >
                                     <View style={{
@@ -112,15 +112,15 @@ class CardList extends React.Component {
                                         paddingHorizontal: 20,
                                         paddingVertical: 5,
                                         height: 70,
-                                        width: 120,
+                                        // width: 120,
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                     }}>
                                         <Image source={stringToImage(INTRA_CARDS[1])}
-                                               style={{ width: 55, height: 30 }}/>
+                                               style={{ width: 45, height: 27 }}/>
                                     </View>
                                 </TouchableOpacity>
-                                <TouchableOpacity style={{}}
+                                <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                                                   onPress={() => this.onAlert(INTRA_CARDS[2])}
                                 >
                                     <View style={{
@@ -131,17 +131,17 @@ class CardList extends React.Component {
                                         paddingHorizontal: 20,
                                         paddingVertical: 5,
                                         height: 70,
-                                        width: 120,
+                                        // width: 120,
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                     }}>
                                         <Image source={stringToImage(INTRA_CARDS[2])}
-                                               style={{ width: 50, height: 36 }}/>
+                                               style={{ width: 40, height: 25 }}/>
                                     </View>
                                 </TouchableOpacity>
                             </View>
                             <View style={{ flexDirection: 'row' }}>
-                                <TouchableOpacity style={{}}
+                                <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                                                   onPress={() => this.onAlert(INTRA_CARDS[3])}
                                 >
                                     <View style={{
@@ -153,12 +153,13 @@ class CardList extends React.Component {
                                         paddingVertical: 5,
                                         height: 70,
                                         justifyContent: 'center',
+                                        alignItems: 'center',
                                     }}>
                                         <Image source={stringToImage(INTRA_CARDS[3])}
                                                style={{ width: 80, height: 40 }}/>
                                     </View>
                                 </TouchableOpacity>
-                                <TouchableOpacity style={{}}
+                                <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                                                   onPress={() => this.onAlert(INTRA_CARDS[4])}
                                 >
                                     <View style={{
@@ -169,7 +170,7 @@ class CardList extends React.Component {
                                         paddingHorizontal: 20,
                                         paddingVertical: 5,
                                         height: 70,
-                                        width: 120,
+                                        // width: 120,
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                     }}>
@@ -177,7 +178,7 @@ class CardList extends React.Component {
                                                style={{ width: 80, height: 50 }}/>
                                     </View>
                                 </TouchableOpacity>
-                                <TouchableOpacity style={{}}
+                                <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                                                   onPress={() => this.onAlert(INTRA_CARDS[5])}
                                 >
                                     <View style={{
@@ -188,7 +189,7 @@ class CardList extends React.Component {
                                         paddingHorizontal: 20,
                                         paddingVertical: 5,
                                         height: 70,
-                                        width: 120,
+                                        // width: 120,
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                     }}>
@@ -198,7 +199,7 @@ class CardList extends React.Component {
                                 </TouchableOpacity>
                             </View>
                             <View style={{ flexDirection: 'row' }}>
-                                <TouchableOpacity style={{}}
+                                <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                                                   onPress={() => this.onAlert(INTRA_CARDS[6])}
                                 >
                                     <View style={{
@@ -210,12 +211,13 @@ class CardList extends React.Component {
                                         paddingVertical: 5,
                                         height: 70,
                                         justifyContent: 'center',
+                                        alignItems: 'center',
                                     }}>
                                         <Image source={stringToImage(INTRA_CARDS[6])}
                                                style={{ width: 80, height: 35 }}/>
                                     </View>
                                 </TouchableOpacity>
-                                <TouchableOpacity style={{}}
+                                <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                                                   onPress={() => this.onAlert(INTRA_CARDS[7])}
                                 >
                                     <View style={{
@@ -226,15 +228,15 @@ class CardList extends React.Component {
                                         paddingHorizontal: 20,
                                         paddingVertical: 5,
                                         height: 70,
-                                        width: 120,
+                                        // width: 120,
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                     }}>
                                         <Image source={stringToImage(INTRA_CARDS[7])}
-                                               style={{ width: 80, height: 16 }}/>
+                                               style={{ width: 76, height: 16 }}/>
                                     </View>
                                 </TouchableOpacity>
-                                <TouchableOpacity style={{}}
+                                <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                                                   onPress={() => this.onAlert(INTRA_CARDS[8])}
                                 >
                                     <View style={{
@@ -245,7 +247,7 @@ class CardList extends React.Component {
                                         paddingHorizontal: 20,
                                         paddingVertical: 5,
                                         height: 70,
-                                        width: 120,
+                                        // width: 120,
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                     }}>

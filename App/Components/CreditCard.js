@@ -4,7 +4,7 @@ import { stringToImage } from '../Utils/stringToImage'
 
 export const CreditCard = ({ title, image, onItemPress }) => {
     return (
-        <TouchableOpacity style={{}}
+        <TouchableOpacity style={{width: "33.33%", marginRight: 5}}
                           onPress={onItemPress}
         >
             <View style={{
@@ -13,9 +13,9 @@ export const CreditCard = ({ title, image, onItemPress }) => {
                 borderRadius: 3,
                 backgroundColor: "#fff",
                 paddingHorizontal: 20,
-                paddingVertical: 5
+                paddingVertical: 5,
             }}>
-                <Image source={stringToImage(image)} style={{ width: 80, height: 60 }}/>
+                <Image source={stringToImage(image)} style={{ width: 60, height: 60 }}/>
             </View>
         </TouchableOpacity>
     )
