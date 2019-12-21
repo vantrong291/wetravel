@@ -338,7 +338,7 @@ class TourOptions extends React.Component {
                                         detailContainerStyle={{ marginTop: -10 }}
                                         timeStyle={{
                                             textAlign: 'center',
-                                            backgroundColor: '#ff9797',
+                                            backgroundColor: Colors.success,
                                             color: 'white',
                                             padding: 5,
                                             borderRadius: 15,
