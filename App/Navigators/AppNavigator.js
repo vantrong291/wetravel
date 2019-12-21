@@ -30,6 +30,7 @@ import RecentTourDetail from 'App/Screens/RecentTourDetail'
 import CustomTabBar from './CustomTabBar'
 import { Icon as EIcon, withBadge } from 'react-native-elements'
 import { Config } from '../Config'
+import CardList from '../Screens/CardList'
 
 const notiNum = Math.floor(Math.random() * 10) + 1
 const BadgedIcon = withBadge(notiNum)(EIcon)
@@ -134,7 +135,8 @@ const StackNavigator = createStackNavigator(
         SearchResults: SearchResults,
         ListTours: ListTours,
         ReviewEditor: ReviewEditor,
-        RecentTourDetail: RecentTourDetail
+        RecentTourDetail: RecentTourDetail,
+        CardList: CardList
     },
     {
         initialRouteName: 'Main',

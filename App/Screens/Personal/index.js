@@ -51,7 +51,7 @@ class Personal extends React.Component {
     }
 
     goToAddCard = (item) => {
-        this.props.navigation.navigate('AddCard')
+        this.props.navigation.navigate('CardList')
     }
 
     goToChangePassword = (item) => {

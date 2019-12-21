@@ -35,7 +35,7 @@ class AddCard extends React.Component {
     return (
       <View style={{ flex: 1, backgroundColor: Colors.mainBackgroundColor }}>
 
-        <AppHeader onItemPress={this.goBack} title={'Add Credit Card'} barStyle={'dark-content'}
+        <AppHeader onItemPress={this.goBack} title={'Thêm thẻ quốc tế'} barStyle={'dark-content'}
                    backgroundColor={Colors.mainBackgroundColor} textColor={Colors.mainBackgroundColorTitle}/>
         {/*<StatusBar translucent backgroundColor={Colors.mainBackgroundColor} barStyle="dark-content"/>*/}
 
