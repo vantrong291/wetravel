@@ -33,8 +33,8 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [Introduce](#introduce)
-  * [Built With](#built-with)
+* [ScreenShots](#screenshots)
+* [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -44,25 +44,98 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## Introduce
+## Screenshots
 
-Splash Screen ![Splash Screen!](App/Assets/Images/Screenshots/01-splash.jpg "Splash Screen" )
-Login or Signup Screen ![Login or Signup Screen!](App/Assets/Images/Screenshots/02-login-or-signup.jpg "Login or Signup Screen" )
-Login Screen ![Login Screen!](App/Assets/Images/Screenshots/03-login.jpg "Login Screen" )
-Home Screen ![Home Screen!](App/Assets/Images/Screenshots/04-home-tab.jpg "Home Screen" )
-Reviews Screen ![Reviews Screen!](App/Assets/Images/Screenshots/05-review-tab.jpg "Reviews Screen" )
-Notifications Screen ![Notifications Screen!](App/Assets/Images/Screenshots/06-noti-tab.jpg "Notifications Screen" )
-Account Info & Setting Screen ![Account Info & Setting Screen!](App/Assets/Images/Screenshots/07-account-info-tab.jpg "Account Info & Setting Screen" )
-Payment Screen ![Payment Screen!](App/Assets/Images/Screenshots/08-payment.jpg "Payment Screen" )
-Account Information Screen ![Account Information Screen!](App/Assets/Images/Screenshots/09-account-info.jpg "Account Information Screen" )
-Tour Detail Screen ![Tour Detail Screen!](App/Assets/Images/Screenshots/10-tour-detail.jpg "Tour Detail Screen" )
-Select Payment Method Screen ![Select Payment Method Screen!](App/Assets/Images/Screenshots/11-select-payment.jpg "Select Payment Method Screen" )
-Ticket Overview Screen ![Ticket Overview Screen!](App/Assets/Images/Screenshots/12-ticket-overview.jpg "Ticket Overview Screen" )
-Success Payment Screen ![Success Payment Screen!](App/Assets/Images/Screenshots/13-success-payment.jpg "Success Payment Screen" )
-Review Detail Screen ![Review Detail Screen!](App/Assets/Images/Screenshots/14-review-detail.jpg "Review Detail Screen" )
+<div style="text-align: center"> 
+<img src="App/Assets/Images/Screenshots/01-splash.jpg" width="300" alt="Splash Screen"/>
+<p><em>Image 1: Splash Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/02-login-or-signup.jpg" width="300" alt="Login or Signup Screen"/>
+<p><em>Image 2: Login or Signup Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/03-login.jpg" width="300" alt="Login Screen"/>
+<p><em>Image 3: Login Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/04-home-tab.jpg" width="300" alt="Home Screen"/>
+<p><em>Image 4: Home Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/05-review-tab.jpg" width="300" alt="Reviews Screen"/>
+<p><em>Image 5: Reviews Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/06-noti-tab.jpg" width="300" alt="Notifications Screen"/>
+<p><em>Image 6: Notifications Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/07-account-info-tab.jpg" width="300" alt="Account Info & Setting Screen"/>
+<p><em>Image 7: Account Info & Setting Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/08-payment.jpg" width="300" alt="Payment Screen"/>
+<p><em>Image 8: Payment Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/09-account-info.jpg" width="300" alt="Account Information Screen"/>
+<p><em>Image 9: Account Information Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/10-tour-detail.jpg" width="300" alt="Tour Detail Screen"/>
+<p><em>Image 10: Tour Detail Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/11-select-payment.jpg" width="300" alt="Select Payment Method Screen"/>
+<p><em>Image 11: Select Payment Method Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/12-ticket-overview.jpg" width="300" alt="Ticket Overview Screen"/>
+<p><em>Image 12: Ticket Overview Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/13-success-payment.jpg" width="300" alt="Success Payment Screen"/>
+<p><em>Image 13: Success Payment Screen</em></p>
+<br/>
+
+<img src="App/Assets/Images/Screenshots/14-review-detail.jpg" width="300" alt="Review Detail Screen"/>
+<p><em>Image 14: Review Detail Screen</em></p>
+<br/>
 
 
-### Built With
+</div>
+
+[//]: # (Splash Screen ![Splash Screen!]&#40;App/Assets/Images/Screenshots/01-splash.jpg#10x20 "Splash Screen" &#41;)
+
+[//]: # (Login or Signup Screen ![Login or Signup Screen!]&#40;App/Assets/Images/Screenshots/02-login-or-signup.jpg "Login or Signup Screen" &#41;)
+
+[//]: # (Login Screen ![Login Screen!]&#40;App/Assets/Images/Screenshots/03-login.jpg "Login Screen" &#41;)
+
+[//]: # (Home Screen ![Home Screen!]&#40;App/Assets/Images/Screenshots/04-home-tab.jpg "Home Screen" &#41;)
+
+[//]: # (Reviews Screen ![Reviews Screen!]&#40;App/Assets/Images/Screenshots/05-review-tab.jpg "Reviews Screen" &#41;)
+
+[//]: # (Notifications Screen ![Notifications Screen!]&#40;App/Assets/Images/Screenshots/06-noti-tab.jpg "Notifications Screen" &#41;)
+
+[//]: # (Account Info & Setting Screen ![Account Info & Setting Screen!]&#40;App/Assets/Images/Screenshots/07-account-info-tab.jpg "Account Info & Setting Screen" &#41;)
+
+[//]: # (Payment Screen ![Payment Screen!]&#40;App/Assets/Images/Screenshots/08-payment.jpg "Payment Screen" &#41;)
+
+[//]: # (Account Information Screen ![Account Information Screen!]&#40;App/Assets/Images/Screenshots/09-account-info.jpg "Account Information Screen" &#41;)
+
+[//]: # (Tour Detail Screen ![Tour Detail Screen!]&#40;App/Assets/Images/Screenshots/10-tour-detail.jpg "Tour Detail Screen" &#41;)
+
+[//]: # (Select Payment Method Screen ![Select Payment Method Screen!]&#40;App/Assets/Images/Screenshots/11-select-payment.jpg "Select Payment Method Screen" &#41;)
+
+[//]: # (Ticket Overview Screen ![Ticket Overview Screen!]&#40;App/Assets/Images/Screenshots/12-ticket-overview.jpg "Ticket Overview Screen" &#41;)
+
+[//]: # (Success Payment Screen ![Success Payment Screen!]&#40;App/Assets/Images/Screenshots/13-success-payment.jpg "Success Payment Screen" &#41;)
+
+[//]: # (Review Detail Screen ![Review Detail Screen!]&#40;App/Assets/Images/Screenshots/14-review-detail.jpg "Review Detail Screen" &#41;)
+
+
+## Built With
 * [React Native](https://facebook.github.io/react-native/)
 * [React](https://reactjs.org/)
 
