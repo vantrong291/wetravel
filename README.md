@@ -1,16 +1,4 @@
 <!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
 *** I'm using markdown "reference style" links for readability.
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
 *** See the bottom of this document for the declaration of the reference variables
@@ -36,16 +24,7 @@
   <h3 align="center">WeTravel</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/vantrong291/wetravel"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/vantrong291/wetravel">View Demo</a>
-    ·
-    <a href="https://github.com/vantrong291/wetravel/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/vantrong291/wetravel/issues">Request Feature</a>
+    An React Native UI project
   </p>
 </p>
 
@@ -54,58 +33,33 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
+* [Introduce](#introduce)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Introduce
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Du lịch là việc thực hiện một chuyến đi của con người, với nhiều mục đích cụ
-thể riêng biệt đến một nơi khác mà không phải để định cư và có sự trở về sau chuyến
-đi (theo Wikipedia). Mục đích của việc đi du lịch là vui chơi, giải trí, thăm thân nhân
-hoặc được tổ chức bởi các công ty để thưởng cho nhân viên sau một năm làm việc mệt
-mỏi. Du lịch mang lại cho ta rất nhiều lợi ích như :
-+ Giúp ta mở rộng kiến thức và tâm hồn.
-+ Giảm stress và bế tắc trong cuộc sống.
-+ Giúp ta cởi mở hơn, giao tiếp tốt hơn, và có thêm những mối quan hệ.
-+ Được vận động nhiều hơn , nâng cao sức khỏe về thể chất, tinh thần.
-
-Nhu cầu lớn là vậy, tuy nhiên, chúng ta thường gặp khó khăn trong việc chuẩn bị
-cho chuyến du lịch như về địa điểm, giá cả và người hướng dẫn tour,... Việc chuẩn bị
-và tìm kiếm những thông tin như thế thường làm cho chúng ta mất rất nhiều thời gian
-và công sức.Và tất nhiên việc so sánh giá cả cũng như tìm kiếm được một người hướng
-dẫn viên phù hợp là rất cần thiết đối với mỗi người. Về phương diện của người hướng
-dẫn viên hoặc các công ty tour du lịch, việc quảng bá hình ảnh từ khi mới xây dựng
-hoặc phát triển cần một chi phí marketing rất lớn. Không những thế, các phương pháp
-quảng bá thường dùng như quảng cáo qua báo đài, TV thường đem lại hiệu quả không
-cao bởi không có sự chọn lọc khách hàng.
-
-Chính vì thế, WeTravel ra đời để giúp khách hàng và các công ty tour du lịch được
-kết nối với nhau, giúp giải quyết những khó khăn và vướng mắc ở trên . Với
-WeTravel, khách hàng sẽ có thể biết được những tour du lịch đang mở, biết được giá,
-được trao đổi trực tiếp với công ty về lộ trình và chọn người người hướng dẫn sao cho 
-phù hợp. Người đi du lịch còn có thể so sánh giá cả giữa các tour, giúp họ có thể chọn
-được tour phù hợp với mong muốn với kinh tế hiện có. Ngoài ra, khách hàng còn còn thể thấy
-được những đánh giá của người đã tham gia tour du lịch trước của công ty để an tâm
-hơn về chất lượng của tour. Phía ngược lại, các công ty tour sẽ có được một nguồn
-khách hàng dồi dào, chọn lọc mà không cần bỏ ra nhiều chi phí cho marketing và quảng
-cáo. WeTravel là một cầu nối hoàn hảo cho công ty và khách hàng, giúp việc đi du
-lịch, trải nghiệm ngày một nâng cao hơn.
-
-Ứng dụng Mobile WeTravel là 1 phần của hệ thống WeTravel, đưa tour Du lịch tiếp cận với khách hàng một cách dễ dàng nhất có thể. 
+Splash Screen ![Splash Screen!](App/Assets/Images/Screenshots/01-splash.jpg "Splash Screen" )
+Login or Signup Screen ![Login or Signup Screen!](App/Assets/Images/Screenshots/02-login-or-signup.jpg "Login or Signup Screen" )
+Login Screen ![Login Screen!](App/Assets/Images/Screenshots/03-login.jpg "Login Screen" )
+Home Screen ![Home Screen!](App/Assets/Images/Screenshots/04-home-tab.jpg "Home Screen" )
+Reviews Screen ![Reviews Screen!](App/Assets/Images/Screenshots/05-review-tab.jpg "Reviews Screen" )
+Notifications Screen ![Notifications Screen!](App/Assets/Images/Screenshots/06-noti-tab.jpg "Notifications Screen" )
+Account Info & Setting Screen ![Account Info & Setting Screen!](App/Assets/Images/Screenshots/07-account-info-tab.jpg "Account Info & Setting Screen" )
+Payment Screen ![Payment Screen!](App/Assets/Images/Screenshots/08-payment.jpg "Payment Screen" )
+Account Information Screen ![Account Information Screen!](App/Assets/Images/Screenshots/09-account-info.jpg "Account Information Screen" )
+Tour Detail Screen ![Tour Detail Screen!](App/Assets/Images/Screenshots/10-tour-detail.jpg "Tour Detail Screen" )
+Select Payment Method Screen ![Select Payment Method Screen!](App/Assets/Images/Screenshots/11-select-payment.jpg "Select Payment Method Screen" )
+Ticket Overview Screen ![Ticket Overview Screen!](App/Assets/Images/Screenshots/12-ticket-overview.jpg "Ticket Overview Screen" )
+Success Payment Screen ![Success Payment Screen!](App/Assets/Images/Screenshots/13-success-payment.jpg "Success Payment Screen" )
+Review Detail Screen ![Review Detail Screen!](App/Assets/Images/Screenshots/14-review-detail.jpg "Review Detail Screen" )
 
 
 ### Built With
@@ -191,37 +145,6 @@ npm install
 yarn r
 ```
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/vantrong291/wetravel/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
 <!-- LICENSE -->
 ## License
 
@@ -232,28 +155,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+vantrong291 - vantrong291@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
+Project Link: [https://github.com/vantrong291/wetravel](https://github.com/vantrong291/wetravel)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -270,4 +174,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [license-url]: https://github.com/vantrong291/wetravel/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/vantrong291
-[product-screenshot]: App/Assets/Images/Screenshoots/screenshot01.png
+[product-screenshot]: App/Assets/Images/Screenshots/screenshot01.png
